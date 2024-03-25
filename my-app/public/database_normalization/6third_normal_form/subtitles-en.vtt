@@ -1,0 +1,501 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.025
+When working with
+tables in a database,
+
+2
+00:00:02.025 --> 00:00:03.510
+you may often encounter tables
+
+3
+00:00:03.510 --> 00:00:05.100
+that contain repetitive data.
+
+4
+00:00:05.100 --> 00:00:08.385
+Perhaps two columns contain
+values that are very similar.
+
+5
+00:00:08.385 --> 00:00:11.865
+You might split the table in
+two to simplify the data.
+
+6
+00:00:11.865 --> 00:00:14.205
+When building
+relational databases,
+
+7
+00:00:14.205 --> 00:00:15.840
+you can solve similar issues of
+
+8
+00:00:15.840 --> 00:00:17.490
+repetitive data using what's
+
+9
+00:00:17.490 --> 00:00:21.310
+known as third
+normal form, or 3NF.
+
+10
+00:00:21.310 --> 00:00:23.035
+By the end of this video,
+
+11
+00:00:23.035 --> 00:00:24.830
+you'll be able to
+understand how to design
+
+12
+00:00:24.830 --> 00:00:26.720
+a database in third normal form,
+
+13
+00:00:26.720 --> 00:00:29.734
+and explain the concept
+of transitive dependency.
+
+14
+00:00:29.734 --> 00:00:32.180
+Before we begin, make
+sure that you've watched
+
+15
+00:00:32.180 --> 00:00:34.825
+the videos in first and
+second normal form.
+
+16
+00:00:34.825 --> 00:00:36.290
+A database must be in
+
+17
+00:00:36.290 --> 00:00:37.835
+first and second normal form
+
+18
+00:00:37.835 --> 00:00:39.965
+before it can be in
+third normal form.
+
+19
+00:00:39.965 --> 00:00:41.810
+In addition to these rules,
+
+20
+00:00:41.810 --> 00:00:43.310
+databases can contain
+
+21
+00:00:43.310 --> 00:00:45.934
+any instances of
+transitive dependency.
+
+22
+00:00:45.934 --> 00:00:48.320
+In the context of
+third normal form,
+
+23
+00:00:48.320 --> 00:00:50.150
+transitive dependency means that
+
+24
+00:00:50.150 --> 00:00:52.070
+a non-key attribute cannot be
+
+25
+00:00:52.070 --> 00:00:54.800
+functionally dependent on
+another non-key attribute.
+
+26
+00:00:54.800 --> 00:00:57.260
+In other words,
+non-key attributes
+
+27
+00:00:57.260 --> 00:00:59.320
+cannot depend upon one another.
+
+28
+00:00:59.320 --> 00:01:02.330
+A key attribute in a database
+is an attribute that
+
+29
+00:01:02.330 --> 00:01:05.525
+helps to uniquely identify
+a raw of data in a table.
+
+30
+00:01:05.525 --> 00:01:07.385
+To demonstrate this concept,
+
+31
+00:01:07.385 --> 00:01:09.380
+let's take the example
+of a basic table
+
+32
+00:01:09.380 --> 00:01:10.570
+with three columns;
+
+33
+00:01:10.570 --> 00:01:14.150
+A, B, and C. The concept of
+
+34
+00:01:14.150 --> 00:01:16.100
+transitive dependency means that
+
+35
+00:01:16.100 --> 00:01:18.760
+the value of A determines
+the value of B.
+
+36
+00:01:18.760 --> 00:01:21.870
+Likewise, the value of B
+determines the value of C.
+
+37
+00:01:21.870 --> 00:01:24.380
+The relation between
+these table columns
+
+38
+00:01:24.380 --> 00:01:25.760
+is represented by A,
+
+39
+00:01:25.760 --> 00:01:30.970
+B, and C. This means that
+A determines C through B.
+
+40
+00:01:30.970 --> 00:01:32.840
+This is the type
+of relation that
+
+41
+00:01:32.840 --> 00:01:35.810
+database engineers called
+transitive dependency.
+
+42
+00:01:35.810 --> 00:01:38.750
+Let's see how this works
+using a more complex example.
+
+43
+00:01:38.750 --> 00:01:41.060
+I have a table of
+best-selling books
+
+44
+00:01:41.060 --> 00:01:43.925
+within Europe from the database
+of an online bookstore.
+
+45
+00:01:43.925 --> 00:01:46.100
+The table organizes
+the books according to
+
+46
+00:01:46.100 --> 00:01:48.830
+five attributes:
+Book ID and title,
+
+47
+00:01:48.830 --> 00:01:52.330
+author name, author
+language, and country.
+
+48
+00:01:52.330 --> 00:01:54.800
+In this table, ID is the only
+
+49
+00:01:54.800 --> 00:01:57.815
+key or primary key that
+exists in the table.
+
+50
+00:01:57.815 --> 00:02:00.800
+All other attributes
+are non-key attributes.
+
+51
+00:02:00.800 --> 00:02:03.550
+But to determine what these
+non-key attributes are,
+
+52
+00:02:03.550 --> 00:02:06.475
+I most used the ID of
+the top-selling books.
+
+53
+00:02:06.475 --> 00:02:08.165
+This means if I want to find
+
+54
+00:02:08.165 --> 00:02:10.940
+any specific information
+about any attribute,
+
+55
+00:02:10.940 --> 00:02:13.040
+I need to use the
+ID attribute value
+
+56
+00:02:13.040 --> 00:02:15.100
+to find the targeted
+attribute value.
+
+57
+00:02:15.100 --> 00:02:18.560
+For example, if I
+use the ID of 3,
+
+58
+00:02:18.560 --> 00:02:20.840
+then I can locate the
+author, Cormac O'Dwyer,
+
+59
+00:02:20.840 --> 00:02:22.700
+the language,
+Irish, the country,
+
+60
+00:02:22.700 --> 00:02:24.170
+Ireland, and so on.
+
+61
+00:02:24.170 --> 00:02:25.790
+However, it's also possible to
+
+62
+00:02:25.790 --> 00:02:28.115
+determine the country
+based on the language,
+
+63
+00:02:28.115 --> 00:02:31.010
+or to determine the language
+based on the country,
+
+64
+00:02:31.010 --> 00:02:34.895
+and both country and language
+are non-key attributes.
+
+65
+00:02:34.895 --> 00:02:36.860
+For example, in the
+context of Europe,
+
+66
+00:02:36.860 --> 00:02:39.905
+it's always possible to
+determine the country is France,
+
+67
+00:02:39.905 --> 00:02:42.425
+if the language is
+French, and vice versa.
+
+68
+00:02:42.425 --> 00:02:44.150
+This means that I
+have a transitive
+
+69
+00:02:44.150 --> 00:02:45.470
+dependency in this relation.
+
+70
+00:02:45.470 --> 00:02:49.775
+A non-key attribute depends
+on another non-key attribute.
+
+71
+00:02:49.775 --> 00:02:52.340
+This dependency relation
+can be presented as follows
+
+72
+00:02:52.340 --> 00:02:54.905
+: Language determines country,
+
+73
+00:02:54.905 --> 00:02:56.995
+and country determines language.
+
+74
+00:02:56.995 --> 00:02:59.390
+The rest of the attributes
+are fine as they
+
+75
+00:02:59.390 --> 00:03:02.035
+only depend on the
+ID primary key.
+
+76
+00:03:02.035 --> 00:03:03.740
+You can't say, for instance,
+
+77
+00:03:03.740 --> 00:03:06.140
+that author name
+determines book title,
+
+78
+00:03:06.140 --> 00:03:08.840
+or that author name
+determines language.
+
+79
+00:03:08.840 --> 00:03:10.580
+For example, the author,
+
+80
+00:03:10.580 --> 00:03:12.440
+Michel Leiris has
+written two books in
+
+81
+00:03:12.440 --> 00:03:15.275
+two different languages,
+French and Spanish.
+
+82
+00:03:15.275 --> 00:03:18.350
+As I've just pointed out, the
+only transitive dependency
+
+83
+00:03:18.350 --> 00:03:19.775
+that exists in this example
+
+84
+00:03:19.775 --> 00:03:21.635
+is between language and country.
+
+85
+00:03:21.635 --> 00:03:24.380
+How do I solve this
+transitive dependency within
+
+86
+00:03:24.380 --> 00:03:27.245
+my table and remove any
+repetition of data?
+
+87
+00:03:27.245 --> 00:03:29.750
+I can split the table
+into two tables while
+
+88
+00:03:29.750 --> 00:03:32.900
+joining them to conform
+with 3NF rules.
+
+89
+00:03:32.900 --> 00:03:35.465
+I keep the top books table,
+
+90
+00:03:35.465 --> 00:03:37.070
+while splitting off
+the country and
+
+91
+00:03:37.070 --> 00:03:39.980
+language columns into a
+new table called country.
+
+92
+00:03:39.980 --> 00:03:42.350
+But I also leave the
+country column inside
+
+93
+00:03:42.350 --> 00:03:43.730
+the top books table as
+
+94
+00:03:43.730 --> 00:03:45.965
+a foreign key that
+connects the two tables.
+
+95
+00:03:45.965 --> 00:03:47.510
+The country table now holds
+
+96
+00:03:47.510 --> 00:03:50.295
+just four records with
+no repetition of data.
+
+97
+00:03:50.295 --> 00:03:52.070
+There's no need for
+language column
+
+98
+00:03:52.070 --> 00:03:53.680
+within the top books table.
+
+99
+00:03:53.680 --> 00:03:56.870
+Stating the country is enough
+to determine the language.
+
+100
+00:03:56.870 --> 00:03:59.735
+Most importantly, all
+non-key attributes
+
+101
+00:03:59.735 --> 00:04:02.570
+are determined only by the
+primary key in each table.
+
+102
+00:04:02.570 --> 00:04:04.400
+This means that my
+table then meets
+
+103
+00:04:04.400 --> 00:04:06.605
+the requirements of 3NF.
+
+104
+00:04:06.605 --> 00:04:08.360
+You should now
+know how to design
+
+105
+00:04:08.360 --> 00:04:10.495
+a database in third normal form.
+
+106
+00:04:10.495 --> 00:04:12.980
+You should also be able
+to explain the concept of
+
+107
+00:04:12.980 --> 00:04:16.410
+transitive dependency.
+Well done.

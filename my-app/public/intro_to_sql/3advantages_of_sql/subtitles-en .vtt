@@ -1,0 +1,288 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.520
+By now you're most likely
+familiar with the basics of
+
+2
+00:00:02.520 --> 00:00:04.530
+databases and you
+might even have
+
+3
+00:00:04.530 --> 00:00:07.095
+come across some
+simple SQL syntax.
+
+4
+00:00:07.095 --> 00:00:10.620
+Why do developers use SQL
+to interact with databases?
+
+5
+00:00:10.620 --> 00:00:12.750
+SQL is a popular
+language choice for
+
+6
+00:00:12.750 --> 00:00:15.825
+databases because of the many
+advantages that it offers.
+
+7
+00:00:15.825 --> 00:00:17.625
+Now for the next few minutes,
+
+8
+00:00:17.625 --> 00:00:20.910
+you'll identify the
+advantages of SQL and
+
+9
+00:00:20.910 --> 00:00:22.530
+demonstrate how
+the advantages of
+
+10
+00:00:22.530 --> 00:00:24.930
+SQL assist with database tasks.
+
+11
+00:00:24.930 --> 00:00:26.970
+SQL is the interface or
+
+12
+00:00:26.970 --> 00:00:29.310
+bridge between a
+relational database and
+
+13
+00:00:29.310 --> 00:00:31.650
+its users and offers
+web developers
+
+14
+00:00:31.650 --> 00:00:35.295
+a wide range of advantages.
+Let's look at a few of them.
+
+15
+00:00:35.295 --> 00:00:37.440
+The biggest advantage
+of SQL is that it
+
+16
+00:00:37.440 --> 00:00:39.990
+requires very little
+coding skills to use,
+
+17
+00:00:39.990 --> 00:00:41.850
+is just a set of keywords.
+
+18
+00:00:41.850 --> 00:00:43.970
+There aren't many lines
+of code required to
+
+19
+00:00:43.970 --> 00:00:46.220
+perform basic CRUD operations,
+
+20
+00:00:46.220 --> 00:00:48.530
+or add, create, update,
+
+21
+00:00:48.530 --> 00:00:50.705
+and delete tasks
+on the database.
+
+22
+00:00:50.705 --> 00:00:54.055
+It's a very developer or
+user-friendly language.
+
+23
+00:00:54.055 --> 00:00:57.050
+SQL's interactivity
+makes it even more
+
+24
+00:00:57.050 --> 00:00:59.240
+user-friendly because
+it lets developers
+
+25
+00:00:59.240 --> 00:01:02.155
+write complex queries in
+a short space of time.
+
+26
+00:01:02.155 --> 00:01:04.130
+If you need to work
+with relational
+
+27
+00:01:04.130 --> 00:01:05.840
+databases for your next project,
+
+28
+00:01:05.840 --> 00:01:09.185
+you just need to know what
+keywords to use and when.
+
+29
+00:01:09.185 --> 00:01:12.140
+SQL is also a standard
+language that can be used
+
+30
+00:01:12.140 --> 00:01:15.140
+with all relational
+databases like MySQL.
+
+31
+00:01:15.140 --> 00:01:16.970
+This also means that
+there's a lot of
+
+32
+00:01:16.970 --> 00:01:19.370
+support and
+information available.
+
+33
+00:01:19.370 --> 00:01:21.785
+SQL can run on any computer
+
+34
+00:01:21.785 --> 00:01:24.260
+once you've database
+software installed.
+
+35
+00:01:24.260 --> 00:01:26.890
+SQL is also a portable language.
+
+36
+00:01:26.890 --> 00:01:28.535
+Once you write your code,
+
+37
+00:01:28.535 --> 00:01:30.650
+it can then be used
+in any hardware,
+
+38
+00:01:30.650 --> 00:01:34.315
+on any operating system or
+platform wherever you need.
+
+39
+00:01:34.315 --> 00:01:36.815
+If you write SQL
+code in a desktop
+
+40
+00:01:36.815 --> 00:01:39.485
+and then move it to a
+production server environment,
+
+41
+00:01:39.485 --> 00:01:42.235
+it will run the same
+in both locations.
+
+42
+00:01:42.235 --> 00:01:45.200
+Also, SQL is a
+comprehensive language that
+
+43
+00:01:45.200 --> 00:01:48.455
+covers all areas of database
+management administration.
+
+44
+00:01:48.455 --> 00:01:50.195
+For example, it allows you to
+
+45
+00:01:50.195 --> 00:01:52.730
+create databases,
+insert, update,
+
+46
+00:01:52.730 --> 00:01:55.430
+and delete data,
+retrieve and share data
+
+47
+00:01:55.430 --> 00:01:58.580
+among multiple users and
+manage database security.
+
+48
+00:01:58.580 --> 00:02:02.180
+This is made possible
+through subsets of SQL like
+
+49
+00:02:02.180 --> 00:02:05.635
+DDL or Data Definition
+Language, DML,
+
+50
+00:02:05.635 --> 00:02:07.955
+also known as Data
+Manipulation Language,
+
+51
+00:02:07.955 --> 00:02:10.595
+DQL or Data Query Language,
+
+52
+00:02:10.595 --> 00:02:14.360
+and DCL, also known as
+Data Control Language.
+
+53
+00:02:14.360 --> 00:02:17.150
+The final advantage of
+SQL is that it lets
+
+54
+00:02:17.150 --> 00:02:19.190
+database users
+process large amounts
+
+55
+00:02:19.190 --> 00:02:21.460
+of data quickly and efficiently.
+
+56
+00:02:21.460 --> 00:02:23.915
+You now know that
+SQL is a simple,
+
+57
+00:02:23.915 --> 00:02:26.345
+standard, portable,
+comprehensive,
+
+58
+00:02:26.345 --> 00:02:28.070
+and efficient language
+that can be used to
+
+59
+00:02:28.070 --> 00:02:31.105
+communicate and work with
+relational databases.
+
+60
+00:02:31.105 --> 00:02:35.210
+You're well on your way to
+mastering SQL. Well done.

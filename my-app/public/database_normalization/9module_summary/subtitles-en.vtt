@@ -1,0 +1,188 @@
+WEBVTT
+
+1
+00:00:00.540 --> 00:00:01.740
+Well done.
+
+2
+00:00:01.740 --> 00:00:04.640
+You've reached the end of this module and
+database design.
+
+3
+00:00:04.640 --> 00:00:07.940
+It's now time to recap the key points and
+skills.
+
+4
+00:00:07.940 --> 00:00:11.494
+You began this module with a lesson
+on designing a database schema.
+
+5
+00:00:11.494 --> 00:00:14.939
+And learned that a correctly
+designed database is the basis for
+
+6
+00:00:14.939 --> 00:00:17.347
+all subsequent data storage and analysis.
+
+7
+00:00:17.347 --> 00:00:20.484
+It's crucial to know the principles
+of good database design.
+
+8
+00:00:20.484 --> 00:00:22.960
+Because a poorly designed
+database makes it hard,
+
+9
+00:00:22.960 --> 00:00:26.340
+if not impossible to produce
+accurate information.
+
+10
+00:00:26.340 --> 00:00:31.310
+Having completed this module, you should
+now be able to define the term database
+
+11
+00:00:31.310 --> 00:00:36.063
+schema, describe the schema of different
+database systems, create a basic
+
+12
+00:00:36.063 --> 00:00:40.761
+database schema using SQL, and list
+the two main types of database schema.
+
+13
+00:00:41.840 --> 00:00:44.561
+You then moved on to explore
+relational database design.
+
+14
+00:00:45.640 --> 00:00:49.040
+In this lesson, you learned how
+to design a relational database.
+
+15
+00:00:49.040 --> 00:00:53.766
+Having completed this lesson, you should
+now be able to describe the relational
+
+16
+00:00:53.766 --> 00:00:58.982
+model, list different types of relations,
+evaluate an entity relationship diagram,
+
+17
+00:00:58.982 --> 00:01:02.961
+or ERD, and explain the purpose of
+primary key in a database table.
+
+18
+00:01:04.040 --> 00:01:06.869
+And you should now also be
+able to demonstrate how
+
+19
+00:01:06.869 --> 00:01:10.462
+to select a single primary key,
+and a composite primary key.
+
+20
+00:01:10.462 --> 00:01:14.958
+Describe the purpose of a foreign key,
+connect tables using a foreign key, and
+
+21
+00:01:14.958 --> 00:01:19.340
+summarize the meaning of entities
+in a relational database.
+
+22
+00:01:19.340 --> 00:01:23.185
+Furthermore, you should now be able to
+list different types of attributes,
+
+23
+00:01:23.185 --> 00:01:28.140
+identify entities and their attributes,
+and create links between entities.
+
+24
+00:01:28.140 --> 00:01:30.904
+The last lesson covered
+database normalization.
+
+25
+00:01:30.904 --> 00:01:35.398
+Normalization is the process of converting
+a large table into multiple tables to
+
+26
+00:01:35.398 --> 00:01:37.640
+reduce data redundancy.
+
+27
+00:01:37.640 --> 00:01:40.975
+You should now be able to
+explain database normalization,
+
+28
+00:01:40.975 --> 00:01:44.255
+recognize, insert, update,
+and deletion anomalies.
+
+29
+00:01:44.255 --> 00:01:46.424
+And explain the Atomicity concept, and
+
+30
+00:01:46.424 --> 00:01:49.116
+describe the repeating
+groups of data problems.
+
+31
+00:01:49.116 --> 00:01:52.381
+And you should now know how to
+design a database in first,
+
+32
+00:01:52.381 --> 00:01:57.145
+second and third normal form, and explain
+the concepts of functional, partial,
+
+33
+00:01:57.145 --> 00:01:59.740
+and transitive dependency.
+
+34
+00:01:59.740 --> 00:02:02.241
+You should then be familiar
+with the essential skills and
+
+35
+00:02:02.241 --> 00:02:03.606
+concepts of database design.
+
+36
+00:02:03.606 --> 00:02:07.027
+And you should also be able to create
+the structure of a normalized relational
+
+37
+00:02:07.027 --> 00:02:08.139
+database.
+
+38
+00:02:08.139 --> 00:02:09.340
+Well done.
+
+39
+00:02:09.340 --> 00:02:11.351
+That's great progress
+towards your learning goals.

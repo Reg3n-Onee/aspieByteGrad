@@ -1,0 +1,389 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.495
+You've reached the end of this
+module on CRUD operations.
+
+2
+00:00:03.495 --> 00:00:06.105
+In this module, you've
+discovered how to create,
+
+3
+00:00:06.105 --> 00:00:09.675
+read, update, and delete
+data within a database.
+
+4
+00:00:09.675 --> 00:00:11.250
+You've also examined different
+
+5
+00:00:11.250 --> 00:00:13.140
+SQL data types like numeric,
+
+6
+00:00:13.140 --> 00:00:15.495
+string, and default values.
+
+7
+00:00:15.495 --> 00:00:17.010
+It's now time to recap
+
+8
+00:00:17.010 --> 00:00:20.310
+the key topics you learned
+and the skills that you gain.
+
+9
+00:00:20.310 --> 00:00:22.530
+You began the module
+with an introduction
+
+10
+00:00:22.530 --> 00:00:24.075
+to SQL data types.
+
+11
+00:00:24.075 --> 00:00:26.640
+Following the completion
+of this first lesson,
+
+12
+00:00:26.640 --> 00:00:28.740
+you can now identify
+and understand
+
+13
+00:00:28.740 --> 00:00:30.750
+the numeric data
+type so that you can
+
+14
+00:00:30.750 --> 00:00:33.270
+store data as numbers
+in a database,
+
+15
+00:00:33.270 --> 00:00:36.344
+utilize numerical data
+types in a database,
+
+16
+00:00:36.344 --> 00:00:39.435
+and differentiate between
+integer and decimal data types.
+
+17
+00:00:39.435 --> 00:00:41.480
+So that you can store
+numerical values
+
+18
+00:00:41.480 --> 00:00:42.680
+of different sizes,
+
+19
+00:00:42.680 --> 00:00:45.280
+including positive
+and negative ones.
+
+20
+00:00:45.280 --> 00:00:48.260
+Following your exploration
+of numerical data types,
+
+21
+00:00:48.260 --> 00:00:51.650
+you then move down to
+investigate string data types.
+
+22
+00:00:51.650 --> 00:00:53.960
+During your investigation,
+you learned how to
+
+23
+00:00:53.960 --> 00:00:57.670
+identify and understand string
+data types in a database.
+
+24
+00:00:57.670 --> 00:01:01.160
+Demonstrate how to use string
+data types and outline
+
+25
+00:01:01.160 --> 00:01:04.955
+the key differences between
+CHAR and VARCHAR data types.
+
+26
+00:01:04.955 --> 00:01:07.130
+The final concept that
+you learned about
+
+27
+00:01:07.130 --> 00:01:09.175
+in this lesson was
+default values.
+
+28
+00:01:09.175 --> 00:01:11.975
+Now that you've completed the
+lesson on default values,
+
+29
+00:01:11.975 --> 00:01:14.090
+you are able to demonstrate
+an understanding of
+
+30
+00:01:14.090 --> 00:01:16.400
+the concept of constraints
+in a database with
+
+31
+00:01:16.400 --> 00:01:18.350
+SQL syntax and identify
+
+32
+00:01:18.350 --> 00:01:21.760
+the default constraint to set
+default values in a table.
+
+33
+00:01:21.760 --> 00:01:23.315
+As part of this lesson,
+
+34
+00:01:23.315 --> 00:01:24.920
+you also want to
+take a series of
+
+35
+00:01:24.920 --> 00:01:27.790
+exercises focused
+on SQL data types.
+
+36
+00:01:27.790 --> 00:01:30.320
+Having successfully
+completed these exercises,
+
+37
+00:01:30.320 --> 00:01:31.850
+you can now demonstrate
+
+38
+00:01:31.850 --> 00:01:34.310
+your ability to work
+with numeric data types,
+
+39
+00:01:34.310 --> 00:01:36.890
+string data types,
+and default values,
+
+40
+00:01:36.890 --> 00:01:38.210
+and outline how to select
+
+41
+00:01:38.210 --> 00:01:40.280
+the correct data
+type for your data.
+
+42
+00:01:40.280 --> 00:01:43.295
+Once you've completed your
+study of SQL data types,
+
+43
+00:01:43.295 --> 00:01:45.350
+you then move down to
+explore the topic of
+
+44
+00:01:45.350 --> 00:01:48.265
+creating and reading
+data in a database.
+
+45
+00:01:48.265 --> 00:01:50.645
+Now that you've
+completed this lesson,
+
+46
+00:01:50.645 --> 00:01:53.675
+you were able to create a
+database and create tables,
+
+47
+00:01:53.675 --> 00:01:57.025
+alter database tables,
+and drop a database.
+
+48
+00:01:57.025 --> 00:01:59.360
+You can also demonstrate
+how to create
+
+49
+00:01:59.360 --> 00:02:02.015
+a table in a database
+with SQL syntax,
+
+50
+00:02:02.015 --> 00:02:03.650
+alter a table's structure using
+
+51
+00:02:03.650 --> 00:02:05.525
+the SQL ALTER TABLE statement,
+
+52
+00:02:05.525 --> 00:02:07.535
+and insert or add data
+
+53
+00:02:07.535 --> 00:02:10.085
+into a table with SQL
+insert statement.
+
+54
+00:02:10.085 --> 00:02:11.840
+In addition to these new skills,
+
+55
+00:02:11.840 --> 00:02:14.420
+you also learned how to
+retrieve data from tables with
+
+56
+00:02:14.420 --> 00:02:17.180
+the SQL select statement
+and insert query
+
+57
+00:02:17.180 --> 00:02:20.365
+data from one or more tables
+into another target table.
+
+58
+00:02:20.365 --> 00:02:23.060
+Using the INSERT INTO
+SELECT statement.
+
+59
+00:02:23.060 --> 00:02:25.220
+You also had an
+opportunity to demonstrate
+
+60
+00:02:25.220 --> 00:02:27.965
+these new skills through
+a series of exercises.
+
+61
+00:02:27.965 --> 00:02:29.810
+These exercises you proved
+
+62
+00:02:29.810 --> 00:02:32.435
+your ability to create
+a database and a table,
+
+63
+00:02:32.435 --> 00:02:33.860
+and then populate the table with
+
+64
+00:02:33.860 --> 00:02:35.780
+data and manage data within
+
+65
+00:02:35.780 --> 00:02:37.505
+your tables using the select
+
+66
+00:02:37.505 --> 00:02:39.820
+and insert into
+select statements.
+
+67
+00:02:39.820 --> 00:02:42.380
+You then move down to the
+final lesson in which
+
+68
+00:02:42.380 --> 00:02:44.980
+you explored how to
+update and delete data.
+
+69
+00:02:44.980 --> 00:02:46.895
+Having completed this lesson,
+
+70
+00:02:46.895 --> 00:02:48.530
+you can now demonstrate
+knowledge of
+
+71
+00:02:48.530 --> 00:02:51.080
+the SQL UPDATE
+statement and utilize
+
+72
+00:02:51.080 --> 00:02:52.820
+the UPDATE statement to update
+
+73
+00:02:52.820 --> 00:02:55.810
+both single and multiple
+field values of a record.
+
+74
+00:02:55.810 --> 00:02:57.560
+Finally, you also proved
+
+75
+00:02:57.560 --> 00:02:59.255
+your abilities with
+these new skills
+
+76
+00:02:59.255 --> 00:03:00.920
+by completing an exercise in
+
+77
+00:03:00.920 --> 00:03:03.055
+which you deleted
+records from a table.
+
+78
+00:03:03.055 --> 00:03:05.000
+You're now familiar
+with the create,
+
+79
+00:03:05.000 --> 00:03:07.835
+read, update, and
+delete operations.
+
+80
+00:03:07.835 --> 00:03:10.895
+You're also skilled in the
+use of SQL data types.
+
+81
+00:03:10.895 --> 00:03:13.460
+Great work. You're
+making good progress
+
+82
+00:03:13.460 --> 00:03:16.950
+on your journey towards
+becoming a database engineer.

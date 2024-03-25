@@ -1,0 +1,735 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.680
+As a database engineer,
+
+2
+00:00:01.680 --> 00:00:04.200
+you'll very often come across
+columns in a table that are
+
+3
+00:00:04.200 --> 00:00:06.975
+filled with duplicates of
+data and multiple values.
+
+4
+00:00:06.975 --> 00:00:09.000
+This can make it quite
+challenging to view,
+
+5
+00:00:09.000 --> 00:00:10.875
+search, and sort your data.
+
+6
+00:00:10.875 --> 00:00:13.890
+But with the correct
+implementation of normalization,
+
+7
+00:00:13.890 --> 00:00:15.660
+this challenge can
+be dealt with.
+
+8
+00:00:15.660 --> 00:00:17.400
+By the end of this video,
+
+9
+00:00:17.400 --> 00:00:19.200
+you'll be able to
+explain how to design
+
+10
+00:00:19.200 --> 00:00:21.345
+a database in a
+second normal form,
+
+11
+00:00:21.345 --> 00:00:23.775
+outline the functional
+dependency concept,
+
+12
+00:00:23.775 --> 00:00:26.500
+and define the partial
+dependency concept.
+
+13
+00:00:26.500 --> 00:00:29.120
+Before we begin, make
+sure that you've watched
+
+14
+00:00:29.120 --> 00:00:32.375
+the video on first
+normal form or 1NF.
+
+15
+00:00:32.375 --> 00:00:35.390
+Database normalization is
+a progressive process.
+
+16
+00:00:35.390 --> 00:00:37.355
+So you must be familiar with 1NF
+
+17
+00:00:37.355 --> 00:00:40.060
+before you can implement 2NF.
+
+18
+00:00:40.060 --> 00:00:42.230
+Why do database developers
+
+19
+00:00:42.230 --> 00:00:44.405
+require database normalization?
+
+20
+00:00:44.405 --> 00:00:46.340
+If you're going
+to store content,
+
+21
+00:00:46.340 --> 00:00:48.980
+you should aim to have the
+best possible database.
+
+22
+00:00:48.980 --> 00:00:52.250
+Best means that it is a
+proper structure that reduces
+
+23
+00:00:52.250 --> 00:00:54.470
+duplication and
+ultimately allows for
+
+24
+00:00:54.470 --> 00:00:57.130
+accurate data analysis
+and data retrieval.
+
+25
+00:00:57.130 --> 00:00:58.875
+To get the best results,
+
+26
+00:00:58.875 --> 00:01:00.770
+engineers build
+tables in a way that
+
+27
+00:01:00.770 --> 00:01:02.870
+optimizes the
+database structure.
+
+28
+00:01:02.870 --> 00:01:05.480
+This video focuses on
+how to design tables in
+
+29
+00:01:05.480 --> 00:01:06.770
+a relational database to meet
+
+30
+00:01:06.770 --> 00:01:08.950
+the second normal form criteria.
+
+31
+00:01:08.950 --> 00:01:11.150
+But before you can
+learn how to do this,
+
+32
+00:01:11.150 --> 00:01:12.740
+you need to understand
+what is meant by
+
+33
+00:01:12.740 --> 00:01:15.725
+the terms functional
+and partial dependency.
+
+34
+00:01:15.725 --> 00:01:17.720
+Functional dependency refers to
+
+35
+00:01:17.720 --> 00:01:20.435
+the relationship between
+two attributes in a table.
+
+36
+00:01:20.435 --> 00:01:22.220
+The unique value of a column in
+
+37
+00:01:22.220 --> 00:01:25.160
+a relation determines the
+value of another column.
+
+38
+00:01:25.160 --> 00:01:26.960
+To demonstrate this concept,
+
+39
+00:01:26.960 --> 00:01:29.645
+let's take the example
+of a table known as R.
+
+40
+00:01:29.645 --> 00:01:31.700
+This table contains two columns
+
+41
+00:01:31.700 --> 00:01:34.090
+called X and Y, respectively.
+
+42
+00:01:34.090 --> 00:01:35.780
+X is a column with a set of
+
+43
+00:01:35.780 --> 00:01:37.280
+unique values which are not
+
+44
+00:01:37.280 --> 00:01:38.915
+replicated elsewhere
+in the table,
+
+45
+00:01:38.915 --> 00:01:40.825
+a primary key, for example.
+
+46
+00:01:40.825 --> 00:01:42.710
+Y is the column without a set of
+
+47
+00:01:42.710 --> 00:01:45.395
+unique values like
+a non-primary key.
+
+48
+00:01:45.395 --> 00:01:47.690
+R is the table or relation
+
+49
+00:01:47.690 --> 00:01:50.365
+in which the columns
+X and Y exist.
+
+50
+00:01:50.365 --> 00:01:52.850
+Y as a non-primary key with
+
+51
+00:01:52.850 --> 00:01:55.760
+duplicated values
+is dependent on X.
+
+52
+00:01:55.760 --> 00:01:57.080
+This is because X is
+
+53
+00:01:57.080 --> 00:01:58.550
+the table's primary key
+
+54
+00:01:58.550 --> 00:02:00.635
+as it only contains
+unique values.
+
+55
+00:02:00.635 --> 00:02:01.910
+Don't worry if you don't quite
+
+56
+00:02:01.910 --> 00:02:03.560
+understand this concept yet.
+
+57
+00:02:03.560 --> 00:02:05.450
+I'm going to
+demonstrate functional
+
+58
+00:02:05.450 --> 00:02:07.520
+dependency in more detail.
+
+59
+00:02:07.520 --> 00:02:10.130
+Let's take the example
+of a table called
+
+60
+00:02:10.130 --> 00:02:12.140
+Student that holds
+key information
+
+61
+00:02:12.140 --> 00:02:13.720
+on students in a college.
+
+62
+00:02:13.720 --> 00:02:15.915
+The table contains
+three columns,
+
+63
+00:02:15.915 --> 00:02:17.520
+a student ID column,
+
+64
+00:02:17.520 --> 00:02:20.460
+a name column, and a
+date of birth column.
+
+65
+00:02:20.460 --> 00:02:22.370
+I need to use this table to find
+
+66
+00:02:22.370 --> 00:02:24.605
+the date of birth for
+a specific student.
+
+67
+00:02:24.605 --> 00:02:26.585
+I can't use the name column
+
+68
+00:02:26.585 --> 00:02:28.850
+because it has
+duplicated values.
+
+69
+00:02:28.850 --> 00:02:31.205
+There are two
+students named Tony.
+
+70
+00:02:31.205 --> 00:02:33.110
+If I query this column,
+
+71
+00:02:33.110 --> 00:02:35.360
+I'll just receive both
+instances of Tony.
+
+72
+00:02:35.360 --> 00:02:37.430
+I can't use the date
+of birth column
+
+73
+00:02:37.430 --> 00:02:38.570
+either because there are
+
+74
+00:02:38.570 --> 00:02:41.020
+two students who share
+the same date of birth.
+
+75
+00:02:41.020 --> 00:02:42.860
+But I can complete this task
+
+76
+00:02:42.860 --> 00:02:44.870
+by using the student ID column.
+
+77
+00:02:44.870 --> 00:02:47.000
+All values in this
+column are unique,
+
+78
+00:02:47.000 --> 00:02:50.060
+so it is designated as
+the table's primary key.
+
+79
+00:02:50.060 --> 00:02:52.415
+The values of this
+primary key column
+
+80
+00:02:52.415 --> 00:02:55.255
+determine the information
+of the other columns.
+
+81
+00:02:55.255 --> 00:02:57.500
+This means that each
+column in the table is
+
+82
+00:02:57.500 --> 00:03:00.140
+functionally dependent on
+the student ID column.
+
+83
+00:03:00.140 --> 00:03:01.970
+It's the only column that can be
+
+84
+00:03:01.970 --> 00:03:04.130
+used to return specific data.
+
+85
+00:03:04.130 --> 00:03:05.930
+Now that you've
+explored the concept
+
+86
+00:03:05.930 --> 00:03:07.339
+of functional dependency,
+
+87
+00:03:07.339 --> 00:03:09.595
+let's look at
+partial dependency.
+
+88
+00:03:09.595 --> 00:03:11.540
+Partial dependency refers to
+
+89
+00:03:11.540 --> 00:03:14.000
+tables with a
+composite primary key.
+
+90
+00:03:14.000 --> 00:03:15.770
+This is a key that consists of
+
+91
+00:03:15.770 --> 00:03:18.115
+a combination of two
+or more columns.
+
+92
+00:03:18.115 --> 00:03:21.470
+To demonstrate, let's take
+the example of a table that
+
+93
+00:03:21.470 --> 00:03:22.970
+shows the vaccination status of
+
+94
+00:03:22.970 --> 00:03:25.145
+patients in a hospital database.
+
+95
+00:03:25.145 --> 00:03:27.650
+The table shows the
+vaccination status of
+
+96
+00:03:27.650 --> 00:03:29.930
+two patients, David and Kate.
+
+97
+00:03:29.930 --> 00:03:32.720
+It also displays the patient ID,
+
+98
+00:03:32.720 --> 00:03:35.785
+vaccine ID, and vaccine name.
+
+99
+00:03:35.785 --> 00:03:37.670
+There is no one single column
+
+100
+00:03:37.670 --> 00:03:39.650
+with unique values in each row.
+
+101
+00:03:39.650 --> 00:03:41.450
+There is no single column that
+
+102
+00:03:41.450 --> 00:03:43.300
+can be used as a primary key.
+
+103
+00:03:43.300 --> 00:03:45.350
+It's best to combine
+both the patient
+
+104
+00:03:45.350 --> 00:03:47.330
+ID and vaccine ID columns
+
+105
+00:03:47.330 --> 00:03:48.920
+as a composite primary key to
+
+106
+00:03:48.920 --> 00:03:51.475
+create a unique value
+in each record.
+
+107
+00:03:51.475 --> 00:03:53.630
+The vaccination table must meet
+
+108
+00:03:53.630 --> 00:03:56.600
+the second normal form or 2NF.
+
+109
+00:03:56.600 --> 00:03:59.465
+All non-key attributes,
+the vaccine name,
+
+110
+00:03:59.465 --> 00:04:00.950
+patient name, and status,
+
+111
+00:04:00.950 --> 00:04:03.755
+must depend on the
+entire primary key value
+
+112
+00:04:03.755 --> 00:04:06.350
+which are patient
+ID and vaccine ID.
+
+113
+00:04:06.350 --> 00:04:08.820
+It can't depend on just
+part of the value,
+
+114
+00:04:08.820 --> 00:04:11.405
+otherwise this creates
+partial dependency.
+
+115
+00:04:11.405 --> 00:04:13.540
+Let's apply this rule
+to find out if it's
+
+116
+00:04:13.540 --> 00:04:16.075
+true for every non-key column.
+
+117
+00:04:16.075 --> 00:04:18.460
+How do I check that the
+patient with the ID of
+
+118
+00:04:18.460 --> 00:04:20.840
+50 has taken vaccine 1?
+
+119
+00:04:20.840 --> 00:04:23.425
+I check the value of
+both the patient ID
+
+120
+00:04:23.425 --> 00:04:25.170
+and the vaccine ID keys.
+
+121
+00:04:25.170 --> 00:04:27.580
+The combined value is
+the only way to return
+
+122
+00:04:27.580 --> 00:04:30.490
+the vaccination status value
+of a specific patient.
+
+123
+00:04:30.490 --> 00:04:32.890
+This means that there is a
+functional dependency between
+
+124
+00:04:32.890 --> 00:04:35.495
+the status value and
+the primary key value.
+
+125
+00:04:35.495 --> 00:04:38.005
+But if I just want to find
+out the vaccine name,
+
+126
+00:04:38.005 --> 00:04:40.270
+then I don't need
+both combined values.
+
+127
+00:04:40.270 --> 00:04:42.130
+The only information
+I need to return
+
+128
+00:04:42.130 --> 00:04:44.740
+the vaccine name
+is a vaccine ID.
+
+129
+00:04:44.740 --> 00:04:46.690
+As you learned earlier, this
+
+130
+00:04:46.690 --> 00:04:48.560
+is called partial dependency.
+
+131
+00:04:48.560 --> 00:04:50.874
+This should be avoided
+in most instances
+
+132
+00:04:50.874 --> 00:04:52.975
+as it violates the 2NF rule.
+
+133
+00:04:52.975 --> 00:04:56.315
+Similarly, if I want to
+identify the patient's name,
+
+134
+00:04:56.315 --> 00:04:58.385
+I don't need both
+combined values.
+
+135
+00:04:58.385 --> 00:05:00.335
+I can just use the patient ID
+
+136
+00:05:00.335 --> 00:05:01.960
+to return the patient's name.
+
+137
+00:05:01.960 --> 00:05:05.690
+Next, let's look at how to
+upgrade this table to 2NF.
+
+138
+00:05:05.690 --> 00:05:08.180
+First, I need to make
+all non-key columns
+
+139
+00:05:08.180 --> 00:05:10.735
+dependent on all components
+of the primary key.
+
+140
+00:05:10.735 --> 00:05:13.340
+I identify the entities
+
+141
+00:05:13.340 --> 00:05:15.440
+included in the
+vaccination table.
+
+142
+00:05:15.440 --> 00:05:17.150
+In this instance there are
+
+143
+00:05:17.150 --> 00:05:19.535
+three entities:
+Vaccination status,
+
+144
+00:05:19.535 --> 00:05:21.500
+as represented by
+the status column,
+
+145
+00:05:21.500 --> 00:05:22.850
+vaccine, which is
+
+146
+00:05:22.850 --> 00:05:25.220
+the vaccine ID and
+vaccine name columns,
+
+147
+00:05:25.220 --> 00:05:26.960
+and patient, represented by
+
+148
+00:05:26.960 --> 00:05:29.600
+the patient name and
+patient ID columns.
+
+149
+00:05:29.600 --> 00:05:31.280
+I then break up the table into
+
+150
+00:05:31.280 --> 00:05:34.175
+three separate tables as
+follows: Patient table,
+
+151
+00:05:34.175 --> 00:05:37.325
+vaccine table, and
+vaccination status.
+
+152
+00:05:37.325 --> 00:05:39.530
+Now in each of these new tables,
+
+153
+00:05:39.530 --> 00:05:41.420
+all non-primary key attributes
+
+154
+00:05:41.420 --> 00:05:43.810
+depend only on the
+primary key value.
+
+155
+00:05:43.810 --> 00:05:46.550
+I've eliminated all
+unnecessary replication of
+
+156
+00:05:46.550 --> 00:05:47.810
+the vaccine and patient
+
+157
+00:05:47.810 --> 00:05:49.925
+names within the
+vaccination table.
+
+158
+00:05:49.925 --> 00:05:51.620
+The three tables are now in
+
+159
+00:05:51.620 --> 00:05:54.955
+the second normal form, or 2NF.
+
+160
+00:05:54.955 --> 00:05:58.220
+You should now be familiar
+with the 2NF rule and how to
+
+161
+00:05:58.220 --> 00:06:02.250
+upgrade a table to
+2NF. Good work.

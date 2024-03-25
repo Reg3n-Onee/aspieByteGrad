@@ -1,0 +1,12 @@
+Additional resources
+The following list of resources covers the relational database model, clarifying its advantages and explaining how to design a relational database.
+
+Opentextbc1
+
+IBM
+
+Scaler
+
+Oracle
+
+  

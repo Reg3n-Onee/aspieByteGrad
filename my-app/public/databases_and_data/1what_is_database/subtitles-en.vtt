@@ -1,0 +1,637 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.975
+We all use data and databases
+in our daily online lives.
+
+2
+00:00:03.975 --> 00:00:07.830
+For example, uploading photos
+to our social media feeds,
+
+3
+00:00:07.830 --> 00:00:09.570
+downloading files at work,
+
+4
+00:00:09.570 --> 00:00:11.010
+and playing games online,
+
+5
+00:00:11.010 --> 00:00:13.320
+are all examples
+of database usage.
+
+6
+00:00:13.320 --> 00:00:15.270
+What exactly is data
+
+7
+00:00:15.270 --> 00:00:17.685
+and how does it interact
+with the database?
+
+8
+00:00:17.685 --> 00:00:19.740
+If you're struggling to
+answer these questions,
+
+9
+00:00:19.740 --> 00:00:22.050
+don't worry, by the
+end of this video,
+
+10
+00:00:22.050 --> 00:00:23.580
+you'll be able to describe what
+
+11
+00:00:23.580 --> 00:00:26.010
+a database is at a
+conceptual level,
+
+12
+00:00:26.010 --> 00:00:29.655
+identify real-world examples
+of the use of databases,
+
+13
+00:00:29.655 --> 00:00:31.545
+and demonstrate an
+understanding of how
+
+14
+00:00:31.545 --> 00:00:34.380
+data is organized in a database.
+
+15
+00:00:34.380 --> 00:00:38.445
+Let's return to the first of
+our questions. What is data?
+
+16
+00:00:38.445 --> 00:00:43.660
+In basic terms, data is facts
+and figures about anything.
+
+17
+00:00:43.660 --> 00:00:47.015
+For example, if data were
+collected on a person,
+
+18
+00:00:47.015 --> 00:00:49.115
+then that data might
+include their name,
+
+19
+00:00:49.115 --> 00:00:51.880
+age, email, and date of birth.
+
+20
+00:00:51.880 --> 00:00:53.630
+Or the data could be facts and
+
+21
+00:00:53.630 --> 00:00:55.805
+figures related to
+an online purchase.
+
+22
+00:00:55.805 --> 00:00:58.310
+This could be the order
+number, description,
+
+23
+00:00:58.310 --> 00:00:59.840
+order quantity, and date,
+
+24
+00:00:59.840 --> 00:01:01.720
+and even the customer's email.
+
+25
+00:01:01.720 --> 00:01:05.465
+Data is crucial for individuals
+as well as organizations.
+
+26
+00:01:05.465 --> 00:01:07.310
+Where's all this data stored?
+
+27
+00:01:07.310 --> 00:01:09.485
+In our digital world,
+
+28
+00:01:09.485 --> 00:01:12.370
+data is no longer
+stored in manual files.
+
+29
+00:01:12.370 --> 00:01:15.950
+Instead, developers use
+something called databases.
+
+30
+00:01:15.950 --> 00:01:17.420
+A database is a form of
+
+31
+00:01:17.420 --> 00:01:18.830
+electronic storage in which
+
+32
+00:01:18.830 --> 00:01:20.930
+data is organized
+systematically.
+
+33
+00:01:20.930 --> 00:01:23.795
+It stores and manipulates
+data electronically
+
+34
+00:01:23.795 --> 00:01:27.310
+to make it more manageable,
+efficient, and secure.
+
+35
+00:01:27.310 --> 00:01:29.330
+There are many
+real-world examples
+
+36
+00:01:29.330 --> 00:01:31.045
+of where databases are used.
+
+37
+00:01:31.045 --> 00:01:33.020
+For example, a bank can use
+
+38
+00:01:33.020 --> 00:01:35.330
+a database to store
+data for its customers,
+
+39
+00:01:35.330 --> 00:01:37.160
+bank accounts, and transactions.
+
+40
+00:01:37.160 --> 00:01:40.610
+A hospital uses a database
+to store patient data,
+
+41
+00:01:40.610 --> 00:01:43.895
+staff data, laboratory
+data, and much more.
+
+42
+00:01:43.895 --> 00:01:46.280
+At this point, you might
+be asking yourself,
+
+43
+00:01:46.280 --> 00:01:48.785
+but what does a database
+actually look like?
+
+44
+00:01:48.785 --> 00:01:50.660
+Well, a database looks
+
+45
+00:01:50.660 --> 00:01:52.805
+like data organized
+systematically.
+
+46
+00:01:52.805 --> 00:01:54.740
+This organization
+typically looks
+
+47
+00:01:54.740 --> 00:01:56.750
+like a spreadsheet or a table.
+
+48
+00:01:56.750 --> 00:02:00.290
+What exactly does the
+term systematic mean?
+
+49
+00:02:00.290 --> 00:02:02.510
+All data contains elements or
+
+50
+00:02:02.510 --> 00:02:05.455
+features and attributes by
+which they can be identified.
+
+51
+00:02:05.455 --> 00:02:07.610
+For example, a person can be
+
+52
+00:02:07.610 --> 00:02:09.590
+identified by attributes
+like their age,
+
+53
+00:02:09.590 --> 00:02:11.225
+height, or hair color.
+
+54
+00:02:11.225 --> 00:02:13.670
+This data is separated
+and stored in what's
+
+55
+00:02:13.670 --> 00:02:16.625
+known as entities that
+represent those elements.
+
+56
+00:02:16.625 --> 00:02:20.120
+As you just learned, an
+entity is like a table.
+
+57
+00:02:20.120 --> 00:02:22.250
+It contains rows
+and columns that
+
+58
+00:02:22.250 --> 00:02:24.905
+store data relating to
+a specific element.
+
+59
+00:02:24.905 --> 00:02:28.550
+In other words, these
+are relational elements.
+
+60
+00:02:28.550 --> 00:02:30.330
+They're related to one another.
+
+61
+00:02:30.330 --> 00:02:31.970
+These entities could be physical
+
+62
+00:02:31.970 --> 00:02:33.845
+representations
+like an employee,
+
+63
+00:02:33.845 --> 00:02:35.390
+a customer, or a product.
+
+64
+00:02:35.390 --> 00:02:38.060
+Or they could be
+conceptual like an order,
+
+65
+00:02:38.060 --> 00:02:40.235
+an invoice or a quotation.
+
+66
+00:02:40.235 --> 00:02:43.415
+Entities then store data
+in a table-like format
+
+67
+00:02:43.415 --> 00:02:44.900
+against the attributes or
+
+68
+00:02:44.900 --> 00:02:46.715
+features related to the element.
+
+69
+00:02:46.715 --> 00:02:48.980
+For example, an online store
+
+70
+00:02:48.980 --> 00:02:50.390
+could hold customer's data in
+
+71
+00:02:50.390 --> 00:02:52.220
+a customer entity containing
+
+72
+00:02:52.220 --> 00:02:54.740
+specific attributes
+relating to the customer.
+
+73
+00:02:54.740 --> 00:02:57.515
+These attributes could
+include first name,
+
+74
+00:02:57.515 --> 00:03:01.010
+last name, date of
+birth, and email.
+
+75
+00:03:01.010 --> 00:03:03.440
+They could also have
+product data stored in
+
+76
+00:03:03.440 --> 00:03:07.100
+a product entity against
+attributes like product code,
+
+77
+00:03:07.100 --> 00:03:10.219
+description, price,
+and availability.
+
+78
+00:03:10.219 --> 00:03:12.335
+In the relational
+database world,
+
+79
+00:03:12.335 --> 00:03:15.500
+these entities are known
+as relations or tables.
+
+80
+00:03:15.500 --> 00:03:18.185
+The attributes become the
+columns of the table.
+
+81
+00:03:18.185 --> 00:03:21.550
+Each table row represents
+an instance of that entity.
+
+82
+00:03:21.550 --> 00:03:23.600
+As an example, let's take
+
+83
+00:03:23.600 --> 00:03:24.890
+the entities from the online
+
+84
+00:03:24.890 --> 00:03:26.825
+store example that
+you just explored.
+
+85
+00:03:26.825 --> 00:03:29.420
+These two examples could
+be combined into a list of
+
+86
+00:03:29.420 --> 00:03:32.080
+orders the store received
+from his customers.
+
+87
+00:03:32.080 --> 00:03:34.430
+Within a database,
+this data could be
+
+88
+00:03:34.430 --> 00:03:37.070
+rendered as an order
+table or entity.
+
+89
+00:03:37.070 --> 00:03:39.350
+The data can be
+organized into rows that
+
+90
+00:03:39.350 --> 00:03:41.815
+contain a unique order number.
+
+91
+00:03:41.815 --> 00:03:44.420
+The name of the customer
+who placed the order,
+
+92
+00:03:44.420 --> 00:03:46.010
+the product that they ordered,
+
+93
+00:03:46.010 --> 00:03:47.845
+and the price of that product.
+
+94
+00:03:47.845 --> 00:03:51.079
+There are many ways to
+organize data in a database.
+
+95
+00:03:51.079 --> 00:03:53.270
+Relational databases
+aren't the only kind
+
+96
+00:03:53.270 --> 00:03:55.040
+of databases that
+you'll encounter.
+
+97
+00:03:55.040 --> 00:03:56.735
+As a Database Engineer,
+
+98
+00:03:56.735 --> 00:03:59.525
+you'll work with many
+different types of databases.
+
+99
+00:03:59.525 --> 00:04:02.935
+Here's a few common examples
+of other types of databases.
+
+100
+00:04:02.935 --> 00:04:06.200
+An object-oriented database
+is where data is stored
+
+101
+00:04:06.200 --> 00:04:09.470
+in the form of objects instead
+of tables or relations.
+
+102
+00:04:09.470 --> 00:04:10.880
+An example of this kind of
+
+103
+00:04:10.880 --> 00:04:13.160
+database could be an
+online bookstore.
+
+104
+00:04:13.160 --> 00:04:16.490
+The store's database could
+render authors, customers,
+
+105
+00:04:16.490 --> 00:04:20.305
+books, and publishers as classes
+like sets or categories.
+
+106
+00:04:20.305 --> 00:04:22.310
+The objects or instances of
+
+107
+00:04:22.310 --> 00:04:25.300
+these classes would then
+hold the actual data.
+
+108
+00:04:25.300 --> 00:04:28.985
+Graph databases store data
+in the form of nodes.
+
+109
+00:04:28.985 --> 00:04:31.790
+In this case, entities
+like customers,
+
+110
+00:04:31.790 --> 00:04:34.775
+orders, and products are
+represented as nodes.
+
+111
+00:04:34.775 --> 00:04:38.605
+The relationships between them
+are represented as edges.
+
+112
+00:04:38.605 --> 00:04:42.560
+Finally, there's document
+databases where data is stored
+
+113
+00:04:42.560 --> 00:04:46.340
+as JSON or JavaScript
+Object Notation objects.
+
+114
+00:04:46.340 --> 00:04:49.460
+The data is organized into
+collections like tables.
+
+115
+00:04:49.460 --> 00:04:51.710
+Within each collection
+a documents
+
+116
+00:04:51.710 --> 00:04:54.085
+written in JSON
+that record data.
+
+117
+00:04:54.085 --> 00:04:57.020
+In this example, customer
+documents are held in
+
+118
+00:04:57.020 --> 00:04:59.510
+a customer collection
+while ordering
+
+119
+00:04:59.510 --> 00:05:00.920
+product documents are stored in
+
+120
+00:05:00.920 --> 00:05:03.100
+the ordering product
+collections.
+
+121
+00:05:03.100 --> 00:05:06.140
+Where are the databases
+themselves stored?
+
+122
+00:05:06.140 --> 00:05:07.910
+A database can be hosted on
+
+123
+00:05:07.910 --> 00:05:09.380
+a dedicated machine within
+
+124
+00:05:09.380 --> 00:05:11.150
+the premises of an organization,
+
+125
+00:05:11.150 --> 00:05:13.130
+or it could be
+hosted on the Cloud.
+
+126
+00:05:13.130 --> 00:05:16.295
+Cloud databases are currently
+a more popular choice.
+
+127
+00:05:16.295 --> 00:05:19.310
+This is because they allow
+you to store, manage,
+
+128
+00:05:19.310 --> 00:05:20.450
+and retrieve data to
+
+129
+00:05:20.450 --> 00:05:23.855
+a Cloud platform and access
+data through the Internet.
+
+130
+00:05:23.855 --> 00:05:26.090
+They all provide a
+lower-cost option for
+
+131
+00:05:26.090 --> 00:05:28.570
+data management and
+other similar options.
+
+132
+00:05:28.570 --> 00:05:31.400
+You should now understand
+the concept of a database.
+
+133
+00:05:31.400 --> 00:05:34.310
+You should also be able to
+identify examples of databases
+
+134
+00:05:34.310 --> 00:05:37.370
+and demonstrate how data is
+organized within a database.
+
+135
+00:05:37.370 --> 00:05:39.050
+Great start. You'll be
+
+136
+00:05:39.050 --> 00:05:42.090
+storing and managing
+data in no time.

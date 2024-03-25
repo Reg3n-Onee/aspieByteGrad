@@ -1,0 +1,12 @@
+Additional resources
+The following resources are additional reading material that provide extra knowledge on SQL Arithmetic operators and Comparison operators.
+
+W3Schools
+
+Javatpoint
+
+Tutorialspoint
+
+w3resource
+
+  

@@ -1,0 +1,10 @@
+Additional resources
+The following resources cover database schemas, demonstrating the different types, and clarifying how database schema can create definition and organization of data within a relational database.
+
+Prisma
+
+Lucidchart
+
+Educative
+
+IBM

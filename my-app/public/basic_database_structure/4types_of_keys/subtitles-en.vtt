@@ -1,0 +1,333 @@
+WEBVTT
+
+1
+00:00:00.099 --> 00:00:04.067
+at this stage of the course, you're
+probably familiar with the relational
+
+2
+00:00:04.067 --> 00:00:08.345
+database model, but to fully understand
+how a relational database model works,
+
+3
+00:00:08.345 --> 00:00:12.066
+you first need to understand how
+tables within a database are related.
+
+4
+00:00:12.066 --> 00:00:16.906
+Essentially, relationships are established
+between tables with the use of keys.
+
+5
+00:00:16.906 --> 00:00:21.663
+By the end of this video, you'll be able
+to identify the main keys used in tables
+
+6
+00:00:21.663 --> 00:00:26.434
+in a relational database and explain
+the relationship between keys in a table.
+
+7
+00:00:26.434 --> 00:00:30.413
+The relational database model
+is based on two main concepts,
+
+8
+00:00:30.413 --> 00:00:35.858
+entities which are defined as tables and
+relations that connect to related tables.
+
+9
+00:00:35.858 --> 00:00:40.376
+To realize how this model works, you need
+to understand the different key attributes
+
+10
+00:00:40.376 --> 00:00:43.340
+that exist in the relational
+database to demonstrate.
+
+11
+00:00:43.340 --> 00:00:47.186
+Let's use the example of a sports
+competition that uses three tables to keep
+
+12
+00:00:47.186 --> 00:00:48.275
+track of the league.
+
+13
+00:00:48.275 --> 00:00:52.373
+The league table, the teams table and
+the points table.
+
+14
+00:00:52.373 --> 00:00:55.081
+Each table has relevant columns where each
+
+15
+00:00:55.081 --> 00:00:58.472
+column represents an attribute
+of the table entity.
+
+16
+00:00:58.472 --> 00:01:02.567
+The league table keeps track of
+each team's position in the league,
+
+17
+00:01:02.567 --> 00:01:05.045
+their name and the state they represent.
+
+18
+00:01:05.045 --> 00:01:09.709
+The team's table tracks the team name,
+the team captain and the team coach, and
+
+19
+00:01:09.709 --> 00:01:13.277
+the points table records
+the team's position in the league,
+
+20
+00:01:13.277 --> 00:01:16.861
+the team's name and
+how many points the team has this season.
+
+21
+00:01:16.861 --> 00:01:19.922
+Notice that the team's
+table includes team name,
+
+22
+00:01:19.922 --> 00:01:22.348
+which also belongs to the league table.
+
+23
+00:01:22.348 --> 00:01:26.761
+These attributes could be of a simple
+attribute type that can hold a single
+
+24
+00:01:26.761 --> 00:01:30.530
+value, for example,
+in a table of staff members in a college,
+
+25
+00:01:30.530 --> 00:01:33.892
+each staff name attribute as
+a single value in each row.
+
+26
+00:01:33.892 --> 00:01:37.842
+Or they could also have a multi
+value attribute that can have
+
+27
+00:01:37.842 --> 00:01:41.082
+multiple values like
+a list of subjects taught.
+
+28
+00:01:41.082 --> 00:01:46.418
+However multi value attributes should be
+avoided in relational database design.
+
+29
+00:01:46.418 --> 00:01:49.975
+You'll learn more about this
+concept later in the course.
+
+30
+00:01:49.975 --> 00:01:53.870
+Let's use the example of the staff
+table to explore some examples of
+
+31
+00:01:53.870 --> 00:01:54.906
+attribute keys.
+
+32
+00:01:54.906 --> 00:01:56.768
+Let's begin with the key attribute.
+
+33
+00:01:56.768 --> 00:02:01.880
+This is a value used to uniquely identify
+an individual record of data in a table.
+
+34
+00:02:01.880 --> 00:02:05.327
+For example in the staff table
+the key attribute is staff I.
+
+35
+00:02:05.327 --> 00:02:06.568
+D.
+
+36
+00:02:06.568 --> 00:02:09.977
+This attribute has unique value
+in each row of the table so
+
+37
+00:02:09.977 --> 00:02:14.596
+it's the perfect way to uniquely identify
+each record of data in a relational
+
+38
+00:02:14.596 --> 00:02:18.521
+database there are a range of
+different types of key attributes.
+
+39
+00:02:18.521 --> 00:02:21.156
+There's also the candidate key attributes.
+
+40
+00:02:21.156 --> 00:02:25.899
+This is any attribute that contains
+a unique value in each row of the table.
+
+41
+00:02:25.899 --> 00:02:28.432
+In the case of the staff table,
+both the staff I.
+
+42
+00:02:28.432 --> 00:02:29.103
+D.
+And
+
+43
+00:02:29.103 --> 00:02:32.128
+contact numbers are examples
+of candidate keys.
+
+44
+00:02:32.128 --> 00:02:34.804
+Each has a new unique value in each role.
+
+45
+00:02:34.804 --> 00:02:38.058
+The other columns can contain
+repeated information so
+
+46
+00:02:38.058 --> 00:02:40.755
+they're designated as non key attributes.
+
+47
+00:02:40.755 --> 00:02:43.820
+A composite key is a key
+that is composed of two or
+
+48
+00:02:43.820 --> 00:02:48.586
+more attributes to form a unique value
+in each new role in the staff table.
+
+49
+00:02:48.586 --> 00:02:52.023
+An example of a composite key is
+a combination of the staff name and
+
+50
+00:02:52.023 --> 00:02:55.152
+staff title,
+assuming that there isn't another instance
+
+51
+00:02:55.152 --> 00:02:57.730
+of the same combination
+elsewhere on the table.
+
+52
+00:02:57.730 --> 00:03:02.127
+A composite key is usually considered
+when a single attribute key can't be
+
+53
+00:03:02.127 --> 00:03:06.664
+identified, A relational database must
+also contain a primary key which you
+
+54
+00:03:06.664 --> 00:03:09.764
+should already be familiar
+with in the staff table.
+
+55
+00:03:09.764 --> 00:03:12.920
+The staff idea is the primary key.
+
+56
+00:03:12.920 --> 00:03:17.050
+An alternate key also known as
+the secondary key is a candidate key that
+
+57
+00:03:17.050 --> 00:03:19.363
+was not selected to be the primary key.
+
+58
+00:03:19.363 --> 00:03:21.065
+Just like a primary key.
+
+59
+00:03:21.065 --> 00:03:24.053
+It's a column that contains
+a unique value in each field.
+
+60
+00:03:24.053 --> 00:03:29.180
+For the staff table, the contact number
+is a secondary key on each roll and
+
+61
+00:03:29.180 --> 00:03:31.507
+finally there's a foreign key.
+
+62
+00:03:31.507 --> 00:03:35.729
+The foreign key is an attribute on
+the table that references a unique key in
+
+63
+00:03:35.729 --> 00:03:36.691
+another table.
+
+64
+00:03:36.691 --> 00:03:40.291
+Typically a foreign key reference is
+the primary key of another table.
+
+65
+00:03:40.291 --> 00:03:41.769
+For example, the staff I.
+
+66
+00:03:41.769 --> 00:03:44.242
+D.
+Might also be a foreign key in one or
+
+67
+00:03:44.242 --> 00:03:47.258
+more tables within the college database.
+
+68
+00:03:47.258 --> 00:03:49.185
+The relationship between primary and
+
+69
+00:03:49.185 --> 00:03:53.097
+foreign keys will be discussed in more
+detail At a later point in this course,
+
+70
+00:03:53.097 --> 00:03:57.090
+you're now familiar with the different
+types of keys in a relational database

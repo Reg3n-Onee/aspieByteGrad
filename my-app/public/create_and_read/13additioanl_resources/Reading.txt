@@ -1,0 +1,10 @@
+Additional resources
+The following resources are some additional reading material that provide extra knowledge on SQL DDL and DML commands:
+
+Tutorialspoint
+
+Javatpoint
+
+Tutorialrepublic
+
+  

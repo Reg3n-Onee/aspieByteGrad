@@ -1,0 +1,380 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.477
+You've probably heard of terms
+like big data and cloud databases,
+
+2
+00:00:03.477 --> 00:00:06.233
+Maybe you've even encountered
+them in this course.
+
+3
+00:00:06.233 --> 00:00:10.157
+But do you know what they mean in this
+video, you'll discover more about these
+
+4
+00:00:10.157 --> 00:00:13.664
+terms and you'll be able to identify
+different types of databases and
+
+5
+00:00:13.664 --> 00:00:16.827
+explain how databases have evolved
+in response to new trends.
+
+6
+00:00:16.827 --> 00:00:19.999
+Like big data databases have
+been around for a long time and
+
+7
+00:00:19.999 --> 00:00:22.665
+have been influenced by
+many different trends.
+
+8
+00:00:22.665 --> 00:00:25.935
+But they've undergone a huge
+change in recent decades.
+
+9
+00:00:25.935 --> 00:00:27.870
+Thanks to the growth of the internet,
+
+10
+00:00:27.870 --> 00:00:31.806
+they now must be able to store ever
+increasing amounts of unstructured data.
+
+11
+00:00:31.806 --> 00:00:36.933
+However, this poses difficulties as
+they mostly store structured data.
+
+12
+00:00:36.933 --> 00:00:40.125
+Let's briefly look at some of
+the different types of databases and
+
+13
+00:00:40.125 --> 00:00:42.177
+how they've been affected by this trend.
+
+14
+00:00:42.177 --> 00:00:46.529
+Relational databases have limitations when
+it comes to storing data because they
+
+15
+00:00:46.529 --> 00:00:48.240
+mostly store structured data.
+
+16
+00:00:48.240 --> 00:00:52.519
+Yet databases are now required to
+store more and more unstructured data.
+
+17
+00:00:52.519 --> 00:00:56.224
+So the trend in recent years has
+been to rely on no sequel databases.
+
+18
+00:00:56.224 --> 00:01:01.153
+Instead, no sequel databases are a type
+of database that store data in a variety
+
+19
+00:01:01.153 --> 00:01:02.635
+of different formats.
+
+20
+00:01:02.635 --> 00:01:06.026
+Essentially they provide databases
+with a flexible structure.
+
+21
+00:01:06.026 --> 00:01:10.752
+This makes scaling easy by facilitating
+a change to the database structure
+
+22
+00:01:10.752 --> 00:01:13.912
+itself without the need for
+complex data models.
+
+23
+00:01:13.912 --> 00:01:18.843
+No sequel databases are used by social
+media platforms, the Internet of Things,
+
+24
+00:01:18.843 --> 00:01:23.703
+artificial intelligence and other
+applications that generate massive amounts
+
+25
+00:01:23.703 --> 00:01:28.579
+of unstructured data types of no sequel
+databases include document databases.
+
+26
+00:01:28.579 --> 00:01:31.938
+Key value databases and graph databases.
+
+27
+00:01:31.938 --> 00:01:34.473
+Now that you're familiar with
+different types of databases.
+
+28
+00:01:34.473 --> 00:01:38.538
+Let's take a closer look at Big data and
+cloud databases.
+
+29
+00:01:38.538 --> 00:01:41.184
+Essentially these terms
+are used to describe a recent
+
+30
+00:01:41.184 --> 00:01:43.490
+change in our approach to data and
+databases.
+
+31
+00:01:43.490 --> 00:01:46.064
+Let's start with a look at big data.
+
+32
+00:01:46.064 --> 00:01:50.332
+Big data is complex data that can
+increase in volume with time.
+
+33
+00:01:50.332 --> 00:01:54.736
+In other words is data that can
+grow exponentially with time.
+
+34
+00:01:54.736 --> 00:01:57.648
+Where does this kind of
+complex data come from?
+
+35
+00:01:57.648 --> 00:02:02.517
+Social media platforms, Online shopping
+sites and other services generate massive
+
+36
+00:02:02.517 --> 00:02:06.910
+amounts of data every second of the day
+as they capture the actions of billions
+
+37
+00:02:06.910 --> 00:02:11.169
+of users around the world and with the
+internet of things or IOT more and more
+
+38
+00:02:11.169 --> 00:02:15.585
+devices are connected to the Internet,
+generating even more and more data.
+
+39
+00:02:15.585 --> 00:02:19.346
+This is how complex data or
+big data is created.
+
+40
+00:02:19.346 --> 00:02:22.835
+All this data is highly unstructured or
+semi structured.
+
+41
+00:02:22.835 --> 00:02:27.210
+Traditional database systems could deal
+with structured data using tables,
+
+42
+00:02:27.210 --> 00:02:28.877
+records and relationships.
+
+43
+00:02:28.877 --> 00:02:31.636
+But big data is a whole new challenge.
+
+44
+00:02:31.636 --> 00:02:34.944
+Big data is a combination of structured,
+semi structured and
+
+45
+00:02:34.944 --> 00:02:38.252
+unstructured data collected
+from many different sources and
+
+46
+00:02:38.252 --> 00:02:42.511
+it adds more power to data because it can
+address complex business problems that
+
+47
+00:02:42.511 --> 00:02:45.142
+traditionally structured
+data can't handle.
+
+48
+00:02:45.142 --> 00:02:49.090
+Finally, big data helps to provide
+unique insights that can help to improve
+
+49
+00:02:49.090 --> 00:02:50.082
+decision making.
+
+50
+00:02:50.082 --> 00:02:52.595
+So it's highly valued
+across many industries.
+
+51
+00:02:52.595 --> 00:02:57.250
+For example, the manufacturing sector
+processes big data to predict equipment
+
+52
+00:02:57.250 --> 00:03:02.179
+failure by evaluating the current state
+of machinery, assess production processes
+
+53
+00:03:02.179 --> 00:03:06.972
+by monitoring the production line, respond
+to customer feedback proactively and
+
+54
+00:03:06.972 --> 00:03:11.491
+anticipate future demands by monitoring
+current sales, retail processes,
+
+55
+00:03:11.491 --> 00:03:15.737
+big data to anticipate customer demand,
+improve customer experience,
+
+56
+00:03:15.737 --> 00:03:18.818
+analyze customer behavior and
+spending patterns and
+
+57
+00:03:18.818 --> 00:03:21.658
+identify pricing
+improvement opportunities.
+
+58
+00:03:21.658 --> 00:03:25.613
+And the telecommunications sector
+utilizes big data analytics and
+
+59
+00:03:25.613 --> 00:03:29.568
+network usage analytics to plan for
+infrastructure investments,
+
+60
+00:03:29.568 --> 00:03:34.353
+design new services that meet customer
+demands, analyze service quality data to
+
+61
+00:03:34.353 --> 00:03:39.002
+predict customer satisfaction and plan for
+customer retention mechanisms now
+
+62
+00:03:39.002 --> 00:03:43.336
+that you're familiar with big data and
+how it helps to power businesses.
+
+63
+00:03:43.336 --> 00:03:45.943
+Let's move on to another trend and
+databases.
+
+64
+00:03:45.943 --> 00:03:50.345
+The use of cloud databases, organizations
+are moving to the cloud to free
+
+65
+00:03:50.345 --> 00:03:54.676
+themselves from the difficulties of
+dealing with the infrastructure of
+
+66
+00:03:54.676 --> 00:03:58.020
+physical servers like maintenance and
+storage costs.
+
+67
+00:03:58.020 --> 00:04:02.831
+Some examples of cloud storage
+services include Dropbox and iCloud.
+
+68
+00:04:02.831 --> 00:04:06.914
+With these cloud storage services,
+it's possible to store documents and
+
+69
+00:04:06.914 --> 00:04:10.165
+other data on the cloud,
+a much more affordable solution.
+
+70
+00:04:10.165 --> 00:04:13.228
+Another trend and
+databases is business intelligence or B.
+
+71
+00:04:13.228 --> 00:04:13.933
+I.
+
+72
+00:04:13.933 --> 00:04:18.890
+Traditionally databases were just a means
+of storing data, but organizations now
+
+73
+00:04:18.890 --> 00:04:23.283
+utilize their data with business
+intelligence related technologies and
+
+74
+00:04:23.283 --> 00:04:28.100
+strategies with these technologies,
+organizations can analyze their data and
+
+75
+00:04:28.100 --> 00:04:33.024
+extract valuable information to help them
+to make informed business decisions.
+
+76
+00:04:33.024 --> 00:04:36.156
+New trends are constantly emerging
+in database technology and
+
+77
+00:04:36.156 --> 00:04:37.995
+they'll keep advancing with time.
+
+78
+00:04:37.995 --> 00:04:41.660
+But for now these were a few of the
+leading trends that you should be aware of

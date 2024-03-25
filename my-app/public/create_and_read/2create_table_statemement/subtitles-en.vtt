@@ -1,0 +1,241 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.340
+Building a database involves
+
+2
+00:00:02.340 --> 00:00:04.425
+working with substantial
+amounts of data.
+
+3
+00:00:04.425 --> 00:00:06.540
+But how do you organize
+your data so that you can
+
+4
+00:00:06.540 --> 00:00:09.045
+find exactly what you need
+and make sense of it.
+
+5
+00:00:09.045 --> 00:00:11.640
+With SQL, you can
+create a table within
+
+6
+00:00:11.640 --> 00:00:14.475
+your database to hold
+and organize your data.
+
+7
+00:00:14.475 --> 00:00:17.460
+In this video, you'll learn
+how to create tables in
+
+8
+00:00:17.460 --> 00:00:20.880
+a database management
+system using SQL syntax.
+
+9
+00:00:20.880 --> 00:00:22.710
+Let's begin with
+a look at the SQL
+
+10
+00:00:22.710 --> 00:00:24.855
+create table statement syntax.
+
+11
+00:00:24.855 --> 00:00:27.690
+I begin the statement
+with the keywords Create
+
+12
+00:00:27.690 --> 00:00:31.305
+Table to let SQL know that I
+want to create a new table.
+
+13
+00:00:31.305 --> 00:00:34.200
+I then add the name of the
+table I want to create.
+
+14
+00:00:34.200 --> 00:00:36.870
+Finally, I add a
+pair of parentheses.
+
+15
+00:00:36.870 --> 00:00:38.595
+Within these parentheses,
+
+16
+00:00:38.595 --> 00:00:40.380
+I type the name of
+each column that
+
+17
+00:00:40.380 --> 00:00:42.250
+must be included
+within the table,
+
+18
+00:00:42.250 --> 00:00:44.690
+followed by its
+respective datatype.
+
+19
+00:00:44.690 --> 00:00:46.970
+Now that you're familiar
+with the syntax,
+
+20
+00:00:46.970 --> 00:00:48.905
+let's look at it in action.
+
+21
+00:00:48.905 --> 00:00:51.815
+Be aware that before
+you can create tables,
+
+22
+00:00:51.815 --> 00:00:54.245
+you must already have a
+database on the server.
+
+23
+00:00:54.245 --> 00:00:55.880
+In other words, you can't build
+
+24
+00:00:55.880 --> 00:00:58.510
+tables if there's no
+database to create them in.
+
+25
+00:00:58.510 --> 00:01:00.200
+Let's assume that I already have
+
+26
+00:01:00.200 --> 00:01:01.865
+a database ready to work with.
+
+27
+00:01:01.865 --> 00:01:04.520
+In this example, I'll
+create a customer table in
+
+28
+00:01:04.520 --> 00:01:06.260
+the bookstore database to store
+
+29
+00:01:06.260 --> 00:01:09.295
+customer data like names
+and phone numbers.
+
+30
+00:01:09.295 --> 00:01:11.750
+First, I write a SQL statement
+
+31
+00:01:11.750 --> 00:01:13.895
+that contains the
+create table command,
+
+32
+00:01:13.895 --> 00:01:15.545
+followed by the
+name of the table.
+
+33
+00:01:15.545 --> 00:01:17.210
+In this case customers.
+
+34
+00:01:17.210 --> 00:01:19.675
+Then I add an open parenthesis.
+
+35
+00:01:19.675 --> 00:01:21.650
+Is within this
+parenthesis that I
+
+36
+00:01:21.650 --> 00:01:23.975
+need to create my own columns.
+
+37
+00:01:23.975 --> 00:01:26.210
+I write the name of
+my first column,
+
+38
+00:01:26.210 --> 00:01:27.725
+which is customer name.
+
+39
+00:01:27.725 --> 00:01:30.875
+This is followed by
+the datatype VARCHAR.
+
+40
+00:01:30.875 --> 00:01:32.750
+This datatype means that
+
+41
+00:01:32.750 --> 00:01:35.495
+the column can hold
+data of any type.
+
+42
+00:01:35.495 --> 00:01:39.470
+I then add a numeric value
+within a pair of parenthesis.
+
+43
+00:01:39.470 --> 00:01:41.600
+Then I add a comma
+and write the name of
+
+44
+00:01:41.600 --> 00:01:43.730
+the second column,
+which is phone number.
+
+45
+00:01:43.730 --> 00:01:45.695
+I add into the datatype
+
+46
+00:01:45.695 --> 00:01:48.005
+so that only whole
+numbers can be stored.
+
+47
+00:01:48.005 --> 00:01:51.370
+Then I add a closing
+parenthesis and a semicolon.
+
+48
+00:01:51.370 --> 00:01:53.970
+Finally, I execute
+the statement.
+
+49
+00:01:53.970 --> 00:01:56.990
+The customers table is now
+stored in the database.
+
+50
+00:01:56.990 --> 00:01:59.540
+In this video, you learned
+how to create tables in
+
+51
+00:01:59.540 --> 00:02:03.600
+a database using SQL
+syntax. Well done.

@@ -1,0 +1,343 @@
+WEBVTT
+
+1
+00:00:00.040 --> 00:00:03.264
+Suppose you have a database that
+contains the records of college students
+
+2
+00:00:03.264 --> 00:00:05.040
+from all over the world.
+
+3
+00:00:05.040 --> 00:00:06.509
+As part of an annual report,
+
+4
+00:00:06.509 --> 00:00:11.140
+a list of all the different countries
+these students belong to is required.
+
+5
+00:00:11.140 --> 00:00:14.240
+It's very likely many students
+will come from the same country.
+
+6
+00:00:14.240 --> 00:00:18.240
+So how can you retrieve the results you're
+looking for without any duplicates.
+
+7
+00:00:18.240 --> 00:00:21.540
+Look no further than
+a select distinct clause.
+
+8
+00:00:21.540 --> 00:00:26.182
+In the next few minutes you learn how to
+describe the select distinct statement and
+
+9
+00:00:26.182 --> 00:00:30.418
+explain what it's used for, demonstrate
+how to use it in a sequel query and
+
+10
+00:00:30.418 --> 00:00:35.281
+explain how it interacts with the single
+column, multiple columns and null values.
+
+11
+00:00:35.281 --> 00:00:39.964
+In a few practical examples,
+let's start by exploring what the select
+
+12
+00:00:39.964 --> 00:00:44.501
+distinct statement is in its most
+basic form, distinct as its name.
+
+13
+00:00:44.501 --> 00:00:48.140
+States returns only distinct or
+different values.
+
+14
+00:00:48.140 --> 00:00:51.840
+In other words, it returns
+the results without any duplicates.
+
+15
+00:00:51.840 --> 00:00:54.740
+Let's take a closer look
+at duplicate values.
+
+16
+00:00:54.740 --> 00:00:59.184
+As you can imagine, columns in a table
+can often contain duplicate values in
+
+17
+00:00:59.184 --> 00:01:00.861
+a college student records.
+
+18
+00:01:00.861 --> 00:01:04.565
+For example, the country column will
+likely contain duplicate values as there
+
+19
+00:01:04.565 --> 00:01:07.440
+can be many students who
+are from the same country.
+
+20
+00:01:07.440 --> 00:01:09.976
+Let's assume you want to find out
+which countries the students in
+
+21
+00:01:09.976 --> 00:01:11.240
+the college are from.
+
+22
+00:01:11.240 --> 00:01:14.210
+So that you can get an understanding of
+which nationalities are represented in
+
+23
+00:01:14.210 --> 00:01:15.540
+the college.
+
+24
+00:01:15.540 --> 00:01:18.540
+You can begin by using
+a sequel select statement.
+
+25
+00:01:18.540 --> 00:01:23.076
+You can write the select keyword then
+country followed by the from keyword and
+
+26
+00:01:23.076 --> 00:01:24.553
+the student table name.
+
+27
+00:01:24.553 --> 00:01:28.978
+Running this select query gives you seven
+records as the result with multiple
+
+28
+00:01:28.978 --> 00:01:30.212
+duplicate records.
+
+29
+00:01:30.212 --> 00:01:34.840
+In this case there are duplicate
+records for Australia and the USA.
+
+30
+00:01:34.840 --> 00:01:38.550
+So how can you eliminate these duplicates
+and retrieve a unique set of results?
+
+31
+00:01:38.550 --> 00:01:41.240
+You can use the select distinct statement.
+
+32
+00:01:41.240 --> 00:01:44.631
+You can write a select
+statement just like before but
+
+33
+00:01:44.631 --> 00:01:47.405
+this time distinct after the word select,
+
+34
+00:01:47.405 --> 00:01:53.240
+the word distinct will return all unique
+values in the table with no duplicates.
+
+35
+00:01:53.240 --> 00:01:57.240
+You can then write the from keyword
+followed by the student table name.
+
+36
+00:01:57.240 --> 00:01:58.622
+Once you run this statement,
+
+37
+00:01:58.622 --> 00:02:02.140
+the country's now only appear
+once in the resulting records.
+
+38
+00:02:02.140 --> 00:02:04.740
+All the duplicates have been removed.
+
+39
+00:02:04.740 --> 00:02:08.720
+This is how the selected stink statement
+can be used to return distinct values from
+
+40
+00:02:08.720 --> 00:02:09.840
+one column.
+
+41
+00:02:09.840 --> 00:02:13.640
+In this case you've returned distinct
+values from the country column.
+
+42
+00:02:13.640 --> 00:02:19.340
+No, let's take a few moments to explore
+the select distinct statement in action.
+
+43
+00:02:19.340 --> 00:02:22.521
+The examples that follow focus on
+the select distinct statement.
+
+44
+00:02:22.521 --> 00:02:27.540
+With the use of multiple columns or when
+applied to a column that has a null value.
+
+45
+00:02:27.540 --> 00:02:30.863
+The student table in this example,
+I want to write a query to determine
+
+46
+00:02:30.863 --> 00:02:35.140
+which countries are represented by
+students in different faculties.
+
+47
+00:02:35.140 --> 00:02:38.140
+I can use a select distinct
+statement as before.
+
+48
+00:02:38.140 --> 00:02:42.549
+But this time I allowed the word faculty
+before country Running this statement
+
+49
+00:02:42.549 --> 00:02:46.157
+produces six records the science
+faculty of students from three
+
+50
+00:02:46.157 --> 00:02:50.240
+different countries,
+as does the engineering faculty.
+
+51
+00:02:50.240 --> 00:02:53.154
+So with this statement which
+uses multiple columns,
+
+52
+00:02:53.154 --> 00:02:57.440
+I've generated each unique faculty and
+country combination.
+
+53
+00:02:57.440 --> 00:02:59.869
+Now let's return to
+the table once more and
+
+54
+00:02:59.869 --> 00:03:04.440
+examine how select this thing deals
+with null values and columns.
+
+55
+00:03:04.440 --> 00:03:09.040
+In this example, I have a new student
+named Julia Smith from the USA.
+
+56
+00:03:09.040 --> 00:03:12.440
+She's not yet been assigned a faculty or
+school address.
+
+57
+00:03:12.440 --> 00:03:13.166
+As a result,
+
+58
+00:03:13.166 --> 00:03:17.840
+both fields within these columns assigned
+to Julia Smith contain a value of null.
+
+59
+00:03:17.840 --> 00:03:21.252
+So let's see what happens when I run
+the same select distinct statement as
+
+60
+00:03:21.252 --> 00:03:23.040
+a previous example.
+
+61
+00:03:23.040 --> 00:03:25.340
+How does it handle the null values?
+
+62
+00:03:25.340 --> 00:03:29.340
+In other words,
+what results does it return for Julia?
+
+63
+00:03:29.340 --> 00:03:33.340
+I said let go and
+received the same result as the last time.
+
+64
+00:03:33.340 --> 00:03:37.425
+But now there's also a record for
+Julia with a null faculty value and
+
+65
+00:03:37.425 --> 00:03:39.040
+USA as the country.
+
+66
+00:03:39.040 --> 00:03:43.468
+This is because the distinct clause
+considers null to be a unique value,
+
+67
+00:03:43.468 --> 00:03:47.761
+So it outputs null and USA is a unique
+faculty in country combination.
+
+68
+00:03:49.040 --> 00:03:53.192
+In this video, you learned how to use
+the select distinct statement to eliminate
+
+69
+00:03:53.192 --> 00:03:56.040
+duplicate values in a select query result.
+
+70
+00:03:56.040 --> 00:03:59.826
+You also observed how it behaves in
+response to values in a single column and
+
+71
+00:03:59.826 --> 00:04:02.940
+multiple columns and
+two null values in columns.
+
+72
+00:04:02.940 --> 00:04:03.660
+Great work

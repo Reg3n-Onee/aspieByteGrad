@@ -1,0 +1,405 @@
+WEBVTT
+
+1
+00:00:00.015 --> 00:00:03.160
+At this stage,
+you might be familiar with the process for
+
+2
+00:00:03.160 --> 00:00:05.200
+creating tables within a database.
+
+3
+00:00:05.200 --> 00:00:09.234
+But there are several issues that you're
+likely to encounter when working with
+
+4
+00:00:09.234 --> 00:00:13.148
+tables such as unnecessary data
+duplication, issues with updating data and
+
+5
+00:00:13.148 --> 00:00:15.690
+the effort required to query data.
+
+6
+00:00:15.690 --> 00:00:20.760
+Fortunately these issues can be resolved
+with the use of database normalization.
+
+7
+00:00:20.760 --> 00:00:25.224
+By the end of this video, you'll be able
+to explain what database normalization is
+
+8
+00:00:25.224 --> 00:00:29.498
+and you'll also be able to demonstrate
+an understanding of insert, update and
+
+9
+00:00:29.498 --> 00:00:30.733
+deletion anomalies.
+
+10
+00:00:30.733 --> 00:00:33.943
+And be able to list some of
+the issues associated with them.
+
+11
+00:00:33.943 --> 00:00:38.760
+Normalization is an important
+process used in database systems.
+
+12
+00:00:38.760 --> 00:00:42.952
+It structures tables in a way that
+minimizes challenges by reducing data
+
+13
+00:00:42.952 --> 00:00:46.527
+duplication, avoiding data
+modification implications and
+
+14
+00:00:46.527 --> 00:00:49.634
+helping to simplify data
+queries from the database.
+
+15
+00:00:49.634 --> 00:00:53.793
+To gain a better understanding of
+normalization and the challenges it
+
+16
+00:00:53.793 --> 00:00:58.593
+addresses, let's explore an example of
+a table that hasn't been normalized.
+
+17
+00:00:58.593 --> 00:01:02.327
+In this example I'll use
+a college Enrollment Table.
+
+18
+00:01:02.327 --> 00:01:07.338
+The table serves multiple purposes by
+providing a list of the college students,
+
+19
+00:01:07.338 --> 00:01:09.041
+courses and departments.
+
+20
+00:01:09.041 --> 00:01:13.126
+And the outline of relationships or
+associations between students, courses and
+
+21
+00:01:13.126 --> 00:01:13.903
+departments.
+
+22
+00:01:13.903 --> 00:01:17.296
+And name and contact details for
+the head of each department.
+
+23
+00:01:17.296 --> 00:01:21.014
+Creating tables that serve multiple
+purposes causes serious challenges and
+
+24
+00:01:21.014 --> 00:01:23.270
+problems for database systems.
+
+25
+00:01:23.270 --> 00:01:27.281
+The most common of these
+challenges include insert anomaly,
+
+26
+00:01:27.281 --> 00:01:29.835
+update anomaly and deletion anomaly.
+
+27
+00:01:29.835 --> 00:01:32.591
+Let's begin with an overview
+of insert anomaly.
+
+28
+00:01:32.591 --> 00:01:37.178
+Insert anomaly occurs when new data is
+inserted into a table which then requires
+
+29
+00:01:37.178 --> 00:01:39.940
+the insertion of additional data.
+
+30
+00:01:39.940 --> 00:01:43.294
+I'll use the college Enrollment Table
+to demonstrate an example.
+
+31
+00:01:43.294 --> 00:01:45.250
+In the college enrollment table,
+
+32
+00:01:45.250 --> 00:01:48.660
+the student ID column
+serves as the primary key.
+
+33
+00:01:48.660 --> 00:01:52.893
+Each field in a primary key column must
+contain data before new records can be
+
+34
+00:01:52.893 --> 00:01:55.088
+added to any other column on the table.
+
+35
+00:01:55.088 --> 00:01:58.803
+For example, I can enter a new
+course name in the table but
+
+36
+00:01:58.803 --> 00:02:02.532
+I can't add any new records
+until I enroll new students.
+
+37
+00:02:02.532 --> 00:02:06.940
+And I can't enroll new students
+without assigning each student and ID.
+
+38
+00:02:06.940 --> 00:02:09.768
+The ID column can't contain empty fields.
+
+39
+00:02:09.768 --> 00:02:13.456
+So, I can't insert a new course
+unless I insert new student data.
+
+40
+00:02:13.456 --> 00:02:16.161
+I've encountered the insert
+anomaly problem.
+
+41
+00:02:17.190 --> 00:02:21.210
+An update anomaly occurs when you
+attempt to update a record in a table
+
+42
+00:02:21.210 --> 00:02:25.800
+column only to discover that this result
+in further updates across the table.
+
+43
+00:02:25.800 --> 00:02:29.061
+Let's return to
+the College Enrollment Table, once again,
+
+44
+00:02:29.061 --> 00:02:31.454
+to understand how
+an update anomaly occurs.
+
+45
+00:02:31.454 --> 00:02:35.680
+In the Enrollment Table, the course and
+department information is repeated or
+
+46
+00:02:35.680 --> 00:02:38.088
+duplicated for
+each student on that course.
+
+47
+00:02:38.088 --> 00:02:40.735
+This duplication increases
+database storage and
+
+48
+00:02:40.735 --> 00:02:44.350
+makes it more difficult
+to maintain data changes.
+
+49
+00:02:44.350 --> 00:02:47.984
+I'll demonstrate this with a scenario
+in which Dr. Jones, the Director of
+
+50
+00:02:47.984 --> 00:02:52.980
+the Computing Department, leaves his post
+and is replaced with another director.
+
+51
+00:02:52.980 --> 00:02:55.104
+I now need to update all instances of Dr.
+
+52
+00:02:55.104 --> 00:02:57.737
+Jones in the table with
+the new Director's name.
+
+53
+00:02:57.737 --> 00:03:02.670
+And I also need to update the records of
+every student enrolled in the department.
+
+54
+00:03:02.670 --> 00:03:05.702
+This poses a major challenge
+because if I miss any students,
+
+55
+00:03:05.702 --> 00:03:10.040
+then the table will contain inaccurate or
+inconsistent information.
+
+56
+00:03:10.040 --> 00:03:13.280
+This is a prime example of
+the update anomaly problem.
+
+57
+00:03:13.280 --> 00:03:17.920
+Updating data in one column requires
+updates in multiple others.
+
+58
+00:03:17.920 --> 00:03:20.250
+Next let's review the final challenge.
+
+59
+00:03:20.250 --> 00:03:22.080
+Deletion anomaly.
+
+60
+00:03:22.080 --> 00:03:26.311
+A deletion anomaly is when the deletion
+of a record of data causes the deletion
+
+61
+00:03:26.311 --> 00:03:29.540
+of more than one set of data
+required in the database.
+
+62
+00:03:29.540 --> 00:03:30.755
+For example, Rose,
+
+63
+00:03:30.755 --> 00:03:34.682
+the student has signed the ID of four
+has decided to leave her course.
+
+64
+00:03:34.682 --> 00:03:38.537
+So I need to delete her data but
+deleting Rose's data results in the loss
+
+65
+00:03:38.537 --> 00:03:43.640
+of the records for the design department
+as they're dependent on Rose and her ID.
+
+66
+00:03:43.640 --> 00:03:46.422
+This is an example of
+the deletion anomaly problem.
+
+67
+00:03:46.422 --> 00:03:51.280
+Removing one instance of a record of data
+causes the deletion of other records.
+
+68
+00:03:51.280 --> 00:03:53.680
+So, how can you solve these problems?
+
+69
+00:03:53.680 --> 00:03:57.640
+As you learned earlier,
+the answer lies in database normalization.
+
+70
+00:03:57.640 --> 00:04:02.161
+Normalization optimizes the database
+design by creating a single purpose for
+
+71
+00:04:02.161 --> 00:04:03.690
+each table.
+
+72
+00:04:03.690 --> 00:04:07.584
+To normalize the College Enrollment Table,
+I need to redesign it.
+
+73
+00:04:07.584 --> 00:04:08.987
+As you discovered earlier,
+
+74
+00:04:08.987 --> 00:04:12.830
+the table's current design
+serves three different purposes.
+
+75
+00:04:12.830 --> 00:04:16.243
+So the solution is to split
+the table in three, essentially,
+
+76
+00:04:16.243 --> 00:04:18.617
+creating a single table for each purpose.
+
+77
+00:04:18.617 --> 00:04:22.680
+This means that I now have a Student Table
+with information on each student.
+
+78
+00:04:22.680 --> 00:04:25.839
+A Course Table that contains
+the records for each course.
+
+79
+00:04:25.839 --> 00:04:29.860
+And a Department Table with
+information for each department.
+
+80
+00:04:29.860 --> 00:04:33.540
+This separation of information helps
+to fix the anomaly challenges.
+
+81
+00:04:33.540 --> 00:04:37.878
+It also makes it easier to write sequel
+queries in order to search for, sort and
+
+82
+00:04:37.878 --> 00:04:39.330
+analyze data.
+
+83
+00:04:39.330 --> 00:04:42.831
+You should now be able to explain
+what database normalization is.
+
+84
+00:04:42.831 --> 00:04:46.626
+And you should also be able to demonstrate
+an understanding of anomalies and
+
+85
+00:04:46.626 --> 00:04:47.941
+challenges, well done.

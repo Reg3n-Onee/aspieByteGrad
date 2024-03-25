@@ -1,0 +1,371 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.045
+Before developing a database
+or a software application,
+
+2
+00:00:03.045 --> 00:00:05.775
+you first need to plan how
+you will organize your data.
+
+3
+00:00:05.775 --> 00:00:08.355
+This plan is referred
+to as a schema.
+
+4
+00:00:08.355 --> 00:00:09.930
+It's essentially a blueprint
+
+5
+00:00:09.930 --> 00:00:11.505
+of what your data looks like.
+
+6
+00:00:11.505 --> 00:00:13.410
+In this video,
+you'll learn how to
+
+7
+00:00:13.410 --> 00:00:15.855
+explain the concept
+of a database schema,
+
+8
+00:00:15.855 --> 00:00:19.020
+identify the different meanings
+of the term schema across
+
+9
+00:00:19.020 --> 00:00:21.120
+different database systems and
+
+10
+00:00:21.120 --> 00:00:23.565
+outline the advantages
+of a database schema.
+
+11
+00:00:23.565 --> 00:00:25.200
+Let's begin focusing on what
+
+12
+00:00:25.200 --> 00:00:27.795
+developers mean when they
+use the term schema.
+
+13
+00:00:27.795 --> 00:00:30.420
+The general meaning of
+a schema is that it's
+
+14
+00:00:30.420 --> 00:00:32.160
+an organization or grouping of
+
+15
+00:00:32.160 --> 00:00:34.675
+information and the
+relationships among them.
+
+16
+00:00:34.675 --> 00:00:37.370
+In the context of
+a MySQL database,
+
+17
+00:00:37.370 --> 00:00:40.265
+a schema means a collection
+of data structures
+
+18
+00:00:40.265 --> 00:00:41.945
+or an abstract design of how
+
+19
+00:00:41.945 --> 00:00:44.000
+data is stored in a database.
+
+20
+00:00:44.000 --> 00:00:46.190
+Essentially, schema and database
+
+21
+00:00:46.190 --> 00:00:48.895
+are interchangeable
+terms within MySQL.
+
+22
+00:00:48.895 --> 00:00:51.350
+A schema is how data
+is organized in
+
+23
+00:00:51.350 --> 00:00:54.155
+the database and how it's
+related to other data.
+
+24
+00:00:54.155 --> 00:00:55.790
+But schema is defined in
+
+25
+00:00:55.790 --> 00:00:58.895
+different ways across
+different database systems.
+
+26
+00:00:58.895 --> 00:01:00.635
+In a SQL server,
+
+27
+00:01:00.635 --> 00:01:02.630
+a database schema
+is a collection
+
+28
+00:01:02.630 --> 00:01:04.775
+of different components
+like tables,
+
+29
+00:01:04.775 --> 00:01:08.080
+fields, datatypes, and keys.
+
+30
+00:01:08.080 --> 00:01:09.850
+In Postgres SQL,
+
+31
+00:01:09.850 --> 00:01:12.440
+a database schema is a
+namespace with the name
+
+32
+00:01:12.440 --> 00:01:16.415
+database objects like views,
+indexes, and functions.
+
+33
+00:01:16.415 --> 00:01:18.455
+An oracle schema system
+
+34
+00:01:18.455 --> 00:01:21.190
+assigns a single
+schema to each user.
+
+35
+00:01:21.190 --> 00:01:25.315
+Oracle even names each schema
+after its respective user.
+
+36
+00:01:25.315 --> 00:01:27.950
+But no matter which type
+of database you encounter,
+
+37
+00:01:27.950 --> 00:01:30.110
+the two most important
+concepts you need to
+
+38
+00:01:30.110 --> 00:01:32.945
+understand when working with
+schemas remain the same,
+
+39
+00:01:32.945 --> 00:01:34.910
+organizational data
+in the form of
+
+40
+00:01:34.910 --> 00:01:38.345
+tables and the relationships
+between the tables.
+
+41
+00:01:38.345 --> 00:01:41.225
+Let's now cover the
+components of a database.
+
+42
+00:01:41.225 --> 00:01:43.820
+A SQL Server schema
+
+43
+00:01:43.820 --> 00:01:46.820
+is comprised of what are
+known as schema objects.
+
+44
+00:01:46.820 --> 00:01:49.160
+Many of these objects
+will probably already
+
+45
+00:01:49.160 --> 00:01:51.665
+be familiar to you from
+your study of databases.
+
+46
+00:01:51.665 --> 00:01:54.320
+They include tables, columns,
+
+47
+00:01:54.320 --> 00:01:57.605
+relationships,
+datatypes, and keys.
+
+48
+00:01:57.605 --> 00:02:00.080
+An example of a SQL
+database schema
+
+49
+00:02:00.080 --> 00:02:02.779
+is a music database
+with data and artists,
+
+50
+00:02:02.779 --> 00:02:06.170
+albums, and genres, all
+stored in separate tables.
+
+51
+00:02:06.170 --> 00:02:08.180
+However, these tables
+can still be related
+
+52
+00:02:08.180 --> 00:02:10.415
+to one another
+through various keys.
+
+53
+00:02:10.415 --> 00:02:13.235
+In other words, the data
+within this database
+
+54
+00:02:13.235 --> 00:02:16.160
+is organized in separate
+tables or entities.
+
+55
+00:02:16.160 --> 00:02:19.025
+You have the tables are also
+related to one another.
+
+56
+00:02:19.025 --> 00:02:21.920
+Essentially, a database
+schema is comprised
+
+57
+00:02:21.920 --> 00:02:24.800
+of all of the important
+data and the relationships,
+
+58
+00:02:24.800 --> 00:02:27.980
+the unique keys for all
+entries in databases,
+
+59
+00:02:27.980 --> 00:02:31.390
+and a name and datatype for
+each column in a table.
+
+60
+00:02:31.390 --> 00:02:34.310
+Now that you're familiar
+with what a database is,
+
+61
+00:02:34.310 --> 00:02:35.930
+let's move on and explore
+
+62
+00:02:35.930 --> 00:02:38.275
+the advantages of
+a database schema.
+
+63
+00:02:38.275 --> 00:02:42.230
+Schemas provide logical
+groupings for database objects.
+
+64
+00:02:42.230 --> 00:02:44.930
+They also make it easier
+to access and manipulate
+
+65
+00:02:44.930 --> 00:02:48.125
+these database objects than
+other available methods.
+
+66
+00:02:48.125 --> 00:02:51.770
+Schemas also provide
+greater database security.
+
+67
+00:02:51.770 --> 00:02:54.530
+You can grant permission
+to separate and protect
+
+68
+00:02:54.530 --> 00:02:57.590
+database objects based
+on user access rights.
+
+69
+00:02:57.590 --> 00:03:00.650
+Finally, it's possible
+to transfer ownership of
+
+70
+00:03:00.650 --> 00:03:01.910
+schemas and their objects
+
+71
+00:03:01.910 --> 00:03:03.685
+between users and other schemas.
+
+72
+00:03:03.685 --> 00:03:06.860
+In this video, you've learned
+that a database schema is
+
+73
+00:03:06.860 --> 00:03:08.030
+a structure that represents
+
+74
+00:03:08.030 --> 00:03:10.115
+the storage of data
+in a database.
+
+75
+00:03:10.115 --> 00:03:12.170
+You also now understand
+that the meaning of
+
+76
+00:03:12.170 --> 00:03:15.010
+schema changes across
+different database systems.
+
+77
+00:03:15.010 --> 00:03:16.700
+Lastly, you explored
+
+78
+00:03:16.700 --> 00:03:19.230
+the advantages of
+a database schema.

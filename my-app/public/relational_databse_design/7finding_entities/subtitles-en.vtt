@@ -1,0 +1,427 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.755
+When building a database,
+
+2
+00:00:01.755 --> 00:00:03.390
+there's often a lot
+of different tables
+
+3
+00:00:03.390 --> 00:00:05.145
+that you'd need to
+consider including.
+
+4
+00:00:05.145 --> 00:00:06.690
+But how do you determine what to
+
+5
+00:00:06.690 --> 00:00:08.700
+include and what to exclude?
+
+6
+00:00:08.700 --> 00:00:10.530
+The answer is to identify
+
+7
+00:00:10.530 --> 00:00:13.575
+the entities you're interested
+in maintaining data on.
+
+8
+00:00:13.575 --> 00:00:16.140
+In this video, you'll
+learn how to explain
+
+9
+00:00:16.140 --> 00:00:18.585
+the meaning of entities
+in a relational database,
+
+10
+00:00:18.585 --> 00:00:21.030
+differentiate between
+attribute types,
+
+11
+00:00:21.030 --> 00:00:24.135
+and be able to identify
+entities and their attributes.
+
+12
+00:00:24.135 --> 00:00:27.225
+Let's begin by exploring
+what an entity is.
+
+13
+00:00:27.225 --> 00:00:29.700
+An entity can be described
+as an object that has
+
+14
+00:00:29.700 --> 00:00:32.040
+properties which define
+its characteristics.
+
+15
+00:00:32.040 --> 00:00:34.050
+An entity can be anything
+
+16
+00:00:34.050 --> 00:00:36.405
+that represents a single
+object in a database,
+
+17
+00:00:36.405 --> 00:00:38.650
+such as a place or a person.
+
+18
+00:00:38.650 --> 00:00:40.905
+In a relational database system,
+
+19
+00:00:40.905 --> 00:00:42.320
+each interesting object in
+
+20
+00:00:42.320 --> 00:00:44.500
+a project could be
+considered an entity.
+
+21
+00:00:44.500 --> 00:00:47.535
+For example, a customer
+or individual.
+
+22
+00:00:47.535 --> 00:00:50.360
+An entity in a table is
+comprised of rows and
+
+23
+00:00:50.360 --> 00:00:51.770
+columns created in database
+
+24
+00:00:51.770 --> 00:00:54.025
+management systems
+such as MySQL.
+
+25
+00:00:54.025 --> 00:00:55.730
+Let's explore this concept in
+
+26
+00:00:55.730 --> 00:00:57.800
+more depth using the
+example of a table
+
+27
+00:00:57.800 --> 00:00:59.270
+that holds delivery records for
+
+28
+00:00:59.270 --> 00:01:01.820
+the database of an
+e-commerce store.
+
+29
+00:01:01.820 --> 00:01:04.490
+The table name represents
+the entity name,
+
+30
+00:01:04.490 --> 00:01:06.350
+deliveries, and each column
+
+31
+00:01:06.350 --> 00:01:08.990
+represents the
+entity-related attributes.
+
+32
+00:01:08.990 --> 00:01:12.200
+The system holds customer or
+entity relevant attributes
+
+33
+00:01:12.200 --> 00:01:13.400
+such as ID,
+
+34
+00:01:13.400 --> 00:01:15.980
+name, and delivery
+status details.
+
+35
+00:01:15.980 --> 00:01:18.110
+These attributes
+hold relevant data
+
+36
+00:01:18.110 --> 00:01:19.895
+about the table entity.
+
+37
+00:01:19.895 --> 00:01:22.460
+Each instance of the
+customer entity in
+
+38
+00:01:22.460 --> 00:01:24.020
+this e-commerce system contains
+
+39
+00:01:24.020 --> 00:01:26.255
+a record of data
+about each customer.
+
+40
+00:01:26.255 --> 00:01:28.070
+But there are also
+different types of
+
+41
+00:01:28.070 --> 00:01:30.230
+attributes in a relational
+database system.
+
+42
+00:01:30.230 --> 00:01:32.060
+These include simple attributes,
+
+43
+00:01:32.060 --> 00:01:35.705
+composite attributes, and
+single-valued attributes.
+
+44
+00:01:35.705 --> 00:01:38.210
+There are also
+multi-valued attributes,
+
+45
+00:01:38.210 --> 00:01:41.210
+derived attributes,
+and key attributes.
+
+46
+00:01:41.210 --> 00:01:44.000
+Let's explore these attributes
+in more detail using
+
+47
+00:01:44.000 --> 00:01:45.590
+the example of a student table
+
+48
+00:01:45.590 --> 00:01:47.710
+in a relational database system.
+
+49
+00:01:47.710 --> 00:01:49.700
+A simple attribute
+is an attribute
+
+50
+00:01:49.700 --> 00:01:51.545
+that cannot be
+classified further.
+
+51
+00:01:51.545 --> 00:01:53.645
+In the example of
+the student records,
+
+52
+00:01:53.645 --> 00:01:56.050
+the grade values cannot
+be classified further.
+
+53
+00:01:56.050 --> 00:01:57.830
+A composite attribute is
+
+54
+00:01:57.830 --> 00:02:00.500
+an attribute that can be split
+into different components.
+
+55
+00:02:00.500 --> 00:02:03.260
+For example, the name value
+of each student could be
+
+56
+00:02:03.260 --> 00:02:06.535
+split into sub-attributes
+such as first and last name.
+
+57
+00:02:06.535 --> 00:02:09.600
+A single value attribute
+can only store one value.
+
+58
+00:02:09.600 --> 00:02:11.390
+In the student table example,
+
+59
+00:02:11.390 --> 00:02:13.100
+the date of birth
+column can only
+
+60
+00:02:13.100 --> 00:02:15.215
+contain one value per student.
+
+61
+00:02:15.215 --> 00:02:17.090
+These values can be defined
+
+62
+00:02:17.090 --> 00:02:19.180
+as a single-valued attributes.
+
+63
+00:02:19.180 --> 00:02:21.470
+With a multi-valued attribute.
+
+64
+00:02:21.470 --> 00:02:23.990
+The attribute can store
+multiple values in the field.
+
+65
+00:02:23.990 --> 00:02:27.170
+For example, the student
+email column could
+
+66
+00:02:27.170 --> 00:02:29.255
+hold more than one
+email per student;
+
+67
+00:02:29.255 --> 00:02:31.085
+a college email address,
+
+68
+00:02:31.085 --> 00:02:33.145
+and a personal email address.
+
+69
+00:02:33.145 --> 00:02:34.700
+However, this practice should be
+
+70
+00:02:34.700 --> 00:02:36.470
+avoided in a
+relational database.
+
+71
+00:02:36.470 --> 00:02:38.300
+A derived attribute is where
+
+72
+00:02:38.300 --> 00:02:41.090
+the value of one attribute
+is derived from another.
+
+73
+00:02:41.090 --> 00:02:43.280
+In the student table, the age of
+
+74
+00:02:43.280 --> 00:02:44.480
+each student can be derived
+
+75
+00:02:44.480 --> 00:02:46.450
+from the respective
+date of births.
+
+76
+00:02:46.450 --> 00:02:48.885
+Finally, there's
+the key attribute.
+
+77
+00:02:48.885 --> 00:02:51.305
+This is a field that
+holds a unique value
+
+78
+00:02:51.305 --> 00:02:54.095
+used to identify
+unique entity record.
+
+79
+00:02:54.095 --> 00:02:55.700
+A good example, are the values
+
+80
+00:02:55.700 --> 00:02:57.965
+contained in the
+student ID column.
+
+81
+00:02:57.965 --> 00:03:00.560
+Each ID is a unique
+value which can be used
+
+82
+00:03:00.560 --> 00:03:03.125
+to obtain data about
+a specific student.
+
+83
+00:03:03.125 --> 00:03:05.240
+Remember that there's
+no point in considering
+
+84
+00:03:05.240 --> 00:03:06.440
+entities or attributes that
+
+85
+00:03:06.440 --> 00:03:08.170
+will not be used
+in your project.
+
+86
+00:03:08.170 --> 00:03:10.115
+You only need to capture data
+
+87
+00:03:10.115 --> 00:03:11.780
+in your database
+system that helps
+
+88
+00:03:11.780 --> 00:03:13.220
+the users of your system
+
+89
+00:03:13.220 --> 00:03:15.800
+complete certain
+tasks and activities.
+
+90
+00:03:15.800 --> 00:03:17.930
+You should now
+understand the concept,
+
+91
+00:03:17.930 --> 00:03:20.510
+entities in a relational
+database and be able to
+
+92
+00:03:20.510 --> 00:03:24.640
+differentiate between
+attribute types. Good luck.

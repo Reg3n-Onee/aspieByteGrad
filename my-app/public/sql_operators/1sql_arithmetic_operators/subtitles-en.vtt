@@ -1,0 +1,500 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.860
+Imagine a corporate
+database with
+
+2
+00:00:01.860 --> 00:00:04.139
+information about
+hundreds of employees.
+
+3
+00:00:04.139 --> 00:00:06.090
+How can you calculate
+important things
+
+4
+00:00:06.090 --> 00:00:07.710
+such as salary increases or
+
+5
+00:00:07.710 --> 00:00:09.510
+calculate changes
+to allowances for
+
+6
+00:00:09.510 --> 00:00:11.940
+all the employees
+accurately and efficiently?
+
+7
+00:00:11.940 --> 00:00:13.875
+With SQL you can use
+
+8
+00:00:13.875 --> 00:00:16.645
+arithmetic operators to
+make these adjustments.
+
+9
+00:00:16.645 --> 00:00:18.155
+By the end of this video,
+
+10
+00:00:18.155 --> 00:00:19.610
+you will understand
+and be able to
+
+11
+00:00:19.610 --> 00:00:21.935
+describe SQL
+arithmetic operators
+
+12
+00:00:21.935 --> 00:00:24.470
+and know how to use these
+arithmetic operators
+
+13
+00:00:24.470 --> 00:00:26.350
+to perform functions in SQL.
+
+14
+00:00:26.350 --> 00:00:30.100
+But first, what exactly
+are operators in SQL?
+
+15
+00:00:30.100 --> 00:00:32.840
+Operators are specific
+words or characters that
+
+16
+00:00:32.840 --> 00:00:35.420
+help you to perform different
+activities in a database.
+
+17
+00:00:35.420 --> 00:00:37.010
+They're like conjunctions or
+
+18
+00:00:37.010 --> 00:00:39.470
+connection words you'd use
+to compose a sentence.
+
+19
+00:00:39.470 --> 00:00:41.090
+Or the operation keys used to
+
+20
+00:00:41.090 --> 00:00:43.360
+perform a sum in a calculator.
+
+21
+00:00:43.360 --> 00:00:46.155
+Why do you need to
+know about operators?
+
+22
+00:00:46.155 --> 00:00:48.965
+Well, when handling
+data in a database,
+
+23
+00:00:48.965 --> 00:00:50.720
+at some point, you'll
+need to query and
+
+24
+00:00:50.720 --> 00:00:52.985
+manipulate data for
+different purposes.
+
+25
+00:00:52.985 --> 00:00:55.880
+SQL operators allow you
+to manipulate data as
+
+26
+00:00:55.880 --> 00:00:56.930
+necessary to perform
+
+27
+00:00:56.930 --> 00:00:59.110
+these different activities
+in the database.
+
+28
+00:00:59.110 --> 00:01:00.860
+For example, you can use
+
+29
+00:01:00.860 --> 00:01:02.780
+an arithmetic
+operation to calculate
+
+30
+00:01:02.780 --> 00:01:04.890
+how many leave days
+an employee has left.
+
+31
+00:01:04.890 --> 00:01:06.320
+Or you can compare whether
+
+32
+00:01:06.320 --> 00:01:08.665
+employees are meeting
+company targets.
+
+33
+00:01:08.665 --> 00:01:11.555
+There are various types
+of operators in SQL,
+
+34
+00:01:11.555 --> 00:01:13.310
+each with different functions.
+
+35
+00:01:13.310 --> 00:01:16.550
+Let's explore a few examples
+of arithmetic operators.
+
+36
+00:01:16.550 --> 00:01:18.890
+Arithmetic operators
+are commonly used in
+
+37
+00:01:18.890 --> 00:01:20.390
+computer languages to perform
+
+38
+00:01:20.390 --> 00:01:22.595
+a calculation and
+return the result.
+
+39
+00:01:22.595 --> 00:01:25.655
+Much like common arithmetic
+operators in mathematics,
+
+40
+00:01:25.655 --> 00:01:28.090
+you can use arithmetic
+operators in SQL to
+
+41
+00:01:28.090 --> 00:01:31.105
+carry out mathematical
+operations in a database.
+
+42
+00:01:31.105 --> 00:01:33.380
+The SQL arithmetic operators and
+
+43
+00:01:33.380 --> 00:01:36.095
+their symbols are
+plus for addition,
+
+44
+00:01:36.095 --> 00:01:39.395
+subtraction and asterisk
+for multiplication.
+
+45
+00:01:39.395 --> 00:01:41.225
+Forward slash for division,
+
+46
+00:01:41.225 --> 00:01:43.580
+percentage for modulus,
+which provides
+
+47
+00:01:43.580 --> 00:01:46.375
+the remainder value of
+a division calculation.
+
+48
+00:01:46.375 --> 00:01:49.650
+How does SQL arithmetic
+operations work?
+
+49
+00:01:49.650 --> 00:01:51.735
+When performing a calculation,
+
+50
+00:01:51.735 --> 00:01:55.090
+an operator takes two operands
+and returns a result.
+
+51
+00:01:55.090 --> 00:01:58.595
+For example, an addition
+operator can take five
+
+52
+00:01:58.595 --> 00:02:02.315
+as both of its operands and
+returned ten as its result.
+
+53
+00:02:02.315 --> 00:02:04.955
+In SQL, you can apply
+the same concept
+
+54
+00:02:04.955 --> 00:02:07.870
+by using the select command
+for the various operations.
+
+55
+00:02:07.870 --> 00:02:09.605
+Let's illustrate this concept
+
+56
+00:02:09.605 --> 00:02:11.210
+using the addition operator.
+
+57
+00:02:11.210 --> 00:02:14.390
+You can use the select command
+followed by one operand,
+
+58
+00:02:14.390 --> 00:02:17.030
+the addition operator,
+and the second operand.
+
+59
+00:02:17.030 --> 00:02:18.875
+Just like the previous example,
+
+60
+00:02:18.875 --> 00:02:22.400
+SQL calculates the two operands
+and produces the result.
+
+61
+00:02:22.400 --> 00:02:24.350
+You can repeat the SQL syntax
+
+62
+00:02:24.350 --> 00:02:26.195
+with the other
+arithmetic operators.
+
+63
+00:02:26.195 --> 00:02:27.970
+With the subtraction operator,
+
+64
+00:02:27.970 --> 00:02:29.870
+the output result is 0.
+
+65
+00:02:29.870 --> 00:02:33.245
+A multiplication operator
+returns a result of 25.
+
+66
+00:02:33.245 --> 00:02:36.290
+The division operator
+calculates result as 1.
+
+67
+00:02:36.290 --> 00:02:37.940
+With the modulus operator.
+
+68
+00:02:37.940 --> 00:02:40.130
+The result is 0 as 5 divided
+
+69
+00:02:40.130 --> 00:02:42.940
+by 5 equals 1 with no remainder.
+
+70
+00:02:42.940 --> 00:02:45.635
+Now, let's take a closer look
+
+71
+00:02:45.635 --> 00:02:48.080
+at how to use these
+arithmetic operators in SQL.
+
+72
+00:02:48.080 --> 00:02:50.390
+I'll demonstrate how to use
+
+73
+00:02:50.390 --> 00:02:52.310
+arithmetic operators in SQL to
+
+74
+00:02:52.310 --> 00:02:54.815
+perform basic
+mathematical operations.
+
+75
+00:02:54.815 --> 00:02:57.835
+Let's try an addition
+operation to add two numbers.
+
+76
+00:02:57.835 --> 00:02:59.300
+First, I use
+
+77
+00:02:59.300 --> 00:03:02.405
+the select command and then
+type the numbers 10,15,
+
+78
+00:03:02.405 --> 00:03:04.325
+separated by a plus operator,
+
+79
+00:03:04.325 --> 00:03:05.990
+followed by a semicolon.
+
+80
+00:03:05.990 --> 00:03:08.795
+Although the semicolon is
+optional in this case,
+
+81
+00:03:08.795 --> 00:03:10.340
+I prefer to still use it as it
+
+82
+00:03:10.340 --> 00:03:12.925
+represents the end
+of a SQL statement.
+
+83
+00:03:12.925 --> 00:03:15.230
+The select command
+retrieves the value
+
+84
+00:03:15.230 --> 00:03:17.255
+which is the sum of 10 plus 15,
+
+85
+00:03:17.255 --> 00:03:20.255
+and displays it on screen.
+Let's run this query.
+
+86
+00:03:20.255 --> 00:03:22.160
+The query produces the result of
+
+87
+00:03:22.160 --> 00:03:25.060
+the example addition
+operation, which is 25.
+
+88
+00:03:25.060 --> 00:03:27.800
+Just as I perform this
+addition operation,
+
+89
+00:03:27.800 --> 00:03:29.915
+I can do the same
+with subtraction,
+
+90
+00:03:29.915 --> 00:03:33.985
+multiplication, division,
+and modulus operators.
+
+91
+00:03:33.985 --> 00:03:36.440
+I can use the minus
+sign for subtraction,
+
+92
+00:03:36.440 --> 00:03:38.615
+an asterisk star
+for multiplication,
+
+93
+00:03:38.615 --> 00:03:40.325
+forward slash for division,
+
+94
+00:03:40.325 --> 00:03:42.500
+and the percentage
+sign for modulus.
+
+95
+00:03:42.500 --> 00:03:46.955
+For example, I can type
+select 100 modulus 10.
+
+96
+00:03:46.955 --> 00:03:49.310
+This divides 100 by 10,
+
+97
+00:03:49.310 --> 00:03:52.225
+and gives me the remainder
+of the division operation.
+
+98
+00:03:52.225 --> 00:03:55.040
+In this case, the
+remainder is 0 as
+
+99
+00:03:55.040 --> 00:03:58.550
+100 divided by 10 equals
+10 with no remainder.
+
+100
+00:03:58.550 --> 00:04:02.410
+I run the query and the
+remainder of 0 is displayed.
+
+101
+00:04:02.410 --> 00:04:04.640
+That's how you can use
+the operator symbols for
+
+102
+00:04:04.640 --> 00:04:07.135
+different basic
+operations in SQL.
+
+103
+00:04:07.135 --> 00:04:09.740
+You've learned about secret
+arithmetic operators
+
+104
+00:04:09.740 --> 00:04:12.890
+and how to perform basic
+operations with them in school.
+
+105
+00:04:12.890 --> 00:04:14.990
+You're now ready to
+learn how to apply
+
+106
+00:04:14.990 --> 00:04:16.430
+these arithmetic operators in
+
+107
+00:04:16.430 --> 00:04:19.770
+more practical
+ways. Awesome work.

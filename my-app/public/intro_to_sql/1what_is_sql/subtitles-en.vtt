@@ -1,0 +1,231 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.590
+At this stage in the course,
+
+2
+00:00:01.590 --> 00:00:03.240
+you're probably familiar
+with the basics of
+
+3
+00:00:03.240 --> 00:00:05.520
+databases and how they
+store and manage data.
+
+4
+00:00:05.520 --> 00:00:07.800
+But it's also important
+that you know how to
+
+5
+00:00:07.800 --> 00:00:10.650
+interact with databases in
+order to work with data.
+
+6
+00:00:10.650 --> 00:00:12.330
+As a data engineer,
+
+7
+00:00:12.330 --> 00:00:14.220
+you can interact
+with databases using
+
+8
+00:00:14.220 --> 00:00:17.655
+Structured Query Language or
+as it's more commonly known,
+
+9
+00:00:17.655 --> 00:00:21.120
+SQL, also pronounced as sequel.
+
+10
+00:00:21.120 --> 00:00:22.950
+Over the next few
+minutes you'll learn
+
+11
+00:00:22.950 --> 00:00:24.390
+how to explain what
+
+12
+00:00:24.390 --> 00:00:28.425
+SQL is and outline the
+role of SQL in databases.
+
+13
+00:00:28.425 --> 00:00:30.360
+What sort of interactions do
+
+14
+00:00:30.360 --> 00:00:33.615
+database engineers need to
+establish with databases?
+
+15
+00:00:33.615 --> 00:00:35.670
+Some of the operations
+you could carry it in
+
+16
+00:00:35.670 --> 00:00:38.160
+the data might require
+you to create,
+
+17
+00:00:38.160 --> 00:00:41.125
+read, update, and delete data.
+
+18
+00:00:41.125 --> 00:00:44.690
+These operations are also
+known as CRUD operations.
+
+19
+00:00:44.690 --> 00:00:46.220
+You might already be familiar
+
+20
+00:00:46.220 --> 00:00:47.735
+with some of these operations.
+
+21
+00:00:47.735 --> 00:00:49.430
+If not, don't worry,
+
+22
+00:00:49.430 --> 00:00:50.870
+they'll be covered in depth at
+
+23
+00:00:50.870 --> 00:00:52.840
+later stages in this course.
+
+24
+00:00:52.840 --> 00:00:55.260
+Let's find out more about SQL.
+
+25
+00:00:55.260 --> 00:00:57.290
+SQL is the standard
+language that can
+
+26
+00:00:57.290 --> 00:00:59.225
+be used with all databases.
+
+27
+00:00:59.225 --> 00:01:01.010
+It's particularly useful when
+
+28
+00:01:01.010 --> 00:01:02.840
+working with
+relational databases,
+
+29
+00:01:02.840 --> 00:01:04.250
+which require a
+language that can
+
+30
+00:01:04.250 --> 00:01:06.110
+interact with structured data.
+
+31
+00:01:06.110 --> 00:01:08.630
+Some examples of
+relational databases that
+
+32
+00:01:08.630 --> 00:01:11.620
+SQL can interact
+with include MySQL,
+
+33
+00:01:11.620 --> 00:01:16.095
+PostgreSQL, Oracle, and
+Microsoft SQL Server.
+
+34
+00:01:16.095 --> 00:01:17.940
+The next question this raises,
+
+35
+00:01:17.940 --> 00:01:20.360
+is how does a
+database interpret or
+
+36
+00:01:20.360 --> 00:01:23.890
+read and execute instructions
+given using SQL.
+
+37
+00:01:23.890 --> 00:01:27.845
+A database interprets and make
+sense of SQL instructions
+
+38
+00:01:27.845 --> 00:01:32.300
+with the use of a Database
+Management System or DBMS.
+
+39
+00:01:32.300 --> 00:01:34.775
+As a web developer,
+you'll execute
+
+40
+00:01:34.775 --> 00:01:38.585
+all SQL instructions on
+a database using a DBMS.
+
+41
+00:01:38.585 --> 00:01:42.200
+The DBMS takes responsibility
+for transforming
+
+42
+00:01:42.200 --> 00:01:44.105
+SQL instructions into a form
+
+43
+00:01:44.105 --> 00:01:47.005
+that's understood by the
+underlying database.
+
+44
+00:01:47.005 --> 00:01:50.195
+This was just a very quick
+introduction to SQL.
+
+45
+00:01:50.195 --> 00:01:51.650
+At this early stage,
+
+46
+00:01:51.650 --> 00:01:53.270
+you should be able
+to explain what SQL
+
+47
+00:01:53.270 --> 00:01:56.695
+is and explain the role
+of SQL in databases.
+
+48
+00:01:56.695 --> 00:01:58.385
+In the upcoming videos,
+
+49
+00:01:58.385 --> 00:02:00.050
+you'll learn more about SQL and
+
+50
+00:02:00.050 --> 00:02:03.000
+develop a deeper understanding
+of the language.

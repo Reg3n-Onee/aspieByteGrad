@@ -1,0 +1,470 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.050
+You probably already
+know that when you
+
+2
+00:00:02.050 --> 00:00:03.774
+create a table in a database,
+
+3
+00:00:03.774 --> 00:00:05.830
+you must define the
+column names and
+
+4
+00:00:05.830 --> 00:00:07.150
+the data type of the content
+
+5
+00:00:07.150 --> 00:00:09.010
+that will reside
+in those columns.
+
+6
+00:00:09.010 --> 00:00:10.750
+You can use a string datatype
+
+7
+00:00:10.750 --> 00:00:12.460
+to define the columns datatype,
+
+8
+00:00:12.460 --> 00:00:14.470
+particularly in instances
+when it accepts
+
+9
+00:00:14.470 --> 00:00:17.065
+both numeric and
+text characters.
+
+10
+00:00:17.065 --> 00:00:20.020
+In this video, you'll
+explore the string datatype,
+
+11
+00:00:20.020 --> 00:00:21.505
+and by the end of the video,
+
+12
+00:00:21.505 --> 00:00:23.740
+you'll be able to explain
+the string datatype in
+
+13
+00:00:23.740 --> 00:00:25.510
+a database and differentiate
+
+14
+00:00:25.510 --> 00:00:28.220
+between CHARR and
+VARCHAR datatypes.
+
+15
+00:00:28.220 --> 00:00:30.939
+When you create a
+table in a database,
+
+16
+00:00:30.939 --> 00:00:33.430
+it is important for data
+integrity to ensure that
+
+17
+00:00:33.430 --> 00:00:36.175
+only valid values are
+inserted in your table.
+
+18
+00:00:36.175 --> 00:00:39.400
+For example, you should use
+string datatype when you
+
+19
+00:00:39.400 --> 00:00:40.570
+intend to store data that
+
+20
+00:00:40.570 --> 00:00:42.935
+contains a mix of
+character types.
+
+21
+00:00:42.935 --> 00:00:45.245
+If you define a
+column as a string,
+
+22
+00:00:45.245 --> 00:00:47.390
+then any type of text
+can be inserted.
+
+23
+00:00:47.390 --> 00:00:49.910
+This includes
+alphabet characters,
+
+24
+00:00:49.910 --> 00:00:52.780
+numeric characters, and
+special characters.
+
+25
+00:00:52.780 --> 00:00:54.785
+Let's explore an
+example to find out
+
+26
+00:00:54.785 --> 00:00:57.425
+more about how string
+datatypes work.
+
+27
+00:00:57.425 --> 00:00:58.820
+Let's take the example of
+
+28
+00:00:58.820 --> 00:01:01.105
+a student table from
+a college database.
+
+29
+00:01:01.105 --> 00:01:03.050
+This table stores student login
+
+30
+00:01:03.050 --> 00:01:05.705
+information for the
+colleges online portal.
+
+31
+00:01:05.705 --> 00:01:07.220
+It stores this information
+
+32
+00:01:07.220 --> 00:01:08.945
+under the following
+four columns;
+
+33
+00:01:08.945 --> 00:01:13.885
+Student name, username,
+password and email address.
+
+34
+00:01:13.885 --> 00:01:15.440
+The student name column
+
+35
+00:01:15.440 --> 00:01:17.675
+contains only
+alphabet characters.
+
+36
+00:01:17.675 --> 00:01:21.050
+The username column contains
+alphanumeric characters,
+
+37
+00:01:21.050 --> 00:01:22.850
+and the password
+and email column
+
+38
+00:01:22.850 --> 00:01:25.055
+contains a mix of
+character types.
+
+39
+00:01:25.055 --> 00:01:27.830
+String datatype is
+a generic term used
+
+40
+00:01:27.830 --> 00:01:30.590
+for different string
+datatypes in the database.
+
+41
+00:01:30.590 --> 00:01:33.425
+The most used string
+datatypes are CHAR,
+
+42
+00:01:33.425 --> 00:01:35.095
+which stands for character.
+
+43
+00:01:35.095 --> 00:01:37.010
+This datatype is used to hold
+
+44
+00:01:37.010 --> 00:01:38.825
+characters of a fixed length.
+
+45
+00:01:38.825 --> 00:01:41.615
+VARCHAR stands for
+variable character.
+
+46
+00:01:41.615 --> 00:01:44.330
+This holds characters
+of the variable length.
+
+47
+00:01:44.330 --> 00:01:46.760
+Let's explore these string
+data types further.
+
+48
+00:01:46.760 --> 00:01:48.800
+CHAR means that the given length
+
+49
+00:01:48.800 --> 00:01:50.735
+of the characters
+is predetermined.
+
+50
+00:01:50.735 --> 00:01:53.450
+It can't be changed
+after declaration.
+
+51
+00:01:53.450 --> 00:01:55.820
+Column attributes
+are defined as CHAR
+
+52
+00:01:55.820 --> 00:01:58.250
+followed by a character
+length in parentheses.
+
+53
+00:01:58.250 --> 00:02:00.950
+For example, CHAR (50)
+means that a column
+
+54
+00:02:00.950 --> 00:02:04.135
+only permits 50 characters
+of space in each field.
+
+55
+00:02:04.135 --> 00:02:05.990
+CHAR is the best
+option if you've
+
+56
+00:02:05.990 --> 00:02:08.570
+predefined size of character
+that you want to maintain.
+
+57
+00:02:08.570 --> 00:02:10.610
+In the student table,
+
+58
+00:02:10.610 --> 00:02:13.010
+you can set a maximum
+length of 50 characters for
+
+59
+00:02:13.010 --> 00:02:16.355
+the username column in
+SQL with CHAR (50).
+
+60
+00:02:16.355 --> 00:02:19.220
+For example, the table
+contains the records
+
+61
+00:02:19.220 --> 00:02:22.175
+for a student with a
+username Mark 1 2 3,
+
+62
+00:02:22.175 --> 00:02:24.365
+which is a total of
+seven characters.
+
+63
+00:02:24.365 --> 00:02:27.315
+However, because the column
+is defined as CHAR (50),
+
+64
+00:02:27.315 --> 00:02:29.000
+this username occupies
+the length of
+
+65
+00:02:29.000 --> 00:02:31.100
+50 characters within the space.
+
+66
+00:02:31.100 --> 00:02:34.415
+The VARCHAR datatype works
+in a similar way to CHAR.
+
+67
+00:02:34.415 --> 00:02:36.290
+Whoever it is a variable length.
+
+68
+00:02:36.290 --> 00:02:38.435
+This means that the
+length can be changed.
+
+69
+00:02:38.435 --> 00:02:41.480
+It's not fixed. VARCHAR
+are often used when you're
+
+70
+00:02:41.480 --> 00:02:42.830
+not sure how many characters
+
+71
+00:02:42.830 --> 00:02:44.855
+might be inserted in
+the column field.
+
+72
+00:02:44.855 --> 00:02:47.600
+You can type
+VARCHAR(50) in SQL to
+
+73
+00:02:47.600 --> 00:02:50.995
+allow for any input up to
+maximum of 50 characters.
+
+74
+00:02:50.995 --> 00:02:52.790
+In the student table example,
+
+75
+00:02:52.790 --> 00:02:54.470
+the student name
+column would most
+
+76
+00:02:54.470 --> 00:02:56.720
+likely contain names
+of varying length.
+
+77
+00:02:56.720 --> 00:02:58.910
+You could define the
+student name column
+
+78
+00:02:58.910 --> 00:03:01.175
+as VARCHAR(50) in SQL
+
+79
+00:03:01.175 --> 00:03:03.620
+This means that the name
+of each student only
+
+80
+00:03:03.620 --> 00:03:04.985
+occupies as much space
+
+81
+00:03:04.985 --> 00:03:06.905
+as there are characters
+in their name.
+
+82
+00:03:06.905 --> 00:03:08.570
+For example, Mark Simpson
+
+83
+00:03:08.570 --> 00:03:11.045
+occupies far less
+than 50 characters.
+
+84
+00:03:11.045 --> 00:03:12.920
+But this field could
+hold a name up to
+
+85
+00:03:12.920 --> 00:03:15.350
+the value of 50
+characters if required.
+
+86
+00:03:15.350 --> 00:03:17.390
+Finally, let's briefly explore
+
+87
+00:03:17.390 --> 00:03:20.435
+some more commonly used
+examples of string datatypes.
+
+88
+00:03:20.435 --> 00:03:23.720
+TINYTEXT is used to define
+columns that require
+
+89
+00:03:23.720 --> 00:03:27.505
+less than 255 characters,
+like short paragraphs.
+
+90
+00:03:27.505 --> 00:03:30.080
+TEXT is used to define
+columns of less than
+
+91
+00:03:30.080 --> 00:03:32.695
+65,000 characters,
+like an article.
+
+92
+00:03:32.695 --> 00:03:37.055
+MEDIUMTEXT defined columns
+of 16.7 million characters.
+
+93
+00:03:37.055 --> 00:03:38.915
+For example, the text of a book.
+
+94
+00:03:38.915 --> 00:03:41.150
+The LONGTEXT datatype
+stores up to
+
+95
+00:03:41.150 --> 00:03:43.735
+four gigabytes of text data.
+
+96
+00:03:43.735 --> 00:03:45.710
+You should now be
+able to explain
+
+97
+00:03:45.710 --> 00:03:47.990
+the string datatype as
+used in a database.
+
+98
+00:03:47.990 --> 00:03:50.390
+You should also be capable
+of differentiating between
+
+99
+00:03:50.390 --> 00:03:55.650
+string datatypes including
+CHAR and VARCHAR. Great work.
