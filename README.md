@@ -10,9 +10,9 @@
 - [@harshchamola](https://www.github.com/Harsh1032)
 
 
-## Acknowledgements
+## User Manual 
 
- - 
+User Manual is available in Docs folder.
 
 
 ## Environment Variables
