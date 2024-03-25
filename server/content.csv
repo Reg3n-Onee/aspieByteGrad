@@ -1,0 +1,72 @@
+﻿3001,2001,600,1,Course Syllabus
+3002,2001,600,1,Professional Certificate Career Support
+3003,2001,120,0,What is Data Science?
+3004,2001,120,0,Fundamentals of Data Science
+3005,2001,180,0,The Many Paths to Data Science
+3006,2001,120,0,Advice for New Data Scientists
+3007,2001,600,1,Defining Data Science Summary
+3008,2002,300,0,Foundations of Big Data
+3009,2002,360,0,What is Hadoop?
+3010,2002,180,0,How Big Data is Driving Digital Transformation
+3011,2002,240,0,Data Science Skills & Big Data
+3012,2002,240,0,Data Scientists at New York University
+3013,2002,600,1,Big Data and Data Mining Summary
+3014,2003,240,0,How Data Science is Saving Lives
+3015,2003,120,0,How Should Companies Get Started in Data Science?
+3016,2003,180,0,Applications of Data Science
+3017,2003,600,1,Data Science in Business Summary
+3018,2003,300,0,How Can Somone Become a Data Scientist?
+3019,2003,120,0,Careers in Data Science
+3020,2003,600,1,Careers in Data Science Summary
+3021,2004,120,1,Introduction to the program
+3022,2004,180,0,Introduction to databases
+3023,2004,360,0,A Day in the Life of a Database Engineer
+3024,2004,600,1,Course Syllabus: introduction to Database
+3025,2004,600,1,How to be successful in this course
+3026,2004,300,0,What is Database?
+3027,2004,180,0,How is data related?
+3028,2004,600,1,Relational data example charts
+3029,2004,240,0,Alternative types of databases
+3030,2005,180,0,Numeric Data types
+3031,2005,180,0,String Data types
+3032,2005,240,0,Default values
+3033,2005,120,0,CREATE and DROP Data Base
+3034,2005,120,0,CREATE TABLE statement
+3035,2005,180,0,ALTER TABLE statement
+3036,2005,240,0,INSERT statement
+3037,2005,900,1,Creating tables
+3038,2005,180,0,SELECT statement
+3039,2005,180,0,INSERT into SELECT statement
+3040,2005,180,0,Updating data
+3041,2005,180,0,Deleting data
+3042,2005,180,0,Summary of CRUD Operation
+3043,2006,240,0,SQL Arithmetic operators
+3044,2006,1800,1,SQL Arithmetic operator Examples
+3045,2006,240,0,Operators in Use
+3046,2006,300,0,SQL omparison operators
+3047,2006,1800,1,SQL comparison operators examples
+3048,2006,300,0,ORDER By clause
+3049,2006,1800,1,Types of ordering/sorting
+3050,2006,420,0,WHERE clause
+3051,2006,1800,1,WHERE clause uses
+3052,2006,240,0,SELECT DISTINCT clause
+3053,2006,900,1,SELECT DISTINCT clause in use
+3054,2006,60,0,Module Summary SQL operators
+3055,2007,180,0,Database schema
+3056,2007,900,1,Exploring database schema
+3057,2007,240,0,Schema in use
+3058,2007,120,0,Types of database schema
+3059,2007,900,1,Building a schema
+3060,2007,180,0,Table relationships
+3061,2007,900,1,Rational model
+3062,2007,180,0,Primary Key
+3063,2007,240,0,Foreign Key
+3064,2007,900,1,Keys in Depth
+3065,2007,180,0,Finding Entities
+3066,2007,1800,1,Entity Relationship Diagram (ERD)
+3067,2007,240,0,What is Database Normalization?
+3068,2007,900,1,Data Normalization
+3069,2007,240,0,First Normal Form 1NF
+3070,2007,360,0,Second Normal Form 2NF
+3071,2007,240,0,Third Normal Form 3NF
+3072,2007,120,0,Module Summary Database Design
