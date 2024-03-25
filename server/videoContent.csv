@@ -1,0 +1,50 @@
+﻿10001,3003,What is Data Science?,/db/what_is_data_science1/index.mp4
+10002,3004,Fundamental of Data Science,/db/Fundamental_of_data_science2/index.mp4
+10003,3005,The Many Paths to Data Science,/db/The_many_path_to_data_science3/index.mp4
+10004,3006,Advice for New Data Scientists,/db/Advice_for_new_data_scientists4/index.mp4
+10005,3008,Foundation of Data,/db/Foundation_of_big_data1/index.mp4
+10006,3009,What is Hadoop?,/db/What_is_hadoop2/index.mp4
+10007,3010,How Big Data is Driving Digital Transformation,/db/How_big_data_drives_dig_transform3/index.mp4
+10008,3011,Data Science Skills & Big Data,/db/DS_skills&bigdata4/index.mp4
+10009,3012,Data Scientists at New York University,/db/DSts_at_NY_university5/index.mp4
+10010,3014,How Data Science is Saving Lives,/db/How_DS_saving_lives1/index.mp4
+10011,3015,How Should Companies Get Started in Data Science?,/db/How_companies_get_started_DS2/index.mp4
+10012,3016,Applications of Data Science,/db/Application_of_DS3/index.mp4
+10013,3018,How Can Somone Become a Data Scientist?,/db/How_can_someone_becomeaDSt1/index.mp4
+10014,3019,Careers in Data Science,/db/Career_in_DS3/index.mp4
+10015,3022,Introduction to databases,/db/2intro_to_databases/index.mp4
+10016,3023,A Day in the Life of a Database Engineer,/db/3ADIL_of_db_Engineer/index.mp4
+10017,3026,What is Database?,/db/1what_is_database/index.mp4
+10018,3027,How is data related?,/db/2how_is_data_related/index.mp4
+10019,3029,Alternative types of databases,/db/4alternative_type_of_databases/index.mp4
+10020,3030,Numeric Data types,/db/sql_data_types/1numeric_data_types/index.mp4
+10021,3031,String Data types,/db/sql_data_types/4string_data_types/index.mp4
+10022,3032,Default values,/db/sql_data_types/7default_values/index.mp4
+10023,3033,CREATE and DROP Data Base,/db/create_and_read/1create_and_drop_database/index.mp4
+10024,3034,CREATE TABLE statement,/db/create_and_read/2create_table_statmement/index.mp4
+10025,3035,ALTER TABLE statement,/db/create_and_read/3alter_table_statment/index.mp4
+10026,3036,INSERT statement,/db/create_and_read/4insert_statment/index.mp4
+10027,3038,SELECT statement,/db/create_and_read/8select_statment/index.mp4
+10028,3039,INSERT into SELECT statement,/db/create_and_read/9insert_into_select/index.mp4
+10029,3040,Updating data,/db/update_and_delete/1update_data/index.mp4
+10030,3041,Deleting data,/db/update_and_delete/2deleting_data/index.mp4
+10031,3042,Summary of CRUD Operation,/db/update_and_delete/6module_summary_curd_operation/index.mpx
+10032,3043,SQL Arithmetic operators,/db/sql_operators/1sql_arithmetic_operators/index.mp4
+10033,3045,Operators in Use,/db/sql_operators/3operators_in_use/index.mp4
+10034,3046,SQL comparison operators,/db/sql_operators/4sql_comparison_operators/index.mp4
+10035,3048,ORDER By clause,/db/sorting_and_filtering_data/1Order_by_clause/index.mp4
+10036,3050,WHERE clause,/db/sorting_and_filtering_data/3where_clause/index.mp4
+10037,3052,SELECT DISTINCT clause,/db/sorting_and_filtering_data/7select_distinct_clause/index.mp4
+10038,3054,Module Summary SQL operators,/db/sorting_and_filtering_data/9module_summary_sql_operators/index.mp4
+10039,3055,Database schema,/db/designing_database_schema/1database_schma/index.mp4
+10040,3057,Schema in use,/db/designing_database_schema/3schema_in_use/index.mp4
+10041,3058,Types of database schema,/db/designing_database_schema/4types_of_database_schema/index.mp4
+10042,3060,Table relationships,/db/relation_databse_design/1table_relationship/index.mp4
+10043,3062,Primary Key,/db/relation_databse_design/3primary_key/index.mp4
+10044,3063,Foreign Key,/db/relation_databse_design/4foreign_key/index.mp4
+10045,3065,Finding Entities,/db/relation_databse_design/7finding_entities/index.mp4
+10046,3067,What is Database Normalization?,/db/database_normalization/1what_is_db_normalization/index.mp4
+10047,3069,First Normal Form 1NF,/db/database_normalization/3first_normal_form/index.mp4
+10048,3070,Second Normal Form 2NF,/db/database_normalization/4second_normal_form/index.mp4
+10049,3071,Third Normal Form 3NF,/db/database_normalization/6third_normal_form/index.mp4
+10050,3072,Module Summary Database Design,/db/database_normalization/9module_summary/index.mp4
