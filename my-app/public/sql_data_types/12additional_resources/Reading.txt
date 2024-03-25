@@ -1,0 +1,12 @@
+Additional resources
+The following list of resources explore the meaning and role of different data types in databases. They also provide good examples for how to declare and use the data types in SQL.
+
+W3schools
+
+W3resource
+
+LearnSQL
+
+Microsoft
+
+MySQL

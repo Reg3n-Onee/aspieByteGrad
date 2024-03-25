@@ -1,0 +1,437 @@
+WEBVTT
+
+1
+00:00:00.444 --> 00:00:03.225
+Imagine you're running a database for
+a soccer club.
+
+2
+00:00:03.225 --> 00:00:07.326
+As a database engineer, there's a lot of
+work required to manage this database.
+
+3
+00:00:07.326 --> 00:00:08.059
+For example,
+
+4
+00:00:08.059 --> 00:00:11.916
+you might need to categorize players
+into groups according to their ages.
+
+5
+00:00:11.916 --> 00:00:14.237
+How can you complete this kind of task?
+
+6
+00:00:14.237 --> 00:00:18.756
+You can use sequel comparison
+operators over the next few minutes.
+
+7
+00:00:18.756 --> 00:00:23.151
+You'll learn how to explain the concept
+of sequel comparison operators and
+
+8
+00:00:23.151 --> 00:00:26.247
+utilize sequel comparison
+operators in a database.
+
+9
+00:00:26.247 --> 00:00:29.211
+So what our sequel comparison operators,
+
+10
+00:00:29.211 --> 00:00:32.999
+Comparison operators are used
+to compare two values or
+
+11
+00:00:32.999 --> 00:00:37.629
+expressions where the outcome
+result can be either true or false.
+
+12
+00:00:37.629 --> 00:00:42.270
+They can be used to filter data and
+to include and exclude data.
+
+13
+00:00:42.270 --> 00:00:45.023
+So how are these operators used in sequel?
+
+14
+00:00:45.023 --> 00:00:50.318
+Sequel uses common mathematical
+comparison operators by
+
+15
+00:00:50.318 --> 00:00:57.448
+means of the symbols equal to less than
+and greater than it also uses less than or
+
+16
+00:00:57.448 --> 00:01:02.002
+equal to greater than or
+equal to and not equal to.
+
+17
+00:01:02.002 --> 00:01:05.234
+Now let's explore how to use
+these comparison operators and
+
+18
+00:01:05.234 --> 00:01:07.271
+relevant symbols in a practical way.
+
+19
+00:01:07.271 --> 00:01:11.719
+Using a database to demonstrate the use
+of sequel comparison operators,
+
+20
+00:01:11.719 --> 00:01:15.823
+I'll use the example of an employee
+table from a company database.
+
+21
+00:01:15.823 --> 00:01:22.747
+This table includes information on
+each employee's ID, name and salary.
+
+22
+00:01:22.747 --> 00:01:26.443
+Now let's assume the employer wants
+to extract relevant data from
+
+23
+00:01:26.443 --> 00:01:30.734
+the employee table about the employee's
+salaries for different purposes.
+
+24
+00:01:30.734 --> 00:01:35.008
+Each instance of data extraction will
+require a different comparison operator.
+
+25
+00:01:35.008 --> 00:01:39.385
+So in the first example the employer
+wants to identify all employees
+
+26
+00:01:39.385 --> 00:01:42.931
+receiving a salary Equal
+to $18,000 per year.
+
+27
+00:01:42.931 --> 00:01:46.815
+I can identify these employees
+using the equal to operator.
+
+28
+00:01:46.815 --> 00:01:50.322
+First I click the sequel
+tab in the main menu.
+
+29
+00:01:50.322 --> 00:01:55.878
+Then I write select asterix from employee
+
+30
+00:01:55.878 --> 00:02:01.918
+where salary equal to symbol 18,000.
+
+31
+00:02:01.918 --> 00:02:04.520
+Let's break this sequel statement down.
+
+32
+00:02:04.520 --> 00:02:07.155
+The select command is
+used to retrieve data.
+
+33
+00:02:07.155 --> 00:02:11.551
+The asterix star denotes that I'm
+selecting data from all columns,
+
+34
+00:02:11.551 --> 00:02:16.268
+the from keyword and the table name
+specify where the data will come from.
+
+35
+00:02:16.268 --> 00:02:19.501
+And then I define the condition
+using the wear clause.
+
+36
+00:02:19.501 --> 00:02:24.404
+In this case, the condition uses the equal
+to symbol to check if the salary
+
+37
+00:02:24.404 --> 00:02:28.530
+value in each Record of
+the table is equal to $18,000.
+
+38
+00:02:28.530 --> 00:02:32.273
+If the result is true,
+then the data is retrieved.
+
+39
+00:02:32.273 --> 00:02:36.044
+So run the query and generate an output.
+
+40
+00:02:36.044 --> 00:02:39.920
+The Output result of this query
+is that the employees Carl and
+
+41
+00:02:39.920 --> 00:02:42.428
+John earned $18,000 per year.
+
+42
+00:02:42.428 --> 00:02:45.590
+You can apply the other comparison
+operators in a similar way
+
+43
+00:02:45.590 --> 00:02:47.393
+to perform different functions.
+
+44
+00:02:47.393 --> 00:02:50.047
+Let's take another
+example to find out more.
+
+45
+00:02:50.047 --> 00:02:54.652
+In this next example, the employer needs
+to know which employees are receiving
+
+46
+00:02:54.652 --> 00:02:57.827
+a salary That is less
+than 20 $4,000 per year.
+
+47
+00:02:57.827 --> 00:03:00.671
+This task requires a different operator.
+
+48
+00:03:00.671 --> 00:03:03.850
+To find this information,
+
+49
+00:03:03.850 --> 00:03:09.240
+I can write select asterix
+from employee where
+
+50
+00:03:09.240 --> 00:03:13.947
+salary less than symbol 24,000.
+
+51
+00:03:13.947 --> 00:03:18.818
+This sequel statement utilizes the less
+than symbol to check whether the value
+
+52
+00:03:18.818 --> 00:03:23.037
+stored in each field of salary
+column is less than $24,000.
+
+53
+00:03:23.037 --> 00:03:28.642
+Once again, I select the gold button to
+execute the query and generate an output.
+
+54
+00:03:28.642 --> 00:03:30.561
+The output of this query
+is that the employees?
+
+55
+00:03:30.561 --> 00:03:34.379
+Carolyn john earned less than $24,000.
+
+56
+00:03:34.379 --> 00:03:38.283
+Let's take another example where
+the employer needs to determine which
+
+57
+00:03:38.283 --> 00:03:43.028
+employees receive a salary that is less
+than or equal to 24,000 dollars per year.
+
+58
+00:03:43.028 --> 00:03:48.157
+In this case I need to
+write the following query,
+
+59
+00:03:48.157 --> 00:03:53.912
+select asterix from employee
+where salary less than or
+
+60
+00:03:53.912 --> 00:03:57.306
+equal to symbol 24,000.
+
+61
+00:03:57.306 --> 00:04:01.679
+The only thing in this statement that
+has changed from the previous example is
+
+62
+00:04:01.679 --> 00:04:06.187
+the operator symbol this less than or
+equal to symbol tells the sequel statement
+
+63
+00:04:06.187 --> 00:04:10.759
+to check whether the value stored in each
+field of the salary column is less than Or
+
+64
+00:04:10.759 --> 00:04:12.335
+equal to $24,000.
+
+65
+00:04:12.335 --> 00:04:15.284
+I click the go button
+to execute the query.
+
+66
+00:04:15.284 --> 00:04:19.643
+The Output results show that there
+are four employees who Earn less than or
+
+67
+00:04:19.643 --> 00:04:21.905
+equal to 24 $1,000 per year.
+
+68
+00:04:21.905 --> 00:04:26.467
+What if The employer wants to know which
+employees receive a salary that is greater
+
+69
+00:04:26.467 --> 00:04:28.860
+than or equal to $24,000 per year.
+
+70
+00:04:28.860 --> 00:04:31.794
+To generate these results,
+I can use the greater than or
+
+71
+00:04:31.794 --> 00:04:34.048
+equal to operator in my sequel statement.
+
+72
+00:04:34.048 --> 00:04:39.865
+So I write the following sequel query
+select asterix from employee where
+
+73
+00:04:39.865 --> 00:04:45.012
+salary greater than or
+equal to symbol 24,000 this time,
+
+74
+00:04:45.012 --> 00:04:50.445
+the greater than or equal to symbol
+is used to check whether the value
+
+75
+00:04:50.445 --> 00:04:57.343
+stored in each field of the salary column
+is greater Than or equal to $24,000.
+
+76
+00:04:57.343 --> 00:05:02.282
+I click go to execute the query and
+the output shows that there are three
+
+77
+00:05:02.282 --> 00:05:06.059
+employees Who earn $24,000 or
+more per year.
+
+78
+00:05:06.059 --> 00:05:11.440
+The final comparison operator available
+in sequel is a not equal to operator.
+
+79
+00:05:11.440 --> 00:05:16.176
+In this final example, The employer wants
+to know which employees receive a salary
+
+80
+00:05:16.176 --> 00:05:18.825
+that is not equal to $24,000 per year.
+
+81
+00:05:18.825 --> 00:05:23.965
+I can determine this using
+the following sequel code,
+
+82
+00:05:23.965 --> 00:05:28.223
+select asterix from employee where salary.
+
+83
+00:05:28.223 --> 00:05:32.555
+Then I type less than and
+greater than symbols to denote the not
+
+84
+00:05:32.555 --> 00:05:36.068
+equal to operation and then I type 24,000.
+
+85
+00:05:36.068 --> 00:05:40.999
+As with the previous operators, the sequel
+statement utilizes the operator to check
+
+86
+00:05:40.999 --> 00:05:44.023
+the value stored in each
+field of the salary column.
+
+87
+00:05:44.023 --> 00:05:49.037
+In this case, it Checks for
+values that do not equate to $24,000.
+
+88
+00:05:49.037 --> 00:05:52.301
+The output results of this
+query show that there are three
+
+89
+00:05:52.301 --> 00:05:56.248
+employees whose salaries are not
+equal to $24,000 per year.
+
+90
+00:05:56.248 --> 00:05:59.135
+You should now be able to
+describe comparison operators and
+
+91
+00:05:59.135 --> 00:06:01.240
+use them in a database in sequel.
+
+92
+00:06:01.240 --> 00:06:04.360
+Congratulations on building
+another important database skill

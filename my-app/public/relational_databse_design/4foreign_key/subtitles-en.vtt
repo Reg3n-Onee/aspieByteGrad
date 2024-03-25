@@ -1,0 +1,584 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.890
+Imagine a scenario
+where a bookstore has
+
+2
+00:00:01.890 --> 00:00:04.065
+a database that
+contains two tables.
+
+3
+00:00:04.065 --> 00:00:06.840
+Customer table to track
+customer information,
+
+4
+00:00:06.840 --> 00:00:09.720
+and an order table to
+track customers orders.
+
+5
+00:00:09.720 --> 00:00:11.130
+But how can they determine
+
+6
+00:00:11.130 --> 00:00:13.245
+which customer made which order?
+
+7
+00:00:13.245 --> 00:00:14.940
+The solution is to add
+
+8
+00:00:14.940 --> 00:00:16.970
+a customer ID column into
+
+9
+00:00:16.970 --> 00:00:19.580
+the order table column
+as a foreign key.
+
+10
+00:00:19.580 --> 00:00:21.320
+Over the next few minutes,
+
+11
+00:00:21.320 --> 00:00:22.700
+you'll learn how to describe
+
+12
+00:00:22.700 --> 00:00:24.240
+the purpose of a foreign key,
+
+13
+00:00:24.240 --> 00:00:26.210
+and demonstrate how to use it to
+
+14
+00:00:26.210 --> 00:00:29.015
+connect different tables
+in a relational database.
+
+15
+00:00:29.015 --> 00:00:31.405
+What exactly is a foreign key?
+
+16
+00:00:31.405 --> 00:00:34.400
+A foreign key is one or more
+columns used to connect
+
+17
+00:00:34.400 --> 00:00:35.870
+two tables in order to
+
+18
+00:00:35.870 --> 00:00:37.940
+create cross-referencing
+between them.
+
+19
+00:00:37.940 --> 00:00:40.805
+By foreign developers
+mean external.
+
+20
+00:00:40.805 --> 00:00:42.800
+The foreign key in one table,
+
+21
+00:00:42.800 --> 00:00:44.450
+we'll refer to an external or
+
+22
+00:00:44.450 --> 00:00:46.715
+foreign column in another table.
+
+23
+00:00:46.715 --> 00:00:49.940
+Let's find out more about
+how foreign key works by
+
+24
+00:00:49.940 --> 00:00:51.020
+exploring the tables from
+
+25
+00:00:51.020 --> 00:00:53.360
+the database of an online store.
+
+26
+00:00:53.360 --> 00:00:55.610
+The store is customer
+table contains
+
+27
+00:00:55.610 --> 00:00:58.465
+information about the
+customer's name and address.
+
+28
+00:00:58.465 --> 00:01:01.010
+While their order table
+contains information
+
+29
+00:01:01.010 --> 00:01:03.725
+about each customer's
+order date and status.
+
+30
+00:01:03.725 --> 00:01:06.665
+The issue is how to connect
+these tables to make
+
+31
+00:01:06.665 --> 00:01:08.030
+sure that each order is
+
+32
+00:01:08.030 --> 00:01:09.935
+associated with the
+right customer.
+
+33
+00:01:09.935 --> 00:01:11.630
+Establishing this connection is
+
+34
+00:01:11.630 --> 00:01:13.580
+important so that
+you can process,
+
+35
+00:01:13.580 --> 00:01:15.620
+and deliver orders to
+the right customers,
+
+36
+00:01:15.620 --> 00:01:19.475
+update order details, or
+cancel orders if required.
+
+37
+00:01:19.475 --> 00:01:21.590
+A foreign key is a great method
+
+38
+00:01:21.590 --> 00:01:22.970
+of establishing a relationship
+
+39
+00:01:22.970 --> 00:01:24.740
+between these tables so that
+
+40
+00:01:24.740 --> 00:01:27.110
+these other tasks
+can be carried out.
+
+41
+00:01:27.110 --> 00:01:30.110
+But before you learn about
+how to use a foreign key,
+
+42
+00:01:30.110 --> 00:01:31.700
+let's take a few
+moments to explore
+
+43
+00:01:31.700 --> 00:01:33.850
+the concept in a
+bit more detail.
+
+44
+00:01:33.850 --> 00:01:36.830
+To find out more about
+how foreign keys work,
+
+45
+00:01:36.830 --> 00:01:38.810
+let's take the example
+of the relationship
+
+46
+00:01:38.810 --> 00:01:41.165
+between two generic
+entity tables.
+
+47
+00:01:41.165 --> 00:01:44.180
+These tables are
+called Table 1 or T1,
+
+48
+00:01:44.180 --> 00:01:47.035
+and Table 2 or T2.
+
+49
+00:01:47.035 --> 00:01:50.210
+The purpose of connecting
+these tables is to relate
+
+50
+00:01:50.210 --> 00:01:51.650
+records of data that exist
+
+51
+00:01:51.650 --> 00:01:53.615
+in both tables with each other.
+
+52
+00:01:53.615 --> 00:01:55.550
+The foreign key in T1
+
+53
+00:01:55.550 --> 00:01:58.085
+should point to
+related column in T2.
+
+54
+00:01:58.085 --> 00:02:01.775
+In this case, the foreign
+key column values in T1
+
+55
+00:02:01.775 --> 00:02:03.815
+must correspond to
+existing values
+
+56
+00:02:03.815 --> 00:02:06.155
+in the reference column in T2.
+
+57
+00:02:06.155 --> 00:02:08.780
+The reference column in T2 must
+
+58
+00:02:08.780 --> 00:02:11.435
+contain unique values
+in each row of data.
+
+59
+00:02:11.435 --> 00:02:14.775
+This will most likely be
+the primary column in T2.
+
+60
+00:02:14.775 --> 00:02:16.970
+In addition, the reference table
+
+61
+00:02:16.970 --> 00:02:19.145
+T2 is known as the parent table.
+
+62
+00:02:19.145 --> 00:02:22.610
+While the referencing table
+T1 is the child table.
+
+63
+00:02:22.610 --> 00:02:25.279
+Don't worry if all this
+seems a bit complicated.
+
+64
+00:02:25.279 --> 00:02:27.140
+Let's simplify
+things by exploring
+
+65
+00:02:27.140 --> 00:02:29.000
+an entity relationship diagram
+
+66
+00:02:29.000 --> 00:02:31.745
+using the customer and
+order tables from earlier.
+
+67
+00:02:31.745 --> 00:02:34.460
+In this diagram, the
+order table relates to
+
+68
+00:02:34.460 --> 00:02:36.170
+the customer table by including
+
+69
+00:02:36.170 --> 00:02:38.060
+the customer ID attribute,
+
+70
+00:02:38.060 --> 00:02:41.660
+and defining it as foreign
+key inside the order table.
+
+71
+00:02:41.660 --> 00:02:45.190
+The relationship between these
+two tables is one-to-many.
+
+72
+00:02:45.190 --> 00:02:46.790
+You might have
+encountered this type of
+
+73
+00:02:46.790 --> 00:02:48.650
+relationship in
+an earlier video.
+
+74
+00:02:48.650 --> 00:02:50.840
+One-to-many means
+that each customer
+
+75
+00:02:50.840 --> 00:02:52.130
+may have many orders,
+
+76
+00:02:52.130 --> 00:02:55.505
+but each order must refer to
+one single customer only.
+
+77
+00:02:55.505 --> 00:02:58.250
+This means there must
+be a customer record
+
+78
+00:02:58.250 --> 00:02:59.795
+available in the customer table
+
+79
+00:02:59.795 --> 00:03:01.465
+before any order can be made.
+
+80
+00:03:01.465 --> 00:03:03.190
+But it is not necessary to have
+
+81
+00:03:03.190 --> 00:03:05.470
+an order once a new
+customer is created.
+
+82
+00:03:05.470 --> 00:03:07.840
+Therefore, the customer
+table represents
+
+83
+00:03:07.840 --> 00:03:09.070
+a parent table and
+
+84
+00:03:09.070 --> 00:03:11.660
+the order table
+represents a child table.
+
+85
+00:03:11.660 --> 00:03:14.070
+This means that the
+parent can exist,
+
+86
+00:03:14.070 --> 00:03:16.000
+and the child may not exist.
+
+87
+00:03:16.000 --> 00:03:18.760
+But the opposite
+scenario cannot occur.
+
+88
+00:03:18.760 --> 00:03:22.390
+In this example, the customer
+ID value existing in
+
+89
+00:03:22.390 --> 00:03:24.040
+the order table can be used to
+
+90
+00:03:24.040 --> 00:03:26.290
+fetch the records of
+a specific customer,
+
+91
+00:03:26.290 --> 00:03:28.210
+to determine who
+placed the order.
+
+92
+00:03:28.210 --> 00:03:30.625
+For example, to
+generate an invoice
+
+93
+00:03:30.625 --> 00:03:33.320
+or to deliver an order
+through customer address.
+
+94
+00:03:33.320 --> 00:03:35.230
+It is also possible for table
+
+95
+00:03:35.230 --> 00:03:37.255
+to have more than
+one foreign key.
+
+96
+00:03:37.255 --> 00:03:39.430
+Each will be used to
+connect the referencing or
+
+97
+00:03:39.430 --> 00:03:42.830
+child table with other
+referenced or parent tables.
+
+98
+00:03:42.830 --> 00:03:44.510
+In this case, you'll have
+
+99
+00:03:44.510 --> 00:03:46.685
+multiple parents
+to the same child.
+
+100
+00:03:46.685 --> 00:03:48.245
+Let's add a new table,
+
+101
+00:03:48.245 --> 00:03:50.330
+product table into
+the previous diagram
+
+102
+00:03:50.330 --> 00:03:52.565
+to explain this in more detail.
+
+103
+00:03:52.565 --> 00:03:56.075
+The order table now
+has two foreign keys.
+
+104
+00:03:56.075 --> 00:03:57.830
+One foreign key links it with
+
+105
+00:03:57.830 --> 00:04:00.215
+the customer table
+via the customer ID,
+
+106
+00:04:00.215 --> 00:04:01.460
+and the other links it with
+
+107
+00:04:01.460 --> 00:04:03.800
+the product table
+via the product ID.
+
+108
+00:04:03.800 --> 00:04:07.175
+The relationship between
+these tables is one-to-one.
+
+109
+00:04:07.175 --> 00:04:10.820
+Each order must be related to
+a specific product record,
+
+110
+00:04:10.820 --> 00:04:12.950
+and each product
+might be related to
+
+111
+00:04:12.950 --> 00:04:15.260
+an order record, but
+doesn't have to be.
+
+112
+00:04:15.260 --> 00:04:16.970
+For example, you can
+
+113
+00:04:16.970 --> 00:04:18.890
+receive a new product
+in your inventory,
+
+114
+00:04:18.890 --> 00:04:21.520
+but no customer has placed
+an order on it yet.
+
+115
+00:04:21.520 --> 00:04:24.125
+If an order has not been
+placed in this product,
+
+116
+00:04:24.125 --> 00:04:26.630
+then it's not related
+to any order yet.
+
+117
+00:04:26.630 --> 00:04:28.820
+This then raises the question,
+
+118
+00:04:28.820 --> 00:04:31.520
+who is the parent,
+and who is the child?
+
+119
+00:04:31.520 --> 00:04:34.865
+The customer, the
+order, or the product?
+
+120
+00:04:34.865 --> 00:04:37.670
+The answer is that there
+are now two parents,
+
+121
+00:04:37.670 --> 00:04:39.770
+the customer and
+the product tables,
+
+122
+00:04:39.770 --> 00:04:42.695
+and there's one child,
+which is the order table.
+
+123
+00:04:42.695 --> 00:04:45.920
+You should now understand the
+purpose of a foreign key,
+
+124
+00:04:45.920 --> 00:04:47.840
+and you should also be
+able to demonstrate
+
+125
+00:04:47.840 --> 00:04:48.890
+how it can be used to
+
+126
+00:04:48.890 --> 00:04:53.070
+connect tables in a relational
+database. Well done.

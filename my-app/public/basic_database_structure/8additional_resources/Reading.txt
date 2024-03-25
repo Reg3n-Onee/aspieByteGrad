@@ -1,0 +1,8 @@
+Additional resources
+The following resources are reading material that provide additional knowledge on database design and Relational Database structure.
+
+Microsoft
+
+IBM
+
+  

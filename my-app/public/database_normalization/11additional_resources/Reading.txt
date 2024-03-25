@@ -1,0 +1,10 @@
+Additional resources
+The following resources introduce key concepts of database design and anomalies. They also provide good examples of first, second and third normal forms.
+
+Database Design – 2nd Edition
+
+Database Normalization
+
+Anomalies
+
+  

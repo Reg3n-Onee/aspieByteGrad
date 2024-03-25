@@ -1,0 +1,308 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.620
+When creating your databases,
+
+2
+00:00:01.620 --> 00:00:03.210
+you need to be able to
+distinguish between
+
+3
+00:00:03.210 --> 00:00:05.235
+different kinds of
+database schemas.
+
+4
+00:00:05.235 --> 00:00:07.920
+In other words, you need
+to answer the question of
+
+5
+00:00:07.920 --> 00:00:10.755
+what kind of database
+best suits my project?
+
+6
+00:00:10.755 --> 00:00:12.390
+Over the next few minutes,
+
+7
+00:00:12.390 --> 00:00:15.210
+you'll explore some different
+types of database schemas.
+
+8
+00:00:15.210 --> 00:00:16.845
+By the end of this video,
+
+9
+00:00:16.845 --> 00:00:18.090
+you'll be able to explain
+
+10
+00:00:18.090 --> 00:00:20.370
+the concept of a logical
+database schema,
+
+11
+00:00:20.370 --> 00:00:23.670
+and outline the concept of
+a physical database schema.
+
+12
+00:00:23.670 --> 00:00:27.060
+Let's begin by exploring a
+logical database schema.
+
+13
+00:00:27.060 --> 00:00:29.190
+A logical database schema is how
+
+14
+00:00:29.190 --> 00:00:31.860
+the data is organized
+in terms of tables.
+
+15
+00:00:31.860 --> 00:00:33.660
+In other words, it shows
+
+16
+00:00:33.660 --> 00:00:35.360
+what tables should
+be in a database,
+
+17
+00:00:35.360 --> 00:00:36.920
+and explains how
+the attributes of
+
+18
+00:00:36.920 --> 00:00:38.990
+different tables are
+linked together.
+
+19
+00:00:38.990 --> 00:00:41.705
+Creating a logical
+database schema means
+
+20
+00:00:41.705 --> 00:00:43.040
+illustrating relationships
+
+21
+00:00:43.040 --> 00:00:45.125
+between components of your data.
+
+22
+00:00:45.125 --> 00:00:49.730
+This is also called entity
+relationship or ER modeling.
+
+23
+00:00:49.730 --> 00:00:51.800
+It specifies what
+the relationships
+
+24
+00:00:51.800 --> 00:00:53.690
+between entity types are.
+
+25
+00:00:53.690 --> 00:00:56.540
+Let's take the example of
+a simple ER model that
+
+26
+00:00:56.540 --> 00:00:59.525
+shows the logical schema of
+an ordering application.
+
+27
+00:00:59.525 --> 00:01:02.405
+It demonstrates the
+relationship between an order,
+
+28
+00:01:02.405 --> 00:01:04.310
+the shipment in which
+it will be shipped,
+
+29
+00:01:04.310 --> 00:01:06.310
+and the courier assigned to it.
+
+30
+00:01:06.310 --> 00:01:09.170
+The ID attribute
+in each table is
+
+31
+00:01:09.170 --> 00:01:12.005
+the primary key of the
+respective entities.
+
+32
+00:01:12.005 --> 00:01:14.870
+It provides a unique
+identifier for each entry,
+
+33
+00:01:14.870 --> 00:01:17.305
+row, or record in the entities.
+
+34
+00:01:17.305 --> 00:01:19.050
+In the order entity,
+
+35
+00:01:19.050 --> 00:01:22.685
+the shipment ID and courier
+ID are called foreign keys.
+
+36
+00:01:22.685 --> 00:01:25.190
+But in fact, they are
+also the primary keys
+
+37
+00:01:25.190 --> 00:01:28.085
+of the shipment and courier
+entities respectively.
+
+38
+00:01:28.085 --> 00:01:30.020
+This creates a relation between
+
+39
+00:01:30.020 --> 00:01:31.700
+these entities and
+the order table,
+
+40
+00:01:31.700 --> 00:01:35.315
+which in turn has its own
+ID as its primary key.
+
+41
+00:01:35.315 --> 00:01:38.555
+The other type of schema
+is physical schema.
+
+42
+00:01:38.555 --> 00:01:41.960
+Physical schema is how
+data is stored in disk.
+
+43
+00:01:41.960 --> 00:01:44.480
+In other words, this
+involves creating
+
+44
+00:01:44.480 --> 00:01:47.600
+the actual structure of
+your database using code.
+
+45
+00:01:47.600 --> 00:01:50.735
+In my SQL, another
+relational databases,
+
+46
+00:01:50.735 --> 00:01:52.700
+developers use SQL to create
+
+47
+00:01:52.700 --> 00:01:56.270
+the database tables and the
+other database objects.
+
+48
+00:01:56.270 --> 00:01:58.190
+For example, you can create
+
+49
+00:01:58.190 --> 00:02:00.950
+a physical schema for an
+online store database
+
+50
+00:02:00.950 --> 00:02:03.350
+by writing SQL statements
+to create tables for
+
+51
+00:02:03.350 --> 00:02:06.245
+customers, products,
+and transactions.
+
+52
+00:02:06.245 --> 00:02:08.810
+However, physical
+schema creation could
+
+53
+00:02:08.810 --> 00:02:11.825
+differ slightly between
+different database systems.
+
+54
+00:02:11.825 --> 00:02:14.015
+Database schemas are vital
+
+55
+00:02:14.015 --> 00:02:15.200
+when it comes to the creation of
+
+56
+00:02:15.200 --> 00:02:19.055
+databases and they form the
+basis of your application.
+
+57
+00:02:19.055 --> 00:02:21.260
+You should also be
+able to describe how
+
+58
+00:02:21.260 --> 00:02:23.180
+a logical database
+schema refers to
+
+59
+00:02:23.180 --> 00:02:25.460
+the organization
+of data in tables,
+
+60
+00:02:25.460 --> 00:02:27.320
+and that you're
+using an ER model to
+
+61
+00:02:27.320 --> 00:02:30.225
+specify relationships
+between entities.
+
+62
+00:02:30.225 --> 00:02:32.330
+You should also now
+note that you can
+
+63
+00:02:32.330 --> 00:02:34.280
+control how data is
+physically stored
+
+64
+00:02:34.280 --> 00:02:35.720
+on disk by creating
+
+65
+00:02:35.720 --> 00:02:38.940
+a physical schema
+with SQL statements.

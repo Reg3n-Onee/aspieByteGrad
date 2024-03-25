@@ -1,0 +1,9 @@
+Additional resources
+ Here is a list of resources that may be helpful as you continue to explore database engineering.
+
+ 
+W3Schools
+
+Javatpoint
+
+Tutorialspoint

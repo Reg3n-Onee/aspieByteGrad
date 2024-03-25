@@ -1,0 +1,333 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.730
+By now you're probably
+familiar with querying
+
+2
+00:00:02.730 --> 00:00:05.280
+values or records
+within database tables.
+
+3
+00:00:05.280 --> 00:00:07.530
+But how do you query
+specific records and
+
+4
+00:00:07.530 --> 00:00:10.260
+values if they're duplicated
+across the table.
+
+5
+00:00:10.260 --> 00:00:12.630
+When you come across
+obstacles like these,
+
+6
+00:00:12.630 --> 00:00:14.985
+you can use keys
+as your solution.
+
+7
+00:00:14.985 --> 00:00:17.160
+In this video,
+you'll learn how to
+
+8
+00:00:17.160 --> 00:00:19.020
+explain the purpose
+of primary key
+
+9
+00:00:19.020 --> 00:00:20.820
+in a database table and select
+
+10
+00:00:20.820 --> 00:00:23.025
+a simple and composite
+primary key.
+
+11
+00:00:23.025 --> 00:00:25.020
+You may have encountered
+several examples
+
+12
+00:00:25.020 --> 00:00:26.820
+of primary keys
+during this course.
+
+13
+00:00:26.820 --> 00:00:30.090
+In these examples, you saw
+that they're using tables as
+
+14
+00:00:30.090 --> 00:00:31.590
+unique method to identify
+
+15
+00:00:31.590 --> 00:00:33.810
+a record and prevent duplicates.
+
+16
+00:00:33.810 --> 00:00:35.820
+Let's take an example
+of a student table
+
+17
+00:00:35.820 --> 00:00:37.170
+with five attributes,
+
+18
+00:00:37.170 --> 00:00:40.330
+ID, name, date of birth,
+
+19
+00:00:40.330 --> 00:00:42.495
+email, and grade.
+
+20
+00:00:42.495 --> 00:00:44.090
+How could we identify
+
+21
+00:00:44.090 --> 00:00:46.610
+a specific student to
+enter their grade?
+
+22
+00:00:46.610 --> 00:00:49.370
+The student Mary, on row 2.
+
+23
+00:00:49.370 --> 00:00:51.890
+All you need to do is
+find the unique ID
+
+24
+00:00:51.890 --> 00:00:54.475
+of Mary to identify a
+record of her data.
+
+25
+00:00:54.475 --> 00:00:56.165
+However, in this example,
+
+26
+00:00:56.165 --> 00:00:58.175
+you can't use the
+student name column
+
+27
+00:00:58.175 --> 00:01:01.055
+because there are two students
+in the table called Mary.
+
+28
+00:01:01.055 --> 00:01:03.320
+You can't use the date
+of birth either because
+
+29
+00:01:03.320 --> 00:01:04.520
+another student in a table
+
+30
+00:01:04.520 --> 00:01:06.605
+called Dan has the
+same birthday.
+
+31
+00:01:06.605 --> 00:01:09.165
+Neither of these records
+are unique to Mary,
+
+32
+00:01:09.165 --> 00:01:11.210
+so what's the best approach?
+
+33
+00:01:11.210 --> 00:01:14.495
+The solution is to
+locate a candidate key.
+
+34
+00:01:14.495 --> 00:01:17.000
+This is an attribute that's
+unique to each row of
+
+35
+00:01:17.000 --> 00:01:19.775
+the table and I cannot
+have a null value.
+
+36
+00:01:19.775 --> 00:01:22.475
+In other words, it
+cannot be empty.
+
+37
+00:01:22.475 --> 00:01:26.300
+In this example, there are
+two possible candidate keys,
+
+38
+00:01:26.300 --> 00:01:28.925
+the student ID and
+the student email.
+
+39
+00:01:28.925 --> 00:01:32.210
+Both rows contain a unique
+value for each student,
+
+40
+00:01:32.210 --> 00:01:35.635
+so either one can be
+used as a primary key.
+
+41
+00:01:35.635 --> 00:01:39.170
+Let's assign the student
+ID as the primary key.
+
+42
+00:01:39.170 --> 00:01:41.150
+Whichever column you reject as
+
+43
+00:01:41.150 --> 00:01:44.795
+the primary key becomes the
+alternate or secondary key.
+
+44
+00:01:44.795 --> 00:01:48.955
+In this instance, the email
+column is a secondary key.
+
+45
+00:01:48.955 --> 00:01:51.260
+But what happens if
+you can't locate
+
+46
+00:01:51.260 --> 00:01:53.350
+a unique value within the table?
+
+47
+00:01:53.350 --> 00:01:55.770
+Maybe all rows of
+duplicated values.
+
+48
+00:01:55.770 --> 00:02:00.725
+In this instance, you can
+create a composite primary key,
+
+49
+00:02:00.725 --> 00:02:02.869
+this type of key
+in the combination
+
+50
+00:02:02.869 --> 00:02:04.900
+of two or more attributes.
+
+51
+00:02:04.900 --> 00:02:07.295
+Let's take the example of
+the delivery department
+
+52
+00:02:07.295 --> 00:02:08.735
+of an online store.
+
+53
+00:02:08.735 --> 00:02:10.610
+They have a delivery
+table, the tracks and
+
+54
+00:02:10.610 --> 00:02:12.965
+the deliveries placed
+by their customers.
+
+55
+00:02:12.965 --> 00:02:14.690
+However, there's
+no single column
+
+56
+00:02:14.690 --> 00:02:16.930
+with unique values in each row.
+
+57
+00:02:16.930 --> 00:02:20.000
+No column can be considered
+as the primary key.
+
+58
+00:02:20.000 --> 00:02:23.300
+In this case, the best
+approach is to combine
+
+59
+00:02:23.300 --> 00:02:25.880
+the customer ID and
+project code columns to
+
+60
+00:02:25.880 --> 00:02:29.170
+create a unique value for
+each specific record of data.
+
+61
+00:02:29.170 --> 00:02:31.340
+With these columns,
+you can determine
+
+62
+00:02:31.340 --> 00:02:34.580
+which customer ordered
+what product so together,
+
+63
+00:02:34.580 --> 00:02:37.805
+these columns become the
+composite primary key.
+
+64
+00:02:37.805 --> 00:02:39.620
+This key can be used to track
+
+65
+00:02:39.620 --> 00:02:41.780
+the delivery status
+for each customer.
+
+66
+00:02:41.780 --> 00:02:44.030
+You're now familiar
+with one single column
+
+67
+00:02:44.030 --> 00:02:46.530
+primary and composite
+primary key.
+
+68
+00:02:46.530 --> 00:02:48.680
+You should now also
+be able to identify
+
+69
+00:02:48.680 --> 00:02:50.690
+the most appropriate
+situation in which to
+
+70
+00:02:50.690 --> 00:02:53.940
+use each one. Great work.

@@ -1,0 +1,502 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.830
+When working with databases,
+
+2
+00:00:01.830 --> 00:00:04.320
+you'll often have to add
+new rows and columns to
+
+3
+00:00:04.320 --> 00:00:07.455
+existing tables or even create
+new tables from scratch.
+
+4
+00:00:07.455 --> 00:00:10.485
+For example, if you run
+a college database,
+
+5
+00:00:10.485 --> 00:00:13.200
+you'll have to add new rows
+for every new student.
+
+6
+00:00:13.200 --> 00:00:15.270
+With SQL, you can perform
+
+7
+00:00:15.270 --> 00:00:18.555
+these tasks quickly using
+the insert statement.
+
+8
+00:00:18.555 --> 00:00:20.355
+By the end of this video,
+
+9
+00:00:20.355 --> 00:00:23.010
+you'll be able to identify
+and understand insert
+
+10
+00:00:23.010 --> 00:00:25.440
+SQL syntax and insert data into
+
+11
+00:00:25.440 --> 00:00:28.605
+tables with the use of
+the insert into clause.
+
+12
+00:00:28.605 --> 00:00:30.705
+Let's begin with an exploration
+
+13
+00:00:30.705 --> 00:00:32.565
+of the Insert into Syntax.
+
+14
+00:00:32.565 --> 00:00:34.575
+To write an insert statement,
+
+15
+00:00:34.575 --> 00:00:36.270
+first write an insert into
+
+16
+00:00:36.270 --> 00:00:39.410
+clause then specify the
+table name followed
+
+17
+00:00:39.410 --> 00:00:41.480
+by a list of columns
+contained within
+
+18
+00:00:41.480 --> 00:00:44.485
+a pair of parentheses
+and separated by commas.
+
+19
+00:00:44.485 --> 00:00:46.790
+Then use the values
+keyword and write
+
+20
+00:00:46.790 --> 00:00:49.280
+a list of values within
+a pair of parenthesis.
+
+21
+00:00:49.280 --> 00:00:52.220
+It's important to remember
+that each value corresponds to
+
+22
+00:00:52.220 --> 00:00:53.990
+a specific column and so should
+
+23
+00:00:53.990 --> 00:00:56.395
+reflect the same
+datatype and order.
+
+24
+00:00:56.395 --> 00:00:58.445
+You can also add multiple rows
+
+25
+00:00:58.445 --> 00:01:00.155
+into a table at the same time.
+
+26
+00:01:00.155 --> 00:01:01.880
+First, write the insert
+
+27
+00:01:01.880 --> 00:01:04.420
+into clause and table,
+just like before.
+
+28
+00:01:04.420 --> 00:01:06.260
+Then use the values keyword
+
+29
+00:01:06.260 --> 00:01:08.030
+and add multiple rows of values.
+
+30
+00:01:08.030 --> 00:01:09.860
+Just make sure that
+each new row is
+
+31
+00:01:09.860 --> 00:01:12.485
+separated from a
+previous one by a comma.
+
+32
+00:01:12.485 --> 00:01:15.965
+Now let's explore some examples
+of an insert statement.
+
+33
+00:01:15.965 --> 00:01:18.230
+In this example,
+I'll use a table
+
+34
+00:01:18.230 --> 00:01:20.945
+called players from a
+sports club database.
+
+35
+00:01:20.945 --> 00:01:24.445
+I want to insert new player
+data into this table.
+
+36
+00:01:24.445 --> 00:01:26.510
+First I write the insert into
+
+37
+00:01:26.510 --> 00:01:28.820
+command followed by
+the name of the table.
+
+38
+00:01:28.820 --> 00:01:30.835
+In this case, it's players.
+
+39
+00:01:30.835 --> 00:01:34.370
+Then I add the column names
+within a pair of parenthesis.
+
+40
+00:01:34.370 --> 00:01:36.080
+These columns must contain
+
+41
+00:01:36.080 --> 00:01:37.340
+the basic information that
+
+42
+00:01:37.340 --> 00:01:39.530
+the club requires
+about each player.
+
+43
+00:01:39.530 --> 00:01:41.930
+I'll name the columns: ID,
+
+44
+00:01:41.930 --> 00:01:44.995
+Name, Age, and Start date.
+
+45
+00:01:44.995 --> 00:01:47.210
+Next, I insert the
+values keyword
+
+46
+00:01:47.210 --> 00:01:48.290
+and then add the values I
+
+47
+00:01:48.290 --> 00:01:50.000
+want to assign to each column
+
+48
+00:01:50.000 --> 00:01:51.910
+within a pair of parenthesis.
+
+49
+00:01:51.910 --> 00:01:55.550
+I start adding the data for
+a new player named Yuval,
+
+50
+00:01:55.550 --> 00:02:01.200
+age 25 with an ID of 1 and
+a start date of 2020/10/15.
+
+51
+00:02:01.690 --> 00:02:04.835
+It's important to use the
+correct format of year,
+
+52
+00:02:04.835 --> 00:02:07.610
+month, and day when
+entering dates in a table.
+
+53
+00:02:07.610 --> 00:02:10.030
+Otherwise, an error
+message will appear.
+
+54
+00:02:10.030 --> 00:02:12.800
+I can also use the current
+date function followed
+
+55
+00:02:12.800 --> 00:02:15.395
+by a pair of empty parentheses
+next to my values,
+
+56
+00:02:15.395 --> 00:02:16.895
+just like I've done
+for the new player,
+
+57
+00:02:16.895 --> 00:02:20.335
+Yuval and end up scripted
+all values for Yuval.
+
+58
+00:02:20.335 --> 00:02:23.335
+Note that each value relates
+to a specific column.
+
+59
+00:02:23.335 --> 00:02:24.980
+Number 1 corresponds to
+
+60
+00:02:24.980 --> 00:02:27.965
+the player ID column:
+Yuval to player name,
+
+61
+00:02:27.965 --> 00:02:29.765
+25 to player age,
+
+62
+00:02:29.765 --> 00:02:31.520
+and the date to start date.
+
+63
+00:02:31.520 --> 00:02:33.860
+This means that the
+order in which I type
+
+64
+00:02:33.860 --> 00:02:36.730
+my values within the
+parentheses is very important.
+
+65
+00:02:36.730 --> 00:02:38.390
+Otherwise, I might accidentally
+
+66
+00:02:38.390 --> 00:02:40.540
+store these values in
+the wrong columns.
+
+67
+00:02:40.540 --> 00:02:42.290
+It's also important to note that
+
+68
+00:02:42.290 --> 00:02:45.410
+all non-numeric values are
+placed within quotation marks,
+
+69
+00:02:45.410 --> 00:02:48.305
+just like Yuval and the date
+value in the statement.
+
+70
+00:02:48.305 --> 00:02:50.895
+Finally, I execute
+the statement.
+
+71
+00:02:50.895 --> 00:02:53.975
+The output now shows one
+row of data for Yuval,
+
+72
+00:02:53.975 --> 00:02:55.715
+just as my code instructed.
+
+73
+00:02:55.715 --> 00:02:57.350
+But what if I wanted to insert
+
+74
+00:02:57.350 --> 00:02:59.660
+multiple records of
+data into the table?
+
+75
+00:02:59.660 --> 00:03:02.480
+Let's say that two new
+players have joined the team.
+
+76
+00:03:02.480 --> 00:03:03.905
+The first player is Mark,
+
+77
+00:03:03.905 --> 00:03:09.455
+age 27 with an ID of 2 and
+a start date of 2020/10/12.
+
+78
+00:03:09.455 --> 00:03:12.410
+The second player
+is Karl, age 26,
+
+79
+00:03:12.410 --> 00:03:16.165
+with an ID of 3 and a
+start date of 2020/10/07.
+
+80
+00:03:16.165 --> 00:03:20.405
+Both Mark and Karl must be
+inserted into the database.
+
+81
+00:03:20.405 --> 00:03:21.995
+As you learned earlier,
+
+82
+00:03:21.995 --> 00:03:24.235
+this is a very
+straightforward task.
+
+83
+00:03:24.235 --> 00:03:27.005
+First, I write the
+insert into command,
+
+84
+00:03:27.005 --> 00:03:29.600
+then I write the
+table name players.
+
+85
+00:03:29.600 --> 00:03:32.000
+Next, I type the ID, name,
+
+86
+00:03:32.000 --> 00:03:33.050
+age, and start
+
+87
+00:03:33.050 --> 00:03:35.480
+date columns within a
+pair of parenthesis.
+
+88
+00:03:35.480 --> 00:03:37.280
+Then I write the values keyword
+
+89
+00:03:37.280 --> 00:03:39.005
+and insert two records of data.
+
+90
+00:03:39.005 --> 00:03:41.030
+These data records
+are contained within
+
+91
+00:03:41.030 --> 00:03:43.880
+two pairs of parentheses
+separated by a comma,
+
+92
+00:03:43.880 --> 00:03:46.100
+one for Mark and
+another for Karl.
+
+93
+00:03:46.100 --> 00:03:49.400
+Finally, I run or
+execute the statement.
+
+94
+00:03:49.400 --> 00:03:51.350
+I then check my
+output which shows
+
+95
+00:03:51.350 --> 00:03:53.635
+that all three players
+are now in the table.
+
+96
+00:03:53.635 --> 00:03:57.245
+So far I've explored how
+to add data to the table.
+
+97
+00:03:57.245 --> 00:03:59.690
+But it's also possible
+to show existing data in
+
+98
+00:03:59.690 --> 00:04:03.085
+the player table by executing
+the following SQL query.
+
+99
+00:04:03.085 --> 00:04:06.860
+First, I try to select clause
+followed by an asterisk.
+
+100
+00:04:06.860 --> 00:04:09.050
+This asterisk tells SQL to
+
+101
+00:04:09.050 --> 00:04:11.495
+return all columns
+within the table.
+
+102
+00:04:11.495 --> 00:04:15.250
+Then I type the "From" keyword
+and the name of the table.
+
+103
+00:04:15.250 --> 00:04:17.780
+I execute the statement
+and the output
+
+104
+00:04:17.780 --> 00:04:20.435
+shows all data available
+from the player table.
+
+105
+00:04:20.435 --> 00:04:22.640
+You can now identify
+and make sense of
+
+106
+00:04:22.640 --> 00:04:24.965
+the insert syntax as well as
+
+107
+00:04:24.965 --> 00:04:26.690
+insert new data into tables with
+
+108
+00:04:26.690 --> 00:04:30.370
+the insert into
+clause. Good luck.

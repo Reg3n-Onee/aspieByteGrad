@@ -1,0 +1,233 @@
+WEBVTT
+
+1
+00:00:00.370 --> 00:00:05.070
+I recently created a database table for
+a college called student table.
+
+2
+00:00:05.070 --> 00:00:10.594
+It contains the following pieces of deed
+on each student in the college ID, first
+
+3
+00:00:10.594 --> 00:00:16.541
+name, last name, home address, college
+address, contact number and department.
+
+4
+00:00:17.710 --> 00:00:20.771
+Let's use the update syntax to
+update the home address and
+
+5
+00:00:20.771 --> 00:00:25.090
+contact number of the student assigned
+the ID of three in the table.
+
+6
+00:00:25.090 --> 00:00:30.393
+So I click the SQL tab in phpMyAdmin.
+
+7
+00:00:30.393 --> 00:00:35.048
+Now I use the update clause followed
+by the name of the table that I want to
+
+8
+00:00:35.048 --> 00:00:37.156
+update which is student table.
+
+9
+00:00:37.156 --> 00:00:42.457
+Then I add the set clause followed by
+the names of the columns to be updated,
+
+10
+00:00:42.457 --> 00:00:45.586
+which our home address and contact number.
+
+11
+00:00:45.586 --> 00:00:49.616
+Next to the name of each column,
+I add an equal to symbol and
+
+12
+00:00:49.616 --> 00:00:55.860
+place the new values to be inserted into
+the table in single quotation marks.
+
+13
+00:00:55.860 --> 00:01:01.890
+I also make sure to separate these
+column value pairings with a comma.
+
+14
+00:01:01.890 --> 00:01:04.674
+Finally, I add the WHERE cause,
+
+15
+00:01:04.674 --> 00:01:08.562
+to identify the exact
+record I want to update.
+
+16
+00:01:08.562 --> 00:01:12.077
+This record has a student ID column field,
+
+17
+00:01:12.077 --> 00:01:18.690
+that was assigned the value of three so
+I write where ID equals three.
+
+18
+00:01:18.690 --> 00:01:23.687
+Now that I've completed the syntax,
+I can select go.
+
+19
+00:01:23.687 --> 00:01:29.000
+I then receive a message confirming
+that the change has been made.
+
+20
+00:01:29.000 --> 00:01:32.445
+And when I check the table,
+it displays the updated values for
+
+21
+00:01:32.445 --> 00:01:35.171
+the assigned columns
+alongside student three.
+
+22
+00:01:36.600 --> 00:01:40.090
+So that's how you update information for
+one student.
+
+23
+00:01:40.090 --> 00:01:42.720
+However, the update
+syntax can also be used
+
+24
+00:01:42.720 --> 00:01:46.285
+to update the information from
+multiple students at once.
+
+25
+00:01:46.285 --> 00:01:50.608
+Let's suppose that the college's
+engineering department has moved their
+
+26
+00:01:50.608 --> 00:01:54.262
+classes to a new location on
+campus called the Harper Building.
+
+27
+00:01:54.262 --> 00:01:57.248
+And I need to update the department's
+address on the table for
+
+28
+00:01:57.248 --> 00:01:58.634
+all engineering students.
+
+29
+00:01:58.634 --> 00:02:03.320
+I can perform this task
+using the update SQL syntax.
+
+30
+00:02:03.320 --> 00:02:07.479
+The syntax is very similar
+to the previous example.
+
+31
+00:02:08.539 --> 00:02:13.497
+First I used the update clause
+followed by the name of the table.
+
+32
+00:02:14.862 --> 00:02:19.576
+Then I add the set clause and
+state that I want to update the values
+
+33
+00:02:19.576 --> 00:02:24.130
+within the college address column,
+to Harper building.
+
+34
+00:02:24.130 --> 00:02:29.351
+So I type this as SET college
+address equals Harper Building.
+
+35
+00:02:33.580 --> 00:02:38.883
+Next, I type the WHERE clause and
+state that I want this
+
+36
+00:02:38.883 --> 00:02:44.074
+update to occur within
+the college address column for
+
+37
+00:02:44.074 --> 00:02:51.361
+all students assigned the value of
+engineering in the department column.
+
+38
+00:02:52.624 --> 00:02:54.841
+I then click go to run the statement.
+
+39
+00:02:54.841 --> 00:02:59.772
+Now, I just check that the table
+has updated the college address of
+
+40
+00:02:59.772 --> 00:03:03.479
+the engineering department
+to Harper Building.
+
+41
+00:03:03.479 --> 00:03:05.682
+I could also use the update statement,
+
+42
+00:03:05.682 --> 00:03:08.701
+to update multiple fuel
+values in multiple records.
+
+43
+00:03:09.820 --> 00:03:14.552
+For example, I can return to
+the original SQL statement.
+
+44
+00:03:14.552 --> 00:03:19.980
+And add a new column value
+pairing to the set clause.
+
+45
+00:03:19.980 --> 00:03:25.786
+If I want to update the home
+address column, I add a comma and
+
+46
+00:03:25.786 --> 00:03:32.771
+write home address equals the new
+address information within quotes.
+
+47
+00:03:33.890 --> 00:03:37.430
+Make sure to separate out the column
+value pairings with a comma.
+
+48
+00:03:37.430 --> 00:03:41.420
+In this example I'm updating two
+columns with one update statement.

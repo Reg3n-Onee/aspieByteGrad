@@ -1,0 +1,659 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.280
+I really like this idea
+that in the end we're all
+
+2
+00:00:02.280 --> 00:00:05.730
+solving human problems
+through technology.
+
+3
+00:00:05.730 --> 00:00:07.740
+As a software engineer,
+my role is not to
+
+4
+00:00:07.740 --> 00:00:10.010
+simply develop
+technological solutions,
+
+5
+00:00:10.010 --> 00:00:12.700
+they need to have
+this human outcome.
+
+6
+00:00:17.750 --> 00:00:20.235
+I'm Daniel Bloomfield Ramagem,
+
+7
+00:00:20.235 --> 00:00:22.010
+I'm a software
+engineer for Meta.
+
+8
+00:00:22.010 --> 00:00:24.150
+I joined the company in 2017
+
+9
+00:00:24.150 --> 00:00:27.045
+and I work out of our
+Washington DC office.
+
+10
+00:00:27.045 --> 00:00:30.540
+I immediately think of
+my mother's recipe book,
+
+11
+00:00:30.540 --> 00:00:31.995
+which is a spiral notebook.
+
+12
+00:00:31.995 --> 00:00:33.480
+She keeps her recipes in
+
+13
+00:00:33.480 --> 00:00:35.430
+a spiral notebook, every
+page of the number,
+
+14
+00:00:35.430 --> 00:00:37.065
+and she keeps an index
+
+15
+00:00:37.065 --> 00:00:38.460
+at the beginning
+of that note books
+
+16
+00:00:38.460 --> 00:00:39.555
+so she can easily find
+
+17
+00:00:39.555 --> 00:00:41.970
+the recipe. Well,
+that's a database.
+
+18
+00:00:41.970 --> 00:00:44.705
+My mom is a database engineer.
+
+19
+00:00:44.705 --> 00:00:46.490
+Perhaps she is not an
+engineer, but certainly
+
+20
+00:00:46.490 --> 00:00:49.195
+she relies and has
+created her databases.
+
+21
+00:00:49.195 --> 00:00:51.170
+I like that fun example
+
+22
+00:00:51.170 --> 00:00:53.270
+because it shows the
+range of things that are
+
+23
+00:00:53.270 --> 00:00:55.790
+possible once you store data in
+
+24
+00:00:55.790 --> 00:00:58.400
+a structured way that is
+can be easily retrieved,
+
+25
+00:00:58.400 --> 00:00:59.885
+and so it's the recipe book,
+
+26
+00:00:59.885 --> 00:01:04.025
+but it's also the
+picture I just shared on
+
+27
+00:01:04.025 --> 00:01:06.140
+Facebook that now
+my friends get to
+
+28
+00:01:06.140 --> 00:01:09.010
+see anywhere they are in
+the world so quickly.
+
+29
+00:01:09.010 --> 00:01:11.855
+All that is powered by a
+lot of infrastructure,
+
+30
+00:01:11.855 --> 00:01:13.600
+databases at the core.
+
+31
+00:01:13.600 --> 00:01:17.300
+I think data is at the
+heart of every application.
+
+32
+00:01:17.300 --> 00:01:22.505
+Learning to create an
+effective data layer
+
+33
+00:01:22.505 --> 00:01:26.675
+that can provide the user
+with quick responses,
+
+34
+00:01:26.675 --> 00:01:31.235
+accurate responses, and
+results is really critical.
+
+35
+00:01:31.235 --> 00:01:33.020
+As a Database Engineer
+in particular,
+
+36
+00:01:33.020 --> 00:01:34.730
+I think you are involved in
+
+37
+00:01:34.730 --> 00:01:36.890
+such a critical component of
+building applications and
+
+38
+00:01:36.890 --> 00:01:39.020
+you have such a large influence
+
+39
+00:01:39.020 --> 00:01:40.910
+and everything else that
+follows from the data.
+
+40
+00:01:40.910 --> 00:01:42.605
+That includes the
+user interface,
+
+41
+00:01:42.605 --> 00:01:44.870
+it includes the clients,
+
+42
+00:01:44.870 --> 00:01:47.040
+the APIs, all of that
+
+43
+00:01:47.040 --> 00:01:49.620
+gets influenced by how the
+data layer gets modeled,
+
+44
+00:01:49.620 --> 00:01:51.140
+stored, and all the
+characteristics
+
+45
+00:01:51.140 --> 00:01:52.610
+of being able to
+retrieve that data
+
+46
+00:01:52.610 --> 00:01:56.060
+effectively and making
+it the consumption
+
+47
+00:01:56.060 --> 00:01:58.750
+of that information easy for
+the rest of the tech stack.
+
+48
+00:01:58.750 --> 00:02:00.710
+We have a really
+large influence and I
+
+49
+00:02:00.710 --> 00:02:02.930
+hope you walk away knowing that
+
+50
+00:02:02.930 --> 00:02:04.775
+you have this very
+large influence
+
+51
+00:02:04.775 --> 00:02:07.645
+on the development
+of applications.
+
+52
+00:02:07.645 --> 00:02:11.070
+Technical skills I
+use on a daily basis.
+
+53
+00:02:11.070 --> 00:02:13.020
+Certainly, I code.
+
+54
+00:02:13.020 --> 00:02:15.320
+When I say code, I mean,
+
+55
+00:02:15.320 --> 00:02:17.195
+normally I program using
+
+56
+00:02:17.195 --> 00:02:19.745
+the standard programming
+languages for web.
+
+57
+00:02:19.745 --> 00:02:23.060
+But I also work in
+the database space
+
+58
+00:02:23.060 --> 00:02:27.200
+by creating the
+pipelines that produce,
+
+59
+00:02:27.200 --> 00:02:30.560
+that extract, transform, and
+load a lot of the data that
+
+60
+00:02:30.560 --> 00:02:34.205
+makes its way into the
+applications that we develop.
+
+61
+00:02:34.205 --> 00:02:37.010
+The soft skills I use on
+a daily basis certainly
+
+62
+00:02:37.010 --> 00:02:40.565
+include a lot of communication
+and organization.
+
+63
+00:02:40.565 --> 00:02:42.200
+It's easy to come out of school
+
+64
+00:02:42.200 --> 00:02:43.790
+and you're so excited
+at the coding,
+
+65
+00:02:43.790 --> 00:02:44.870
+the technical skills
+you've learned,
+
+66
+00:02:44.870 --> 00:02:47.620
+and those are obviously
+very important.
+
+67
+00:02:47.620 --> 00:02:50.640
+But I thought code was king.
+
+68
+00:02:50.640 --> 00:02:54.170
+I'm here to program,
+and I expect
+
+69
+00:02:54.170 --> 00:02:57.975
+people to understand the
+output of what I'm making.
+
+70
+00:02:57.975 --> 00:03:01.710
+I learned that that is
+insufficient and I saw
+
+71
+00:03:01.710 --> 00:03:04.310
+great examples of people
+
+72
+00:03:04.310 --> 00:03:06.290
+who were doing
+great technically,
+
+73
+00:03:06.290 --> 00:03:08.210
+but they were excelling
+furthermore on
+
+74
+00:03:08.210 --> 00:03:11.245
+just being able to explain
+what they were doing,
+
+75
+00:03:11.245 --> 00:03:13.340
+not only to the team internally,
+
+76
+00:03:13.340 --> 00:03:15.260
+but to the people who
+are going to maybe use
+
+77
+00:03:15.260 --> 00:03:17.870
+those features in the toolset.
+
+78
+00:03:17.870 --> 00:03:21.245
+The perfect is the
+enemy of the good.
+
+79
+00:03:21.245 --> 00:03:23.585
+Particularly think we've
+database development,
+
+80
+00:03:23.585 --> 00:03:29.465
+it's easy to
+over-complicate solutions,
+
+81
+00:03:29.465 --> 00:03:30.635
+especially when you're doing
+
+82
+00:03:30.635 --> 00:03:33.155
+data modeling and data storage,
+
+83
+00:03:33.155 --> 00:03:36.590
+you want to cover every
+possible variation of data,
+
+84
+00:03:36.590 --> 00:03:38.345
+every different use case,
+
+85
+00:03:38.345 --> 00:03:41.405
+edge case for using that data.
+
+86
+00:03:41.405 --> 00:03:45.080
+That can lead you down
+the path of creating very
+
+87
+00:03:45.080 --> 00:03:48.965
+complex data schemas that
+become hard to maintain,
+
+88
+00:03:48.965 --> 00:03:52.380
+can be not well performance.
+
+89
+00:03:52.900 --> 00:03:57.040
+You need to iterate
+on your work.
+
+90
+00:03:57.040 --> 00:03:59.750
+For databases, I would
+say try to focus on
+
+91
+00:03:59.750 --> 00:04:02.750
+the here and now needs of data,
+
+92
+00:04:02.750 --> 00:04:05.645
+be specially mindful of
+
+93
+00:04:05.645 --> 00:04:10.670
+these perceived needs for
+massive data scalability,
+
+94
+00:04:10.670 --> 00:04:13.985
+which may again lead to
+over-complicate your solution
+
+95
+00:04:13.985 --> 00:04:17.630
+when in fact you might need
+something much smaller scale,
+
+96
+00:04:17.630 --> 00:04:20.030
+at least the kickoff and
+get better understanding of
+
+97
+00:04:20.030 --> 00:04:22.625
+what the feature and the
+data requirements truly are.
+
+98
+00:04:22.625 --> 00:04:26.770
+Start small, iterate
+frequently, write more often.
+
+99
+00:04:26.770 --> 00:04:28.490
+I know usually when you think of
+
+100
+00:04:28.490 --> 00:04:30.350
+engineers and
+database programmers,
+
+101
+00:04:30.350 --> 00:04:34.160
+you think of the
+output of your work
+
+102
+00:04:34.160 --> 00:04:38.150
+is the program if the
+code is the SQL queries.
+
+103
+00:04:38.150 --> 00:04:42.215
+Yes, it is. But that alone
+I think is insufficient.
+
+104
+00:04:42.215 --> 00:04:44.810
+Complement that with writing.
+
+105
+00:04:44.810 --> 00:04:45.980
+Now, what are you
+going to write about?
+
+106
+00:04:45.980 --> 00:04:47.300
+Well, certainly there's
+
+107
+00:04:47.300 --> 00:04:49.205
+documentation that goes
+along with your code.
+
+108
+00:04:49.205 --> 00:04:51.230
+I have a good colleague in Meta
+
+109
+00:04:51.230 --> 00:04:54.080
+that always tells me when I
+said I'm done with something,
+
+110
+00:04:54.080 --> 00:04:55.475
+he looks at me and says,
+
+111
+00:04:55.475 --> 00:04:57.630
+are you done done?
+
+112
+00:04:57.630 --> 00:05:00.170
+I said the first time
+he said, yes, I'm done.
+
+113
+00:05:00.170 --> 00:05:03.615
+He followed up with, is
+our documentation ready?
+
+114
+00:05:03.615 --> 00:05:06.135
+Is your co-check in
+the right places?
+
+115
+00:05:06.135 --> 00:05:07.680
+Is the wiki page updated?
+
+116
+00:05:07.680 --> 00:05:09.645
+Did you write a post about this?
+
+117
+00:05:09.645 --> 00:05:14.480
+He emphasized the importance
+of code is the 80 percent,
+
+118
+00:05:14.480 --> 00:05:15.530
+20 percent is that
+
+119
+00:05:15.530 --> 00:05:17.170
+additional communication
+that's needed.
+
+120
+00:05:17.170 --> 00:05:20.165
+I would say, write more often.
+
+121
+00:05:20.165 --> 00:05:22.805
+Don't be afraid to
+write imperfectly,
+
+122
+00:05:22.805 --> 00:05:24.670
+write something, put
+something out there,
+
+123
+00:05:24.670 --> 00:05:26.480
+whether it's sharing the status
+
+124
+00:05:26.480 --> 00:05:27.515
+of something that you're doing,
+
+125
+00:05:27.515 --> 00:05:29.330
+whether it's just enhancing
+
+126
+00:05:29.330 --> 00:05:31.525
+documentation for something
+that you're working on,
+
+127
+00:05:31.525 --> 00:05:33.740
+get into the habit of
+writing more often.
+
+128
+00:05:33.740 --> 00:05:38.060
+Try to take what you're
+learning and connect it
+
+129
+00:05:38.060 --> 00:05:43.085
+to something practical that
+you can see a use for.
+
+130
+00:05:43.085 --> 00:05:47.180
+Whether it's learning about
+databases and thinking about
+
+131
+00:05:47.180 --> 00:05:49.460
+a recipe book that
+your mother or
+
+132
+00:05:49.460 --> 00:05:51.905
+father has in a spiral notebook,
+
+133
+00:05:51.905 --> 00:05:54.380
+or maybe baseball cards that
+you tracked as a child,
+
+134
+00:05:54.380 --> 00:05:56.120
+or comic books that do
+tracked as a child.
+
+135
+00:05:56.120 --> 00:05:59.330
+Try to think of
+ways to apply what
+
+136
+00:05:59.330 --> 00:06:02.795
+you're learning technically
+to these real-life problems.
+
+137
+00:06:02.795 --> 00:06:05.210
+They can be small problems,
+
+138
+00:06:05.210 --> 00:06:06.440
+like finding recipes at
+
+139
+00:06:06.440 --> 00:06:09.955
+the right time, but they can
+be of course, bigger, more,
+
+140
+00:06:09.955 --> 00:06:11.720
+perhaps interesting
+problems around
+
+141
+00:06:11.720 --> 00:06:15.900
+just technical and digital
+communication between people.

@@ -1,0 +1,318 @@
+WEBVTT
+
+1
+00:00:00.086 --> 00:00:04.920
+At this stage you're probably familiar
+with creating tables and databases but no
+
+2
+00:00:04.920 --> 00:00:09.484
+table is ever static database developers
+are always restructuring tables.
+
+3
+00:00:09.484 --> 00:00:11.186
+Sometimes they need to add new columns.
+
+4
+00:00:11.186 --> 00:00:14.906
+Delete old ones or
+edit the data they contain.
+
+5
+00:00:14.906 --> 00:00:19.528
+You can complete many of these basic
+restructuring actions using sequel syntax.
+
+6
+00:00:19.528 --> 00:00:23.561
+In this video you'll learn how to
+alter a database table by adding and
+
+7
+00:00:23.561 --> 00:00:27.399
+removing columns and
+modify the attributes of a database table.
+
+8
+00:00:27.399 --> 00:00:31.361
+Let's start by exploring
+the sequel alter statement syntax.
+
+9
+00:00:31.361 --> 00:00:35.667
+The first part of an alter statement
+is the altar and table keywords.
+
+10
+00:00:35.667 --> 00:00:39.704
+These keywords informed the database that
+there was a table whose contents must be
+
+11
+00:00:39.704 --> 00:00:40.239
+altered.
+
+12
+00:00:40.239 --> 00:00:43.204
+This is followed by the name
+of the table to be altered.
+
+13
+00:00:43.204 --> 00:00:45.451
+I then include the AD keyword.
+
+14
+00:00:45.451 --> 00:00:49.879
+This keyword tells sequel that there's one
+or more items to be added to the table.
+
+15
+00:00:49.879 --> 00:00:52.459
+There are other keywords I
+could include here instead.
+
+16
+00:00:52.459 --> 00:00:56.888
+But for the purposes of this
+example I'll work with AD finally I
+
+17
+00:00:56.888 --> 00:01:00.911
+insert a pair of parentheses
+within these parentheses.
+
+18
+00:01:00.911 --> 00:01:05.154
+I declare the name of a new column
+to be added to the table along with
+
+19
+00:01:05.154 --> 00:01:06.246
+this data type.
+
+20
+00:01:06.246 --> 00:01:09.259
+Now that you're familiar with
+the alter table statement,
+
+21
+00:01:09.259 --> 00:01:12.038
+let's explore an example
+of the statement in action.
+
+22
+00:01:12.038 --> 00:01:16.692
+However, before you can begin altering
+tables you must already have a database on
+
+23
+00:01:16.692 --> 00:01:19.998
+the server so as always make
+sure that you know how to create
+
+24
+00:01:19.998 --> 00:01:24.045
+databases before proceeding and
+ensure that you already have a table in
+
+25
+00:01:24.045 --> 00:01:26.560
+your database with data
+that you can alter.
+
+26
+00:01:26.560 --> 00:01:32.243
+In my example I have a students table
+located within a database called college.
+
+27
+00:01:32.243 --> 00:01:35.231
+My students table holds
+information on their IDs.
+
+28
+00:01:35.231 --> 00:01:38.326
+Names and
+emails of each student in a college.
+
+29
+00:01:38.326 --> 00:01:41.913
+I can demonstrate the altar
+statement by adding deleting and
+
+30
+00:01:41.913 --> 00:01:43.959
+modifying columns in this table.
+
+31
+00:01:43.959 --> 00:01:48.222
+My first task is to add three
+new columns to the table, age,
+
+32
+00:01:48.222 --> 00:01:53.098
+nationality and country to add
+these columns using sequel syntax.
+
+33
+00:01:53.098 --> 00:01:56.990
+I first type the alter table command
+followed by the name of the table.
+
+34
+00:01:56.990 --> 00:02:01.837
+Students next I use the add command
+to let the database know that I want
+
+35
+00:02:01.837 --> 00:02:04.102
+to add new columns to the table.
+
+36
+00:02:04.102 --> 00:02:08.335
+Then I input a pair of parentheses
+that contain the columns I want to add
+
+37
+00:02:08.335 --> 00:02:13.000
+along with the type of data they'll hold
+these columns are an age column which
+
+38
+00:02:13.000 --> 00:02:14.899
+holds data in integer format.
+
+39
+00:02:14.899 --> 00:02:19.889
+A country column with var chars
+the data type, nationality and
+
+40
+00:02:19.889 --> 00:02:23.947
+country columns that hold via char or
+string data.
+
+41
+00:02:23.947 --> 00:02:28.127
+I also had a character limit of
+52 the country columns fields and
+
+42
+00:02:28.127 --> 00:02:31.551
+a limit of 255 to
+the nationality columns fields.
+
+43
+00:02:31.551 --> 00:02:35.275
+Then I execute this statement
+Now have two new columns and
+
+44
+00:02:35.275 --> 00:02:38.000
+students table in the college database.
+
+45
+00:02:38.000 --> 00:02:41.007
+Country and
+nationality are very similar columns and
+
+46
+00:02:41.007 --> 00:02:44.546
+in most cases will probably hold
+the same type of information so
+
+47
+00:02:44.546 --> 00:02:48.620
+I can write a sequel statement to
+remove the nationality column just like
+
+48
+00:02:48.620 --> 00:02:51.801
+the last example I start my
+statement with alter table.
+
+49
+00:02:51.801 --> 00:02:57.996
+Students table next I type the drop
+column command followed by nationality.
+
+50
+00:02:57.996 --> 00:03:02.584
+This command instructs sequel to delete or
+drop this column from the table.
+
+51
+00:03:02.584 --> 00:03:07.455
+Then I run the statement notification
+message appears requesting confirmation
+
+52
+00:03:07.455 --> 00:03:08.320
+of deletion.
+
+53
+00:03:08.320 --> 00:03:10.686
+I press OK to confirm.
+
+54
+00:03:10.686 --> 00:03:13.385
+The nationality column
+has now been dropped.
+
+55
+00:03:13.385 --> 00:03:16.352
+Now it's time to alter
+the structure of the table.
+
+56
+00:03:16.352 --> 00:03:20.869
+The country column has a limit of 50
+characters just as I said it originally.
+
+57
+00:03:20.869 --> 00:03:22.597
+Now I'm going to change it so
+
+58
+00:03:22.597 --> 00:03:26.993
+that it holds 100 characters instead
+using the alter table command.
+
+59
+00:03:26.993 --> 00:03:31.472
+I start with the syntax altar
+table followed by students table.
+
+60
+00:03:31.472 --> 00:03:35.850
+Then I type the modified command,
+the country, column name and
+
+61
+00:03:35.850 --> 00:03:37.483
+the vulture data type.
+
+62
+00:03:37.483 --> 00:03:42.227
+And finally I had a pair of parentheses
+containing my new value of 100.
+
+63
+00:03:42.227 --> 00:03:46.115
+I then execute the query My
+country columns limit has
+
+64
+00:03:46.115 --> 00:03:50.101
+now been updated to 100
+characters in this video.
+
+65
+00:03:50.101 --> 00:03:54.668
+You learned how to alter and modify
+tables in a database using sequel syntax.
+
+66
+00:03:54.668 --> 00:03:55.351
+Well done.

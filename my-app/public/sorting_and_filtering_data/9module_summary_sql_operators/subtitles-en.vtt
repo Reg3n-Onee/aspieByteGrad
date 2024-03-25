@@ -1,0 +1,136 @@
+WEBVTT
+
+1
+00:00:00.212 --> 00:00:03.740
+You're at the end of SQL operators and
+sorting and filtering data.
+
+2
+00:00:03.740 --> 00:00:05.037
+Well done.
+
+3
+00:00:05.037 --> 00:00:07.707
+Having a lot of data stored
+in the database is great.
+
+4
+00:00:07.707 --> 00:00:10.577
+Making sense of all that
+data is even better.
+
+5
+00:00:10.577 --> 00:00:15.474
+That's why using SQL to manipulate the
+data becomes a much sought after skill.
+
+6
+00:00:15.474 --> 00:00:20.285
+You might remember the SQL operators can
+accomplish tasks such as arithmetic and
+
+7
+00:00:20.285 --> 00:00:21.210
+comparisons.
+
+8
+00:00:21.210 --> 00:00:24.321
+Data can be filtered using
+the WHERE clause and
+
+9
+00:00:24.321 --> 00:00:26.649
+sorted using the ORDER BY clause.
+
+10
+00:00:26.649 --> 00:00:30.703
+Just to finish up,
+let's recap the key points of this module.
+
+11
+00:00:30.703 --> 00:00:35.394
+Here at the end of this module, you
+should now be able to demonstrate the SQL
+
+12
+00:00:35.394 --> 00:00:40.313
+arithmetic operators and tables,
+demonstrate the SQL comparison operators
+
+13
+00:00:40.313 --> 00:00:44.261
+in a database, describe the purpose
+of an ORDER BY clause, and
+
+14
+00:00:44.261 --> 00:00:49.208
+demonstrate ascending and descending
+sorts by single and multiple columns.
+
+15
+00:00:49.208 --> 00:00:53.532
+In the videos and filtering the WHERE
+clause was used with the SQL select
+
+16
+00:00:53.532 --> 00:00:55.415
+statement to filter records.
+
+17
+00:00:55.415 --> 00:00:59.111
+For the WHERE clause, you should
+now be able to explain the purpose
+
+18
+00:00:59.111 --> 00:01:02.873
+of the WHERE clause, describe how
+does used to fill their data, and
+
+19
+00:01:02.873 --> 00:01:06.709
+demonstrate using the SQL WHERE
+clause with comparison operators.
+
+20
+00:01:06.709 --> 00:01:10.657
+Finally, you also explored
+the SELECT DISTINCT clause.
+
+21
+00:01:10.657 --> 00:01:15.751
+Following this, you should now be able to
+explain the purpose of SELECT DISTINCT,
+
+22
+00:01:15.751 --> 00:01:20.555
+describe how it is used to eliminate
+duplicate values, and demonstrate using
+
+23
+00:01:20.555 --> 00:01:25.309
+SELECT DISTINCT with a single column,
+multiple columns, and NULL values.
+
+24
+00:01:25.309 --> 00:01:29.747
+After this module, you should now be able
+to do some SQL operations on the data
+
+25
+00:01:29.747 --> 00:01:31.131
+within your database.
+
+26
+00:01:31.131 --> 00:01:34.626
+That's one of the first steps to
+giving real value to that data.
+
+27
+00:01:34.626 --> 00:01:38.061
+With your SQL skills, the database
+is now no longer just a store,
+
+28
+00:01:38.061 --> 00:01:41.751
+it's also something you can
+investigate and draw conclusions from.

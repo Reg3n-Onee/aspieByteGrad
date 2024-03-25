@@ -1,0 +1,517 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.980
+To ensure the accuracy and
+
+2
+00:00:01.980 --> 00:00:04.215
+reliability of the
+data in your database,
+
+3
+00:00:04.215 --> 00:00:05.910
+you must limit the
+type of data they
+
+4
+00:00:05.910 --> 00:00:07.935
+can go into your database table.
+
+5
+00:00:07.935 --> 00:00:09.990
+In this video,
+you'll learn how to
+
+6
+00:00:09.990 --> 00:00:12.060
+describe the purpose
+of constraints in
+
+7
+00:00:12.060 --> 00:00:13.800
+a database and identify
+
+8
+00:00:13.800 --> 00:00:17.130
+default constraints to set
+default values in a table.
+
+9
+00:00:17.130 --> 00:00:19.380
+Database constraints
+are used to limit
+
+10
+00:00:19.380 --> 00:00:21.780
+the type of data that can
+be stored in a table.
+
+11
+00:00:21.780 --> 00:00:24.060
+This ensures that
+all data inserted
+
+12
+00:00:24.060 --> 00:00:26.610
+into the table is
+accurate and reliable.
+
+13
+00:00:26.610 --> 00:00:28.980
+If the database
+dictates a violation
+
+14
+00:00:28.980 --> 00:00:31.380
+between the constraint
+and the data operations,
+
+15
+00:00:31.380 --> 00:00:33.825
+then it aborts these operations.
+
+16
+00:00:33.825 --> 00:00:36.360
+An example of a violation
+might be an attempt to
+
+17
+00:00:36.360 --> 00:00:39.225
+insert or upload invalid
+data to a table.
+
+18
+00:00:39.225 --> 00:00:40.950
+The database realizes that
+
+19
+00:00:40.950 --> 00:00:43.075
+the data is invalid
+and rejects it.
+
+20
+00:00:43.075 --> 00:00:45.200
+Constraints can be
+column level where
+
+21
+00:00:45.200 --> 00:00:47.405
+the rule applies to
+a specific column.
+
+22
+00:00:47.405 --> 00:00:49.670
+They can also be
+applied at table level.
+
+23
+00:00:49.670 --> 00:00:51.320
+For example, I could use
+
+24
+00:00:51.320 --> 00:00:53.315
+the foreign key
+constraints to prevent
+
+25
+00:00:53.315 --> 00:00:55.855
+actions that will destroy
+links between tables.
+
+26
+00:00:55.855 --> 00:00:58.730
+I'll demonstrate this in more
+detail in a later lesson.
+
+27
+00:00:58.730 --> 00:01:01.130
+Two of the most used
+database constraints
+
+28
+00:01:01.130 --> 00:01:02.720
+include NOT NULL,
+
+29
+00:01:02.720 --> 00:01:05.330
+a method of preventing
+empty value fields,
+
+30
+00:01:05.330 --> 00:01:09.050
+and DEFAULT, a method of
+assigning default values.
+
+31
+00:01:09.050 --> 00:01:11.720
+For now, let's begin
+our exploration of
+
+32
+00:01:11.720 --> 00:01:14.585
+default values with a
+NOT NULL constraint.
+
+33
+00:01:14.585 --> 00:01:17.600
+The NOT NULL SQL constraint
+is used to ensure
+
+34
+00:01:17.600 --> 00:01:19.040
+the data fields are always
+
+35
+00:01:19.040 --> 00:01:21.295
+completed and never left blank.
+
+36
+00:01:21.295 --> 00:01:22.955
+Let's explore this concept
+
+37
+00:01:22.955 --> 00:01:24.680
+using the example
+of a table from
+
+38
+00:01:24.680 --> 00:01:26.450
+an online store that records
+
+39
+00:01:26.450 --> 00:01:28.670
+the IDs and names of customers.
+
+40
+00:01:28.670 --> 00:01:31.310
+The table records this data in
+
+41
+00:01:31.310 --> 00:01:34.645
+the customer ID and
+customer name columns.
+
+42
+00:01:34.645 --> 00:01:37.515
+These columns must
+always contain data.
+
+43
+00:01:37.515 --> 00:01:38.880
+If there's no data or
+
+44
+00:01:38.880 --> 00:01:41.330
+values inserted into
+either of these columns,
+
+45
+00:01:41.330 --> 00:01:44.795
+then the creation of a new
+customer record is aborted.
+
+46
+00:01:44.795 --> 00:01:47.210
+The NOT NULL default value is
+
+47
+00:01:47.210 --> 00:01:49.600
+implemented using
+a SQL statement.
+
+48
+00:01:49.600 --> 00:01:52.520
+A typical NOT NULL
+SQL statement begins
+
+49
+00:01:52.520 --> 00:01:55.595
+with the creation of a basic
+table in the database.
+
+50
+00:01:55.595 --> 00:01:58.310
+I can write a create
+table clause,
+
+51
+00:01:58.310 --> 00:02:00.935
+followed by customer to
+define the table name,
+
+52
+00:02:00.935 --> 00:02:03.190
+followed by a pair
+of parenthesis.
+
+53
+00:02:03.190 --> 00:02:06.265
+Within the parentheses
+I add two columns;
+
+54
+00:02:06.265 --> 00:02:08.915
+customer ID and customer name.
+
+55
+00:02:08.915 --> 00:02:12.215
+I also define each column
+with relevant data types.
+
+56
+00:02:12.215 --> 00:02:15.520
+Int for customer ID as it
+stores numeric values,
+
+57
+00:02:15.520 --> 00:02:19.415
+and varchar for customer name
+as it stores string values.
+
+58
+00:02:19.415 --> 00:02:21.140
+Finally, I also declare
+
+59
+00:02:21.140 --> 00:02:23.580
+a NOT NULL constraint
+for each column.
+
+60
+00:02:23.580 --> 00:02:25.580
+This makes sure
+that neither column
+
+61
+00:02:25.580 --> 00:02:27.485
+will accept no values.
+
+62
+00:02:27.485 --> 00:02:29.750
+Now, any operation
+that attempts to place
+
+63
+00:02:29.750 --> 00:02:32.000
+a null value in these
+columns will fail,
+
+64
+00:02:32.000 --> 00:02:34.340
+like inserting or updating data.
+
+65
+00:02:34.340 --> 00:02:35.810
+Next, let's look at how
+
+66
+00:02:35.810 --> 00:02:38.125
+the DEFAULT constraint
+works in a table.
+
+67
+00:02:38.125 --> 00:02:39.920
+The DEFAULT constraints sets
+
+68
+00:02:39.920 --> 00:02:43.420
+a default value for a column
+of no value is specified.
+
+69
+00:02:43.420 --> 00:02:45.860
+This means that if no
+data is entered for
+
+70
+00:02:45.860 --> 00:02:47.930
+a specific field
+within a column,
+
+71
+00:02:47.930 --> 00:02:49.429
+then the table
+will automatically
+
+72
+00:02:49.429 --> 00:02:51.595
+insert a default value instead.
+
+73
+00:02:51.595 --> 00:02:54.410
+To gain a better understanding
+of default values,
+
+74
+00:02:54.410 --> 00:02:56.150
+let's look at a table that holds
+
+75
+00:02:56.150 --> 00:02:59.245
+player records for a
+football club's database.
+
+76
+00:02:59.245 --> 00:03:01.010
+The table is called player
+
+77
+00:03:01.010 --> 00:03:03.275
+table and contains two columns.
+
+78
+00:03:03.275 --> 00:03:05.480
+The first is player name and
+
+79
+00:03:05.480 --> 00:03:07.775
+lists the names of each
+player in the team,
+
+80
+00:03:07.775 --> 00:03:09.680
+and the second
+column is city and
+
+81
+00:03:09.680 --> 00:03:11.995
+list which city each
+player is from.
+
+82
+00:03:11.995 --> 00:03:14.790
+Most of the players in this
+club are from Barcelona,
+
+83
+00:03:14.790 --> 00:03:16.790
+so I can specify a default value
+
+84
+00:03:16.790 --> 00:03:18.890
+of the city column as Barcelona.
+
+85
+00:03:18.890 --> 00:03:21.260
+This means that I don't
+have to enter Barcelona
+
+86
+00:03:21.260 --> 00:03:24.340
+repeatedly into the city
+field for each new player.
+
+87
+00:03:24.340 --> 00:03:26.765
+If no value is
+entered in the table,
+
+88
+00:03:26.765 --> 00:03:28.790
+then each field is
+automatically filled
+
+89
+00:03:28.790 --> 00:03:31.220
+with a default
+value of Barcelona.
+
+90
+00:03:31.220 --> 00:03:33.560
+Let's find out how the
+default command is
+
+91
+00:03:33.560 --> 00:03:35.885
+incorporated into
+a SQL statement.
+
+92
+00:03:35.885 --> 00:03:38.540
+First, I use the
+create table commands
+
+93
+00:03:38.540 --> 00:03:41.320
+to create a table and
+then call it player.
+
+94
+00:03:41.320 --> 00:03:43.780
+Then within a pair
+of parenthesis
+
+95
+00:03:43.780 --> 00:03:45.785
+I input the column names,
+
+96
+00:03:45.785 --> 00:03:48.080
+assign a string
+datatype for each,
+
+97
+00:03:48.080 --> 00:03:49.910
+and assign a default value of
+
+98
+00:03:49.910 --> 00:03:52.225
+NOT NULL for the name column.
+
+99
+00:03:52.225 --> 00:03:55.480
+Finally, I add the
+default keyword statement
+
+100
+00:03:55.480 --> 00:03:57.140
+followed by the default value
+
+101
+00:03:57.140 --> 00:03:59.545
+Barcelona for the city column.
+
+102
+00:03:59.545 --> 00:04:02.870
+Now when I add data into
+the table for a new player,
+
+103
+00:04:02.870 --> 00:04:04.520
+I don't need to
+type in Barcelona
+
+104
+00:04:04.520 --> 00:04:06.500
+for players who
+are from the city.
+
+105
+00:04:06.500 --> 00:04:09.430
+Instead, it will be
+inserted automatically.
+
+106
+00:04:09.430 --> 00:04:11.090
+You should then be familiar with
+
+107
+00:04:11.090 --> 00:04:13.700
+the importance of using
+database constraints.
+
+108
+00:04:13.700 --> 00:04:15.470
+You should also be
+able to explain
+
+109
+00:04:15.470 --> 00:04:17.300
+database constraints
+as a method of
+
+110
+00:04:17.300 --> 00:04:21.840
+enforcing rules on a column
+or table level. Go to work.

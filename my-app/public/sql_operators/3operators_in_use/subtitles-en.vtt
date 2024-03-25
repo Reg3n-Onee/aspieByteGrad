@@ -1,0 +1,435 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.175
+So far, you have
+learned how to use
+
+2
+00:00:02.175 --> 00:00:05.760
+SQL arithmetic operators to
+perform basic functions.
+
+3
+00:00:05.760 --> 00:00:07.350
+In this video, you'll take
+
+4
+00:00:07.350 --> 00:00:09.060
+one step further
+by learning how to
+
+5
+00:00:09.060 --> 00:00:10.530
+use these arithmetic
+operators in
+
+6
+00:00:10.530 --> 00:00:12.720
+practice when working
+with a database.
+
+7
+00:00:12.720 --> 00:00:15.585
+Let's explore the use
+of arithmetic operators
+
+8
+00:00:15.585 --> 00:00:19.110
+using the example of a corporate
+table of employee data.
+
+9
+00:00:19.110 --> 00:00:21.870
+It's populated with the
+following information about
+
+10
+00:00:21.870 --> 00:00:25.710
+each employee: ID,
+name, and salary.
+
+11
+00:00:25.710 --> 00:00:28.230
+I'm going to demonstrate
+how to use each
+
+12
+00:00:28.230 --> 00:00:30.330
+of the arithmetic
+operators in SQL to
+
+13
+00:00:30.330 --> 00:00:32.070
+perform various functions with
+
+14
+00:00:32.070 --> 00:00:35.820
+this practical data and
+retrieve the desired results.
+
+15
+00:00:35.820 --> 00:00:37.835
+In this first example,
+
+16
+00:00:37.835 --> 00:00:40.295
+let's say that an
+employer wants to give
+
+17
+00:00:40.295 --> 00:00:44.450
+each employee on their
+team a $500 bonus.
+
+18
+00:00:44.450 --> 00:00:46.550
+But first, they'd
+like to see what
+
+19
+00:00:46.550 --> 00:00:50.810
+each employee's salary looks
+like after adding the $500.
+
+20
+00:00:50.810 --> 00:00:59.930
+I can type SELECT salary plus
+
+21
+00:00:59.930 --> 00:01:05.210
+500 FROM employee to
+
+22
+00:01:05.210 --> 00:01:09.540
+add the $500 bonus to
+each employee's salary.
+
+23
+00:01:09.650 --> 00:01:11.900
+The SELECT command works by
+
+24
+00:01:11.900 --> 00:01:13.820
+retrieving the salary
+of each employee from
+
+25
+00:01:13.820 --> 00:01:17.845
+the employee table and then
+adding $500 to each value.
+
+26
+00:01:17.845 --> 00:01:21.505
+Let's execute the query by
+clicking the go button.
+
+27
+00:01:21.505 --> 00:01:24.575
+The result is that
+each employee's salary
+
+28
+00:01:24.575 --> 00:01:26.210
+has increased by 500.
+
+29
+00:01:26.210 --> 00:01:29.015
+You can create other statements
+
+30
+00:01:29.015 --> 00:01:31.700
+that use the SELECT
+command in a similar way.
+
+31
+00:01:31.700 --> 00:01:34.970
+For example, let's say
+the employer wants
+
+32
+00:01:34.970 --> 00:01:38.720
+to deduct $500 from the
+salary of each employee.
+
+33
+00:01:38.720 --> 00:01:42.500
+To do this, I typed the
+SQL query statement.
+
+34
+00:01:42.500 --> 00:01:48.420
+SELECT salary minus
+500 from employee.
+
+35
+00:01:48.740 --> 00:01:52.190
+Again, I'm using the
+select command to retrieve
+
+36
+00:01:52.190 --> 00:01:54.215
+the salary value of
+each employee record
+
+37
+00:01:54.215 --> 00:01:56.170
+stored in the employee table.
+
+38
+00:01:56.170 --> 00:01:59.225
+This time, I used
+a subtraction sign
+
+39
+00:01:59.225 --> 00:02:03.560
+minus subtract $500 from the
+salary of each employee.
+
+40
+00:02:03.560 --> 00:02:06.360
+Now I click the Go button
+
+41
+00:02:08.210 --> 00:02:11.060
+and the database returns
+a table that shows
+
+42
+00:02:11.060 --> 00:02:14.920
+the output result of salaries
+after the deductions.
+
+43
+00:02:14.920 --> 00:02:17.025
+In the next example,
+
+44
+00:02:17.025 --> 00:02:18.650
+let's imagine a scenario where
+
+45
+00:02:18.650 --> 00:02:20.330
+the employer would
+like to increase
+
+46
+00:02:20.330 --> 00:02:22.100
+the employee's salaries by
+
+47
+00:02:22.100 --> 00:02:24.925
+doubling their current
+annual salary.
+
+48
+00:02:24.925 --> 00:02:27.920
+To do this, I use the
+SELECT command to
+
+49
+00:02:27.920 --> 00:02:31.755
+perform the same function
+as discussed previously.
+
+50
+00:02:31.755 --> 00:02:34.775
+I then use the
+multiplication sign,
+
+51
+00:02:34.775 --> 00:02:37.160
+an asterisk symbol to
+
+52
+00:02:37.160 --> 00:02:40.940
+multiply the salary value
+of each employee by two.
+
+53
+00:02:45.230 --> 00:02:47.970
+The SQL statement now reads
+
+54
+00:02:47.970 --> 00:02:52.885
+SELECT salary asterisks
+two from employee.
+
+55
+00:02:52.885 --> 00:02:55.640
+I can now click the Go button
+to generate an output of
+
+56
+00:02:55.640 --> 00:02:57.020
+the results of salaries from
+
+57
+00:02:57.020 --> 00:02:59.520
+multiplying the values by two.
+
+58
+00:02:59.860 --> 00:03:02.450
+Now let's suppose the
+employer needs to
+
+59
+00:03:02.450 --> 00:03:05.225
+determine the monthly
+salary of each employee.
+
+60
+00:03:05.225 --> 00:03:07.160
+I can perform this task using
+
+61
+00:03:07.160 --> 00:03:08.600
+an SQL query statement
+
+62
+00:03:08.600 --> 00:03:10.675
+as I have done in the
+previous scenarios.
+
+63
+00:03:10.675 --> 00:03:12.770
+However, this time I'll
+
+64
+00:03:12.770 --> 00:03:15.860
+divide the annual
+salary by 12 months.
+
+65
+00:03:15.860 --> 00:03:17.735
+To determine the monthly salary.
+
+66
+00:03:17.735 --> 00:03:20.540
+My statement reads as follows.
+
+67
+00:03:20.540 --> 00:03:32.365
+SELECT salary forward
+slash 12 FROM employee.
+
+68
+00:03:32.365 --> 00:03:34.100
+The select command retrieves
+
+69
+00:03:34.100 --> 00:03:35.780
+the salary value
+for each employee
+
+70
+00:03:35.780 --> 00:03:37.340
+stored in the employee table.
+
+71
+00:03:37.340 --> 00:03:39.230
+Then division sign or
+
+72
+00:03:39.230 --> 00:03:42.920
+the forward slash divides the
+annual salary value by 12.
+
+73
+00:03:42.920 --> 00:03:47.310
+I click the Go button to
+generate the output results.
+
+74
+00:03:48.010 --> 00:03:51.395
+The employer can now
+use this output result
+
+75
+00:03:51.395 --> 00:03:55.050
+to determine what each
+employee's monthly salary is.
+
+76
+00:03:55.060 --> 00:03:57.410
+In our final example,
+
+77
+00:03:57.410 --> 00:03:59.660
+the employer would like
+to know if the ID of
+
+78
+00:03:59.660 --> 00:04:02.840
+each employee is an
+even or odd number.
+
+79
+00:04:02.840 --> 00:04:06.815
+I can use the modulus operator
+to complete this task.
+
+80
+00:04:06.815 --> 00:04:10.320
+I just need to type the
+following statement.
+
+81
+00:04:11.770 --> 00:04:21.110
+SELECT ID modulus
+
+82
+00:04:21.110 --> 00:04:26.080
+two from employee.
+
+83
+00:04:26.080 --> 00:04:29.595
+I then click Go to
+execute the statement.
+
+84
+00:04:29.595 --> 00:04:32.630
+This divides each employee ID by
+
+85
+00:04:32.630 --> 00:04:36.235
+two and returns the remainder
+of the division operation.
+
+86
+00:04:36.235 --> 00:04:39.200
+In this case, a remainder
+of 0 denotes an
+
+87
+00:04:39.200 --> 00:04:42.650
+even id as all even numbers
+are divisible by two,
+
+88
+00:04:42.650 --> 00:04:45.230
+meaning there will
+be no remainder.
+
+89
+00:04:45.230 --> 00:04:47.225
+The result shows that there are
+
+90
+00:04:47.225 --> 00:04:51.455
+three odd IDs and to even IDs.
+
+91
+00:04:51.455 --> 00:04:53.540
+You should now know
+how to make use of
+
+92
+00:04:53.540 --> 00:04:56.225
+the SQL arithmetic
+operators in a database.
+
+93
+00:04:56.225 --> 00:04:59.800
+You're making great
+progress. Keep it up.

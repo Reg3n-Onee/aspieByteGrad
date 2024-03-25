@@ -1,0 +1,306 @@
+WEBVTT
+
+1
+00:00:00.017 --> 00:00:04.617
+at this stage of the course, you're
+probably familiar with the basics of how
+
+2
+00:00:04.617 --> 00:00:09.287
+databases store and interact with data,
+but how do they store all this data and
+
+3
+00:00:09.287 --> 00:00:11.019
+present it in a logical way.
+
+4
+00:00:11.019 --> 00:00:13.161
+In the form of tables.
+
+5
+00:00:13.161 --> 00:00:17.776
+By the end of this video, you'll be able
+to outline what a database table is at
+
+6
+00:00:17.776 --> 00:00:22.256
+a conceptual level and explain how data
+is structured in a database table.
+
+7
+00:00:22.256 --> 00:00:23.900
+As you probably already know.
+
+8
+00:00:23.900 --> 00:00:27.604
+The table is made up of rows and
+columns which hold data and
+
+9
+00:00:27.604 --> 00:00:32.326
+a table is stored in a database in
+a database that holds multiple tables.
+
+10
+00:00:32.326 --> 00:00:36.884
+These tables are known as relations
+as they all relate to one another.
+
+11
+00:00:36.884 --> 00:00:41.987
+In a more conceptual or logical sense,
+A table is also known as an entity and
+
+12
+00:00:41.987 --> 00:00:44.669
+an object oriented databases or 00.
+
+13
+00:00:44.669 --> 00:00:45.774
+D.
+B.
+
+14
+00:00:45.774 --> 00:00:49.752
+An entity is an object that is
+attributes that are like columns or
+
+15
+00:00:49.752 --> 00:00:50.939
+fields in a table.
+
+16
+00:00:50.939 --> 00:00:53.450
+So in essence a table, entity and
+
+17
+00:00:53.450 --> 00:00:58.576
+object all refer to the same concept
+within every table or columns.
+
+18
+00:00:58.576 --> 00:01:01.813
+Also sometimes called fields or
+attributes.
+
+19
+00:01:01.813 --> 00:01:05.724
+Each column or
+field has a unique name and data type.
+
+20
+00:01:05.724 --> 00:01:10.444
+For example, I have a table that
+contains data on employees in a company.
+
+21
+00:01:10.444 --> 00:01:13.024
+The table organizes the data
+in the columns such as I.
+
+22
+00:01:13.024 --> 00:01:14.754
+D.
+And roll.
+
+23
+00:01:14.754 --> 00:01:19.386
+And each column can hold different
+types of data like numeric or string.
+
+24
+00:01:19.386 --> 00:01:20.983
+A set of columns or fields.
+
+25
+00:01:20.983 --> 00:01:25.158
+Former row in relational
+database terminology.
+
+26
+00:01:25.158 --> 00:01:27.390
+A row is known as a record.
+
+27
+00:01:27.390 --> 00:01:29.922
+So a record is a combination of columns or
+
+28
+00:01:29.922 --> 00:01:32.908
+fields that contain data
+in my employee table.
+
+29
+00:01:32.908 --> 00:01:36.735
+For example,
+each rose a single employee record.
+
+30
+00:01:36.735 --> 00:01:39.276
+Let's return to columns for a moment.
+
+31
+00:01:39.276 --> 00:01:43.149
+As you now know every
+column has a data type.
+
+32
+00:01:43.149 --> 00:01:48.129
+The data type of a column defines what
+type of value a column can hold like
+
+33
+00:01:48.129 --> 00:01:51.294
+integer character,
+date and time and so on.
+
+34
+00:01:51.294 --> 00:01:55.191
+It's up to the developer to decide
+the data type for each column.
+
+35
+00:01:55.191 --> 00:01:59.066
+And it's also a guideline for
+sequel around what data type to expect in
+
+36
+00:01:59.066 --> 00:02:03.349
+each column and how to interact with
+the underlying data stored physically.
+
+37
+00:02:03.349 --> 00:02:07.409
+However, data types can vary
+depending on the database system.
+
+38
+00:02:07.409 --> 00:02:12.247
+For example, you might have different
+types from my sequel, sequel server or
+
+39
+00:02:12.247 --> 00:02:15.034
+access always referred
+to the documentation
+
+40
+00:02:15.034 --> 00:02:19.378
+of the relevant database system to
+check what data types it supports.
+
+41
+00:02:19.378 --> 00:02:24.536
+Generally all database systems support
+string data types for storing characters
+
+42
+00:02:24.536 --> 00:02:29.692
+and strings of characters, numeric data
+types to store exact or whole numbers and
+
+43
+00:02:29.692 --> 00:02:34.700
+approximate numbers, date and time data
+types to store information on date and
+
+44
+00:02:34.700 --> 00:02:39.438
+time and binary data types to store
+images, files and other information.
+
+45
+00:02:39.438 --> 00:02:43.591
+Another important concept
+related to tables is domains.
+
+46
+00:02:43.591 --> 00:02:48.101
+A domain is the set of legal values that
+can be assigned to an attribute basically
+
+47
+00:02:48.101 --> 00:02:52.296
+this means making sure that the values
+of field can hold are well defined.
+
+48
+00:02:52.296 --> 00:02:57.417
+For example, you can only place numbers in
+a numerical domain and you can only place
+
+49
+00:02:57.417 --> 00:03:02.322
+characters or strings of characters in
+a string domain and each of these domains
+
+50
+00:03:02.322 --> 00:03:07.252
+must include length values and other
+relevant rules that define its function.
+
+51
+00:03:07.252 --> 00:03:12.024
+Each rower record in a table is
+also uniquely identified by what's
+
+52
+00:03:12.024 --> 00:03:13.736
+known as a primary key.
+
+53
+00:03:13.736 --> 00:03:18.417
+A column in the table that has unique
+values will become the primary key of
+
+54
+00:03:18.417 --> 00:03:19.192
+the table.
+
+55
+00:03:19.192 --> 00:03:21.435
+An employee table, for example, the I.
+
+56
+00:03:21.435 --> 00:03:24.715
+D.
+Column is the primary key as each idea is
+
+57
+00:03:24.715 --> 00:03:25.481
+unique.
+
+58
+00:03:25.481 --> 00:03:29.965
+This is because the other columns
+could contain repeating values for
+
+59
+00:03:29.965 --> 00:03:33.608
+example, to employees may
+share the same name or role.
+
+60
+00:03:33.608 --> 00:03:37.280
+It's also possible for a primary
+key to be a combination of columns.
+
+61
+00:03:37.280 --> 00:03:41.392
+If a single column alone doesn't possess
+unique values, you should now be
+
+62
+00:03:41.392 --> 00:03:45.581
+familiar with what a database is and
+be able to explain how it is structured.
+
+63
+00:03:45.581 --> 00:03:50.533
+You should also be able to explain key
+concepts such as columns, rows and keys.
+
+64
+00:03:50.533 --> 00:03:51.360
+Great work

@@ -1,0 +1,468 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.270
+Hello and welcome to this
+course in database engineering.
+
+2
+00:00:03.270 --> 00:00:05.790
+Almost everyone has
+used the database.
+
+3
+00:00:05.790 --> 00:00:07.890
+More likely,
+information about us is
+
+4
+00:00:07.890 --> 00:00:10.830
+probably present in many
+databases all over the world.
+
+5
+00:00:10.830 --> 00:00:13.290
+But who understands
+what a database is,
+
+6
+00:00:13.290 --> 00:00:15.090
+and how important
+database engineering
+
+7
+00:00:15.090 --> 00:00:16.320
+is to global industry,
+
+8
+00:00:16.320 --> 00:00:18.600
+governments, and organizations?
+
+9
+00:00:18.600 --> 00:00:21.780
+A very straightforward
+description of a database is that
+
+10
+00:00:21.780 --> 00:00:24.990
+it is a form of electronic
+storage in which data is held.
+
+11
+00:00:24.990 --> 00:00:27.420
+Of course, that explanation
+does not even come
+
+12
+00:00:27.420 --> 00:00:30.405
+close to explaining the impact
+of database technology.
+
+13
+00:00:30.405 --> 00:00:33.690
+To give an idea of databases
+in a real-world context,
+
+14
+00:00:33.690 --> 00:00:36.440
+let's briefly describe
+some typical use cases.
+
+15
+00:00:36.440 --> 00:00:38.660
+For example, your bank uses
+
+16
+00:00:38.660 --> 00:00:40.805
+a database to store
+data for customers,
+
+17
+00:00:40.805 --> 00:00:42.965
+bank accounts, and transactions.
+
+18
+00:00:42.965 --> 00:00:45.035
+A hospital stores patient data,
+
+19
+00:00:45.035 --> 00:00:47.765
+staff data, laboratory
+data, and more.
+
+20
+00:00:47.765 --> 00:00:50.525
+An online store retains
+your profile information
+
+21
+00:00:50.525 --> 00:00:51.860
+along with your shopping history
+
+22
+00:00:51.860 --> 00:00:53.635
+and accounting transactions.
+
+23
+00:00:53.635 --> 00:00:55.310
+Many of these services have
+
+24
+00:00:55.310 --> 00:00:57.305
+access to a diverse
+range of data.
+
+25
+00:00:57.305 --> 00:01:00.680
+They collect and store other
+items such as your location,
+
+26
+00:01:00.680 --> 00:01:02.585
+how long you spend
+on their platform,
+
+27
+00:01:02.585 --> 00:01:03.935
+and friends you connected with,
+
+28
+00:01:03.935 --> 00:01:05.840
+alongside many more facts.
+
+29
+00:01:05.840 --> 00:01:07.730
+Such online services and
+
+30
+00:01:07.730 --> 00:01:10.250
+social media platforms
+generate enormous amounts of
+
+31
+00:01:10.250 --> 00:01:12.725
+data due to their
+large user base
+
+32
+00:01:12.725 --> 00:01:14.630
+and constant user activity.
+
+33
+00:01:14.630 --> 00:01:17.330
+With the Internet
+of things or IoT,
+
+34
+00:01:17.330 --> 00:01:20.430
+many extra devices are now
+connected to the Internet.
+
+35
+00:01:20.430 --> 00:01:23.050
+These continual streams
+of data have led to
+
+36
+00:01:23.050 --> 00:01:25.089
+a revolution in
+database technology
+
+37
+00:01:25.089 --> 00:01:26.500
+to accommodate the volume,
+
+38
+00:01:26.500 --> 00:01:28.300
+variety, and complexity of
+
+39
+00:01:28.300 --> 00:01:30.485
+what has become
+known as big data.
+
+40
+00:01:30.485 --> 00:01:32.455
+Whatever the source of the data,
+
+41
+00:01:32.455 --> 00:01:33.850
+a database will typically
+
+42
+00:01:33.850 --> 00:01:35.530
+carry out the following actions,
+
+43
+00:01:35.530 --> 00:01:38.410
+all of which a database
+engineer must be familiar with.
+
+44
+00:01:38.410 --> 00:01:40.900
+Store the data,
+form connections or
+
+45
+00:01:40.900 --> 00:01:43.765
+relationships between
+segmented areas of the data,
+
+46
+00:01:43.765 --> 00:01:46.465
+filter the data to
+show relevant records,
+
+47
+00:01:46.465 --> 00:01:49.135
+search data to return
+matching records,
+
+48
+00:01:49.135 --> 00:01:51.985
+and have functions to allow
+the data to be updated,
+
+49
+00:01:51.985 --> 00:01:54.410
+changed, and deleted
+as required.
+
+50
+00:01:54.410 --> 00:01:55.840
+Don't worry if you don't fully
+
+51
+00:01:55.840 --> 00:01:57.335
+understand all these terms.
+
+52
+00:01:57.335 --> 00:01:59.260
+For now, you're just receiving
+
+53
+00:01:59.260 --> 00:02:01.900
+a brief introduction
+to databases and data.
+
+54
+00:02:01.900 --> 00:02:03.590
+During the course, you'll
+
+55
+00:02:03.590 --> 00:02:05.615
+explore these concepts
+in more detail
+
+56
+00:02:05.615 --> 00:02:07.460
+alongside the many
+other tasks that
+
+57
+00:02:07.460 --> 00:02:09.820
+form the duties of a
+database engineer.
+
+58
+00:02:09.820 --> 00:02:13.430
+You'll learn about the concepts
+of data and databases,
+
+59
+00:02:13.430 --> 00:02:15.890
+how data is related
+in a database,
+
+60
+00:02:15.890 --> 00:02:17.720
+and different database
+structures and
+
+61
+00:02:17.720 --> 00:02:20.065
+their uses, how to perform,
+
+62
+00:02:20.065 --> 00:02:24.245
+create, read, update,
+and delete operations,
+
+63
+00:02:24.245 --> 00:02:27.920
+how to use SQL operators
+to sort and filter data,
+
+64
+00:02:27.920 --> 00:02:30.125
+what database normalization is,
+
+65
+00:02:30.125 --> 00:02:32.425
+and how to normalize a database.
+
+66
+00:02:32.425 --> 00:02:35.615
+You'll get to build a
+fully operational database
+
+67
+00:02:35.615 --> 00:02:37.490
+and you will also
+install and set up
+
+68
+00:02:37.490 --> 00:02:39.740
+software called XAMPP on
+your computer to help
+
+69
+00:02:39.740 --> 00:02:42.545
+progress your local and
+remote database learning.
+
+70
+00:02:42.545 --> 00:02:46.120
+You're not expected to be a
+database engineer just now.
+
+71
+00:02:46.120 --> 00:02:48.520
+There are many videos in
+your course that will
+
+72
+00:02:48.520 --> 00:02:50.680
+gradually guide you
+toward that goal.
+
+73
+00:02:50.680 --> 00:02:53.649
+Watch, pause, rewind,
+
+74
+00:02:53.649 --> 00:02:55.090
+and rewatch the videos until
+
+75
+00:02:55.090 --> 00:02:56.905
+you're confident in your skills.
+
+76
+00:02:56.905 --> 00:02:59.230
+Then consolidate your
+knowledge by consulting
+
+77
+00:02:59.230 --> 00:03:01.180
+the course readings and put
+
+78
+00:03:01.180 --> 00:03:04.690
+your skills into practice
+during the course exercises.
+
+79
+00:03:04.690 --> 00:03:07.360
+Along the way, you'll
+encounter several
+
+80
+00:03:07.360 --> 00:03:08.590
+knowledge quizzes where you can
+
+81
+00:03:08.590 --> 00:03:10.165
+self-check your progress,
+
+82
+00:03:10.165 --> 00:03:11.740
+and you're not alone
+in considering
+
+83
+00:03:11.740 --> 00:03:13.645
+a career as a database engineer,
+
+84
+00:03:13.645 --> 00:03:16.330
+which is why you'll also
+work with course discussion
+
+85
+00:03:16.330 --> 00:03:19.505
+prompts that enable you to
+connect with your classmates.
+
+86
+00:03:19.505 --> 00:03:21.925
+It's a great way to
+share knowledge,
+
+87
+00:03:21.925 --> 00:03:25.070
+discuss difficulties,
+and make new friends.
+
+88
+00:03:25.070 --> 00:03:26.965
+To be successful in this course,
+
+89
+00:03:26.965 --> 00:03:28.590
+it is helpful to
+commit to a regular
+
+90
+00:03:28.590 --> 00:03:30.520
+and disciplined
+approach to learning.
+
+91
+00:03:30.520 --> 00:03:33.685
+You need to be serious about
+your study and if possible,
+
+92
+00:03:33.685 --> 00:03:35.825
+map the study
+schedule with dates
+
+93
+00:03:35.825 --> 00:03:38.710
+and times that you can devote
+to attending the course.
+
+94
+00:03:38.710 --> 00:03:41.375
+It's an online
+self-paced course,
+
+95
+00:03:41.375 --> 00:03:43.430
+but it does help to think
+of your study in terms of
+
+96
+00:03:43.430 --> 00:03:45.775
+regular attendance in
+a learning institute.
+
+97
+00:03:45.775 --> 00:03:48.110
+In summary, this course provides
+
+98
+00:03:48.110 --> 00:03:50.255
+you with a complete
+introduction to databases,
+
+99
+00:03:50.255 --> 00:03:52.310
+and it's part of a program
+of courses that lead
+
+100
+00:03:52.310 --> 00:03:55.410
+you toward a career in
+database engineering.

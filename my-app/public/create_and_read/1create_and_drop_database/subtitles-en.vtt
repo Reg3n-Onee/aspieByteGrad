@@ -1,0 +1,207 @@
+WEBVTT
+
+1
+00:00:00.440 --> 00:00:03.723
+You've just been hired by an online
+bookstore to build and maintain
+
+2
+00:00:03.723 --> 00:00:07.940
+databases that can store information
+on millions of books and customers.
+
+3
+00:00:07.940 --> 00:00:11.803
+But how do we even begin to create and
+altar databases that store constantly
+
+4
+00:00:11.803 --> 00:00:16.740
+expanding information or process millions
+of orders from all over the world?
+
+5
+00:00:16.740 --> 00:00:20.965
+The answer to these questions lies
+in Sequel create and read commands.
+
+6
+00:00:20.965 --> 00:00:25.517
+In this video, you'll learn how to create
+a database using sequel syntax and
+
+7
+00:00:25.517 --> 00:00:29.440
+you'll also discover how to drop or
+delete database.
+
+8
+00:00:29.440 --> 00:00:34.240
+However, before you create a database, you
+first need a clear idea of its purpose.
+
+9
+00:00:34.240 --> 00:00:38.729
+For example if you're building a database
+for an online bookshop then your
+
+10
+00:00:38.729 --> 00:00:44.540
+database needs to record data like book
+titles, authors, customers and sales.
+
+11
+00:00:44.540 --> 00:00:46.650
+The data on these topics
+must be stored and
+
+12
+00:00:46.650 --> 00:00:49.540
+organized in relevant
+tables in a database.
+
+13
+00:00:49.540 --> 00:00:53.840
+Users can then access, retrieve and
+update the data as needed.
+
+14
+00:00:53.840 --> 00:00:57.577
+So how can you create
+a database using Sequel Syntax?
+
+15
+00:00:57.577 --> 00:01:02.840
+To create a database, just type
+the Create and Database keywords.
+
+16
+00:01:02.840 --> 00:01:06.640
+These keywords are then followed
+by the name of your database.
+
+17
+00:01:06.640 --> 00:01:10.040
+But what about removing or
+dropping a database?
+
+18
+00:01:10.040 --> 00:01:14.940
+To drop a database,
+just type the keywords Drop and Database.
+
+19
+00:01:14.940 --> 00:01:18.940
+Then follow these keywords with the name
+of the database you want to remove.
+
+20
+00:01:18.940 --> 00:01:22.144
+Let's look at these key words in action.
+
+21
+00:01:22.144 --> 00:01:25.354
+To create a database,
+I need to use Sequel Syntax.
+
+22
+00:01:25.354 --> 00:01:30.940
+To demonstrate, let's create a second
+book store database using Sequel Syntax.
+
+23
+00:01:30.940 --> 00:01:33.071
+First I type the keywords Create and
+
+24
+00:01:33.071 --> 00:01:36.740
+Database followed by
+the name of my new database.
+
+25
+00:01:36.740 --> 00:01:42.040
+In this case the database
+is called bookstore2_ db.
+
+26
+00:01:42.040 --> 00:01:46.440
+I always use a meaningful and relevant
+name when creating a new database.
+
+27
+00:01:46.440 --> 00:01:49.640
+This helps to make it
+easier to document my work.
+
+28
+00:01:49.640 --> 00:01:55.040
+Database names must also be unique and
+can only have a maximum of 63 characters.
+
+29
+00:01:55.040 --> 00:01:57.673
+If my database name doesn't
+meet these requirements,
+
+30
+00:01:57.673 --> 00:02:00.040
+then an error message will appear.
+
+31
+00:02:00.040 --> 00:02:03.740
+Finally I add a semicolon to
+the end of the statement.
+
+32
+00:02:03.740 --> 00:02:05.258
+Then I run the statement.
+
+33
+00:02:05.258 --> 00:02:11.540
+And the new database bookstore_db2,
+appears on the left hand side bar.
+
+34
+00:02:11.540 --> 00:02:14.540
+So I've created a second database.
+
+35
+00:02:14.540 --> 00:02:17.940
+I can also remove databases
+using sequel statements.
+
+36
+00:02:17.940 --> 00:02:20.340
+First I select the sequel tab.
+
+37
+00:02:20.340 --> 00:02:23.740
+Then I input my query in
+the code box that appears.
+
+38
+00:02:23.740 --> 00:02:25.343
+I type the keywords Drop and
+
+39
+00:02:25.343 --> 00:02:29.041
+Database followed by the name of
+the database I want to delete.
+
+40
+00:02:29.041 --> 00:02:32.540
+In this case it's bookstore_db.
+
+41
+00:02:32.540 --> 00:02:36.282
+Now I run the query then
+sequel deletes the database.
+
+42
+00:02:36.282 --> 00:02:41.740
+In this video you learned how to create
+and delete databases using Sequel Syntax.
+
+43
+00:02:41.740 --> 00:02:42.250
+Great work.

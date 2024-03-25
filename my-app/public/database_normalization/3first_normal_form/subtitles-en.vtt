@@ -1,0 +1,515 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.455
+As a database engineer,
+
+2
+00:00:01.455 --> 00:00:03.900
+you'll very often come across
+columns in a table that are
+
+3
+00:00:03.900 --> 00:00:06.645
+filled with duplicates of
+data and multiple values.
+
+4
+00:00:06.645 --> 00:00:08.820
+This can make it quite
+challenging to view,
+
+5
+00:00:08.820 --> 00:00:10.800
+search and sort your data.
+
+6
+00:00:10.800 --> 00:00:13.950
+But with the correct
+implementation of normalization,
+
+7
+00:00:13.950 --> 00:00:15.360
+this challenge can
+be dealt with.
+
+8
+00:00:15.360 --> 00:00:16.740
+By the end of this video,
+
+9
+00:00:16.740 --> 00:00:18.180
+you'll be able to
+demonstrate how to
+
+10
+00:00:18.180 --> 00:00:20.685
+design a database in
+first normal form.
+
+11
+00:00:20.685 --> 00:00:23.970
+Identify the atomicity rule
+and how to enforce it,
+
+12
+00:00:23.970 --> 00:00:26.130
+and analyze effective
+ways to eliminate
+
+13
+00:00:26.130 --> 00:00:29.295
+the repeating group of
+data problems in datasets.
+
+14
+00:00:29.295 --> 00:00:30.960
+As you might already know from
+
+15
+00:00:30.960 --> 00:00:32.595
+previous videos in this lesson,
+
+16
+00:00:32.595 --> 00:00:35.400
+the normalization process
+makes it easier and more
+
+17
+00:00:35.400 --> 00:00:38.850
+efficient for engineers to
+perform basic database tasks.
+
+18
+00:00:38.850 --> 00:00:40.910
+It's an especially
+useful process for
+
+19
+00:00:40.910 --> 00:00:42.785
+helping to fix the
+well-known insert,
+
+20
+00:00:42.785 --> 00:00:44.990
+delete, and update anomalies.
+
+21
+00:00:44.990 --> 00:00:48.050
+However, in order to achieve
+database normalization,
+
+22
+00:00:48.050 --> 00:00:49.340
+you first need to perform
+
+23
+00:00:49.340 --> 00:00:52.090
+the three fundamental
+normalization forms.
+
+24
+00:00:52.090 --> 00:00:54.110
+The database normalization forms
+
+25
+00:00:54.110 --> 00:00:57.215
+include first
+normal form or 1NF,
+
+26
+00:00:57.215 --> 00:01:02.615
+second normal form or 2NF and
+third normal form or 3NF.
+
+27
+00:01:02.615 --> 00:01:05.810
+This video focuses on
+designing a database to meet
+
+28
+00:01:05.810 --> 00:01:08.975
+the first normal
+form or 1NF rules.
+
+29
+00:01:08.975 --> 00:01:12.275
+These rules enforce data
+atomicity and eliminate
+
+30
+00:01:12.275 --> 00:01:15.965
+unnecessary repeating groups
+of data in database tables.
+
+31
+00:01:15.965 --> 00:01:18.950
+Data atomicity means
+that there must only be
+
+32
+00:01:18.950 --> 00:01:20.480
+one single instance value of
+
+33
+00:01:20.480 --> 00:01:23.300
+the column attribute in
+any field of the table.
+
+34
+00:01:23.300 --> 00:01:25.280
+In other words, your tables
+
+35
+00:01:25.280 --> 00:01:27.590
+should only have one
+value per field.
+
+36
+00:01:27.590 --> 00:01:30.200
+By eliminating repeating
+groups of data,
+
+37
+00:01:30.200 --> 00:01:31.745
+you can avoid repeating data
+
+38
+00:01:31.745 --> 00:01:33.934
+unnecessarily in the database.
+
+39
+00:01:33.934 --> 00:01:36.380
+Instances of repeated data can
+
+40
+00:01:36.380 --> 00:01:39.080
+cause data redundancy
+and inconsistency.
+
+41
+00:01:39.080 --> 00:01:41.920
+To understand this better,
+let's explore an example,
+
+42
+00:01:41.920 --> 00:01:44.280
+to demonstrate data atomicity.
+
+43
+00:01:44.280 --> 00:01:46.580
+I've built an
+unnormalized table called
+
+44
+00:01:46.580 --> 00:01:49.055
+Course Table within
+a college database.
+
+45
+00:01:49.055 --> 00:01:50.540
+It includes information about
+
+46
+00:01:50.540 --> 00:01:52.250
+the colleges computing courses,
+
+47
+00:01:52.250 --> 00:01:53.690
+along with the names and contact
+
+48
+00:01:53.690 --> 00:01:55.550
+details of the course tutors.
+
+49
+00:01:55.550 --> 00:01:59.455
+The course ID column serves
+as the table's primary key.
+
+50
+00:01:59.455 --> 00:02:01.295
+However, there are
+multiple values in
+
+51
+00:02:01.295 --> 00:02:03.425
+each row of the
+contact number column.
+
+52
+00:02:03.425 --> 00:02:06.650
+Each row contains two contact
+details for each tutor,
+
+53
+00:02:06.650 --> 00:02:09.500
+a cell phone number,
+and a landline number.
+
+54
+00:02:09.500 --> 00:02:11.770
+This table isn't in 1NF.
+
+55
+00:02:11.770 --> 00:02:13.850
+It violates the
+atomicity rule by
+
+56
+00:02:13.850 --> 00:02:16.340
+including multiple values
+in a single field.
+
+57
+00:02:16.340 --> 00:02:17.840
+I can try and fix this by
+
+58
+00:02:17.840 --> 00:02:19.730
+creating a new row
+for each number.
+
+59
+00:02:19.730 --> 00:02:22.505
+This solves my data
+atomicity problem.
+
+60
+00:02:22.505 --> 00:02:25.640
+The table now has just
+one value in each field.
+
+61
+00:02:25.640 --> 00:02:28.550
+But this solution has also
+created another problem.
+
+62
+00:02:28.550 --> 00:02:30.935
+The primary key is
+no longer unique
+
+63
+00:02:30.935 --> 00:02:34.095
+because multiple rows now
+has the same course ID.
+
+64
+00:02:34.095 --> 00:02:36.110
+Another way that I
+could solve the problem
+
+65
+00:02:36.110 --> 00:02:37.700
+of atomicity while retaining
+
+66
+00:02:37.700 --> 00:02:39.170
+the primary key is by
+
+67
+00:02:39.170 --> 00:02:41.495
+creating two columns
+for contact numbers.
+
+68
+00:02:41.495 --> 00:02:43.410
+One column for cell phones
+
+69
+00:02:43.410 --> 00:02:45.775
+and second column for
+landline numbers.
+
+70
+00:02:45.775 --> 00:02:47.180
+But I still have the issue of
+
+71
+00:02:47.180 --> 00:02:49.460
+unnecessary repeated
+groups of data.
+
+72
+00:02:49.460 --> 00:02:53.000
+Mary Evans is the assigned
+tutor for two of the courses.
+
+73
+00:02:53.000 --> 00:02:54.470
+Her name appears twice in
+
+74
+00:02:54.470 --> 00:02:56.995
+the table as do her
+contact details.
+
+75
+00:02:56.995 --> 00:02:59.690
+These instances of
+data will continue to
+
+76
+00:02:59.690 --> 00:03:02.420
+reappear if she's assigned
+more courses to teach.
+
+77
+00:03:02.420 --> 00:03:04.430
+It's likely that our
+details will appear in
+
+78
+00:03:04.430 --> 00:03:06.575
+other tables within
+a database system.
+
+79
+00:03:06.575 --> 00:03:08.360
+This means I could have even
+
+80
+00:03:08.360 --> 00:03:10.115
+more groups of repeated data.
+
+81
+00:03:10.115 --> 00:03:12.020
+This creates another problem.
+
+82
+00:03:12.020 --> 00:03:14.330
+If this user changes
+any of their details,
+
+83
+00:03:14.330 --> 00:03:15.740
+then I'll have to
+update their details in
+
+84
+00:03:15.740 --> 00:03:18.170
+this table and all others
+in which it appears.
+
+85
+00:03:18.170 --> 00:03:19.880
+If I miss any of these tables,
+
+86
+00:03:19.880 --> 00:03:21.380
+then I'll have inconsistency and
+
+87
+00:03:21.380 --> 00:03:23.855
+invalid data within
+my database system.
+
+88
+00:03:23.855 --> 00:03:26.210
+To solve this issue,
+I can redesign
+
+89
+00:03:26.210 --> 00:03:29.150
+my table to adhere to 1NF
+or first normal form.
+
+90
+00:03:29.150 --> 00:03:33.185
+First, I identify the
+repeating groups of data.
+
+91
+00:03:33.185 --> 00:03:36.670
+In this case is the tutor's
+name and contact numbers.
+
+92
+00:03:36.670 --> 00:03:39.890
+Next, I identify the
+entities I'm dealing with,
+
+93
+00:03:39.890 --> 00:03:41.855
+which are course and tutor.
+
+94
+00:03:41.855 --> 00:03:44.300
+Then I split the
+course table so that
+
+95
+00:03:44.300 --> 00:03:46.775
+I now have one table
+for each entity.
+
+96
+00:03:46.775 --> 00:03:48.440
+A course table that contains
+
+97
+00:03:48.440 --> 00:03:50.255
+information about the courses.
+
+98
+00:03:50.255 --> 00:03:52.160
+I choose a table that maintains
+
+99
+00:03:52.160 --> 00:03:54.920
+the name and contact
+numbers of each tutor.
+
+100
+00:03:54.920 --> 00:03:58.520
+Now I need to assign a primary
+key to the tutor table.
+
+101
+00:03:58.520 --> 00:04:00.965
+I select that tutor ID column.
+
+102
+00:04:00.965 --> 00:04:03.755
+I've solved the problem
+of data atomicity,
+
+103
+00:04:03.755 --> 00:04:07.090
+but I also need to provide a
+link between the two tables.
+
+104
+00:04:07.090 --> 00:04:10.385
+I can connect the two tables
+by using a foreign key.
+
+105
+00:04:10.385 --> 00:04:13.400
+I just add the tutor ID
+column to the course table.
+
+106
+00:04:13.400 --> 00:04:15.515
+Now both tables are linked.
+
+107
+00:04:15.515 --> 00:04:18.230
+I've now achieved
+data atomicity and
+
+108
+00:04:18.230 --> 00:04:21.205
+eliminated unnecessary
+repeating groups of data.
+
+109
+00:04:21.205 --> 00:04:24.440
+You should now be familiar
+with 1NF and the rules that
+
+110
+00:04:24.440 --> 00:04:28.230
+you should apply to
+avoid it. Good work.

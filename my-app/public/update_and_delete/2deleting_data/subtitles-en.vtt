@@ -1,0 +1,298 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.415
+In this example, I'll
+demonstrate how to delete
+
+2
+00:00:02.415 --> 00:00:04.995
+a single record from a
+table in a database.
+
+3
+00:00:04.995 --> 00:00:07.830
+I'm using the student table
+from a college database and
+
+4
+00:00:07.830 --> 00:00:09.330
+deleting the record of a student
+
+5
+00:00:09.330 --> 00:00:11.075
+with the last name of Miller.
+
+6
+00:00:11.075 --> 00:00:14.880
+I go to the SQL
+tab in phpMyAdmin.
+
+7
+00:00:15.080 --> 00:00:17.475
+I write a delete statement
+
+8
+00:00:17.475 --> 00:00:21.150
+beginning with the
+keyword delete from.
+
+9
+00:00:21.500 --> 00:00:25.875
+Then I specify the table
+name as student table.
+
+10
+00:00:25.875 --> 00:00:28.230
+I add a where clause and
+
+11
+00:00:28.230 --> 00:00:30.345
+the condition to delete
+the data I want.
+
+12
+00:00:30.345 --> 00:00:33.210
+I need a database to scan
+the list of students and
+
+13
+00:00:33.210 --> 00:00:36.285
+identify the last name
+or value of Miller,
+
+14
+00:00:36.285 --> 00:00:38.715
+and then delete that
+record from the table.
+
+15
+00:00:38.715 --> 00:00:48.270
+I type where followed by
+last name equal to Miller.
+
+16
+00:00:48.590 --> 00:00:52.920
+I then run this statement
+by pressing the go button.
+
+17
+00:00:55.090 --> 00:00:57.170
+I get a confirmation that
+
+18
+00:00:57.170 --> 00:01:00.575
+the record Miller has been
+deleted from the database.
+
+19
+00:01:00.575 --> 00:01:03.650
+I can then access
+the student table on
+
+20
+00:01:03.650 --> 00:01:05.390
+the left panel to ensure that
+
+21
+00:01:05.390 --> 00:01:08.345
+the record or instance of
+Miller has been removed.
+
+22
+00:01:08.345 --> 00:01:11.135
+Let's explore another
+example this time
+
+23
+00:01:11.135 --> 00:01:13.940
+by deleting multiple records
+from the student table.
+
+24
+00:01:13.940 --> 00:01:15.800
+Now I want to delete
+the records for
+
+25
+00:01:15.800 --> 00:01:18.530
+the two students within the
+engineering department.
+
+26
+00:01:18.530 --> 00:01:20.480
+The beginning of the
+statement is the
+
+27
+00:01:20.480 --> 00:01:23.180
+same as the previous example.
+
+28
+00:01:24.890 --> 00:01:27.840
+I begin with the delete and form
+
+29
+00:01:27.840 --> 00:01:29.560
+keywords followed by the name
+
+30
+00:01:29.560 --> 00:01:30.700
+of the table I'm working with,
+
+31
+00:01:30.700 --> 00:01:32.470
+which is student table.
+
+32
+00:01:32.470 --> 00:01:35.935
+The where clause is the key
+difference in this example.
+
+33
+00:01:35.935 --> 00:01:39.035
+I type where followed by
+
+34
+00:01:39.035 --> 00:01:44.770
+department equal.
+To engineering.
+
+35
+00:01:45.050 --> 00:01:47.410
+This instructs SQL to
+
+36
+00:01:47.410 --> 00:01:49.930
+identify all records
+that have a value of
+
+37
+00:01:49.930 --> 00:01:52.225
+engineering within
+the department column
+
+38
+00:01:52.225 --> 00:01:54.580
+and remove those
+rows from the table.
+
+39
+00:01:54.580 --> 00:01:56.410
+But I need to be careful.
+
+40
+00:01:56.410 --> 00:01:59.005
+If I don't correctly
+specify the where clause,
+
+41
+00:01:59.005 --> 00:02:01.955
+then all the records in
+the table will be deleted.
+
+42
+00:02:01.955 --> 00:02:04.165
+Now that I've completed
+my statement,
+
+43
+00:02:04.165 --> 00:02:06.470
+I select Go to run it.
+
+44
+00:02:09.860 --> 00:02:12.830
+I then check the table
+by clicking it on
+
+45
+00:02:12.830 --> 00:02:16.790
+the left panel and
+
+46
+00:02:16.790 --> 00:02:18.080
+confirm that the records for
+
+47
+00:02:18.080 --> 00:02:19.265
+the two engineering students
+
+48
+00:02:19.265 --> 00:02:21.470
+have been deleted
+from the table.
+
+49
+00:02:21.470 --> 00:02:24.350
+Finally, let's quickly explore
+
+50
+00:02:24.350 --> 00:02:26.630
+how to delete all
+records from a table.
+
+51
+00:02:26.630 --> 00:02:29.105
+In this task, the syntax remains
+
+52
+00:02:29.105 --> 00:02:31.790
+largely the same as in
+the previous examples.
+
+53
+00:02:31.790 --> 00:02:33.650
+The key difference
+is that I removed
+
+54
+00:02:33.650 --> 00:02:36.275
+the where clause so
+that now by syntax,
+
+55
+00:02:36.275 --> 00:02:40.935
+just state, delete
+from student table.
+
+56
+00:02:40.935 --> 00:02:44.320
+I remove the where clause.
+
+57
+00:02:44.870 --> 00:02:50.400
+That now my syntax just states
+delete from student table.
+
+58
+00:02:50.400 --> 00:02:53.180
+In other words, I'm
+instructing the database
+
+59
+00:02:53.180 --> 00:02:55.930
+to remove all records
+from the student table.
+
+60
+00:02:55.930 --> 00:03:00.970
+Then I click Go and
+confirm the deletion.
+
+61
+00:03:01.660 --> 00:03:04.475
+Once the deletion
+has been confirmed,
+
+62
+00:03:04.475 --> 00:03:07.020
+I check the student table,
+
+63
+00:03:07.520 --> 00:03:10.035
+which is now empty.
+
+64
+00:03:10.035 --> 00:03:14.040
+I now know that all
+records have been deleted.

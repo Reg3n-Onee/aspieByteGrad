@@ -1,0 +1,647 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.580
+There are several
+clauses available in SQL
+
+2
+00:00:02.580 --> 00:00:05.010
+for sorting and filtering
+data in a table.
+
+3
+00:00:05.010 --> 00:00:08.400
+One of the most useful of
+these is the ORDER BY clause.
+
+4
+00:00:08.400 --> 00:00:10.560
+With this clause,
+you can reorder
+
+5
+00:00:10.560 --> 00:00:13.200
+the data in a table by
+one or more columns.
+
+6
+00:00:13.200 --> 00:00:15.030
+For example, in a table that
+
+7
+00:00:15.030 --> 00:00:17.130
+holds data on students
+in a college,
+
+8
+00:00:17.130 --> 00:00:19.350
+you could sort the
+data by date of birth.
+
+9
+00:00:19.350 --> 00:00:21.750
+The table would then
+present all students in
+
+10
+00:00:21.750 --> 00:00:24.390
+the order of oldest to youngest.
+
+11
+00:00:24.390 --> 00:00:26.085
+By the end of this video,
+
+12
+00:00:26.085 --> 00:00:28.080
+you'll be able to
+demonstrate the purpose of
+
+13
+00:00:28.080 --> 00:00:30.690
+the ORDER BY clause
+for sorting data,
+
+14
+00:00:30.690 --> 00:00:32.940
+explain the different
+forms in which
+
+15
+00:00:32.940 --> 00:00:35.880
+the ORDER BY clause can
+be used to sort data,
+
+16
+00:00:35.880 --> 00:00:37.710
+and describe how
+the ascending and
+
+17
+00:00:37.710 --> 00:00:40.990
+descending keywords behave
+when used in sort columns.
+
+18
+00:00:40.990 --> 00:00:43.130
+Let's begin with
+an exploration of
+
+19
+00:00:43.130 --> 00:00:45.275
+the purpose of the order clause.
+
+20
+00:00:45.275 --> 00:00:47.330
+The ORDER BY clause is
+
+21
+00:00:47.330 --> 00:00:48.560
+an optional clause that can be
+
+22
+00:00:48.560 --> 00:00:50.275
+added to a select statement,
+
+23
+00:00:50.275 --> 00:00:52.670
+its purpose is to help sort data
+
+24
+00:00:52.670 --> 00:00:55.115
+in either ascending
+or descending order.
+
+25
+00:00:55.115 --> 00:00:58.100
+For example, you can sort
+list of student names in
+
+26
+00:00:58.100 --> 00:01:01.955
+an alphabetical order from
+A to Z or vice versa.
+
+27
+00:01:01.955 --> 00:01:03.830
+To get a better
+understanding of how
+
+28
+00:01:03.830 --> 00:01:05.465
+the ORDER BY clause works,
+
+29
+00:01:05.465 --> 00:01:07.615
+let's explore the syntax.
+
+30
+00:01:07.615 --> 00:01:09.555
+In its most basic form,
+
+31
+00:01:09.555 --> 00:01:12.330
+the syntax of ORDER BY
+clause is as follows.
+
+32
+00:01:12.330 --> 00:01:14.765
+It begins with a
+select statement,
+
+33
+00:01:14.765 --> 00:01:16.790
+then a list of the
+columns to be sorted
+
+34
+00:01:16.790 --> 00:01:18.940
+with each one
+separated by comma,
+
+35
+00:01:18.940 --> 00:01:21.200
+next is a from keyword,
+
+36
+00:01:21.200 --> 00:01:22.970
+followed by the name
+of the table to be
+
+37
+00:01:22.970 --> 00:01:24.905
+sorted, finally,
+
+38
+00:01:24.905 --> 00:01:26.690
+the ORDER BY clause is added,
+
+39
+00:01:26.690 --> 00:01:29.380
+followed by the name of
+the column to be sorted.
+
+40
+00:01:29.380 --> 00:01:31.445
+At the end of the column name,
+
+41
+00:01:31.445 --> 00:01:34.220
+state how you want the
+data to be sorted.
+
+42
+00:01:34.220 --> 00:01:38.000
+You can do this by
+specifying ASC for
+
+43
+00:01:38.000 --> 00:01:42.490
+ascending order or
+DESC for descending.
+
+44
+00:01:42.490 --> 00:01:44.330
+But the ORDER BY clause doesn't
+
+45
+00:01:44.330 --> 00:01:46.265
+limit you to just
+the one column.
+
+46
+00:01:46.265 --> 00:01:48.020
+You could also use
+this syntax to
+
+47
+00:01:48.020 --> 00:01:50.210
+order the data from
+multiple columns.
+
+48
+00:01:50.210 --> 00:01:52.535
+The syntax for sorting
+multiple columns
+
+49
+00:01:52.535 --> 00:01:55.085
+is very similar to that
+used for a single column.
+
+50
+00:01:55.085 --> 00:01:56.750
+The key difference from multiple
+
+51
+00:01:56.750 --> 00:01:58.370
+columns is that you must type
+
+52
+00:01:58.370 --> 00:02:01.720
+the name of each column
+after the ORDER BY clause.
+
+53
+00:02:01.720 --> 00:02:03.425
+Just make sure that you separate
+
+54
+00:02:03.425 --> 00:02:05.015
+each column with a comma,
+
+55
+00:02:05.015 --> 00:02:07.070
+and specify whether
+you want to sort
+
+56
+00:02:07.070 --> 00:02:09.710
+the columns in ascending
+or descending order.
+
+57
+00:02:09.710 --> 00:02:12.335
+It's also possible to
+specify all columns
+
+58
+00:02:12.335 --> 00:02:15.140
+after the select keyword
+by using an asterisk.
+
+59
+00:02:15.140 --> 00:02:16.910
+This is a much
+easier method than
+
+60
+00:02:16.910 --> 00:02:18.995
+listing all columns one by one.
+
+61
+00:02:18.995 --> 00:02:21.560
+Finally, it's also
+important to note that
+
+62
+00:02:21.560 --> 00:02:24.620
+the type of data in your table
+affects how it is ordered.
+
+63
+00:02:24.620 --> 00:02:27.080
+If the column has a
+numeric datatype,
+
+64
+00:02:27.080 --> 00:02:28.490
+the records will be sorted in
+
+65
+00:02:28.490 --> 00:02:31.065
+ascending or descending
+numerical order,
+
+66
+00:02:31.065 --> 00:02:34.295
+and if a column has a
+text-based or string data type,
+
+67
+00:02:34.295 --> 00:02:35.915
+then it will be
+sorted in ascending
+
+68
+00:02:35.915 --> 00:02:37.940
+or descending
+alphabetical order.
+
+69
+00:02:37.940 --> 00:02:40.880
+Next, let's explore
+some examples
+
+70
+00:02:40.880 --> 00:02:43.715
+of the ORDER BY clause
+in SQL statement.
+
+71
+00:02:43.715 --> 00:02:45.590
+Let's begin with an example of
+
+72
+00:02:45.590 --> 00:02:47.705
+ordering data by single column.
+
+73
+00:02:47.705 --> 00:02:49.820
+For this example, I'll use
+
+74
+00:02:49.820 --> 00:02:52.660
+a table that lists details
+of students in college.
+
+75
+00:02:52.660 --> 00:02:55.280
+I need to sort or
+order this data in
+
+76
+00:02:55.280 --> 00:02:58.430
+ascending order of each student's
+country of nationality.
+
+77
+00:02:58.430 --> 00:02:59.870
+So in this instance,
+
+78
+00:02:59.870 --> 00:03:01.295
+the ORDER by column
+
+79
+00:03:01.295 --> 00:03:03.850
+must be the nationality
+of each student.
+
+80
+00:03:03.850 --> 00:03:05.900
+Each student's nationality is
+
+81
+00:03:05.900 --> 00:03:08.015
+listed in the table's
+fifth column.
+
+82
+00:03:08.015 --> 00:03:10.820
+I begin by writing
+the select statement,
+
+83
+00:03:10.820 --> 00:03:12.500
+followed by the
+names of the columns
+
+84
+00:03:12.500 --> 00:03:14.125
+that I want and the result,
+
+85
+00:03:14.125 --> 00:03:16.755
+ID, first_name,
+
+86
+00:03:16.755 --> 00:03:19.530
+last_name, and nationality.
+
+87
+00:03:19.530 --> 00:03:21.740
+Then I write the from keyword,
+
+88
+00:03:21.740 --> 00:03:23.210
+followed by the
+name of the table,
+
+89
+00:03:23.210 --> 00:03:24.605
+which is student table.
+
+90
+00:03:24.605 --> 00:03:27.595
+Next, I typed the
+ORDER BY clause.
+
+91
+00:03:27.595 --> 00:03:30.300
+Then I specify the name
+of the code-name by which
+
+92
+00:03:30.300 --> 00:03:33.290
+want my data to be sorted,
+which is nationality.
+
+93
+00:03:33.290 --> 00:03:35.689
+Finally, I type ASC
+
+94
+00:03:35.689 --> 00:03:38.225
+so that the data is sorted
+in ascending order.
+
+95
+00:03:38.225 --> 00:03:40.295
+I then execute the statement.
+
+96
+00:03:40.295 --> 00:03:42.645
+All students in a table
+have now been sorted
+
+97
+00:03:42.645 --> 00:03:45.110
+according to nationality
+in ascending order.
+
+98
+00:03:45.110 --> 00:03:47.060
+Note that even if I was to omit
+
+99
+00:03:47.060 --> 00:03:49.055
+ASC from the end of my code,
+
+100
+00:03:49.055 --> 00:03:50.875
+I'd still get the same result.
+
+101
+00:03:50.875 --> 00:03:53.225
+This is because the
+ORDER BY clause
+
+102
+00:03:53.225 --> 00:03:56.345
+sorts all data in ascending
+order by default.
+
+103
+00:03:56.345 --> 00:03:58.190
+Let's run the same statement,
+
+104
+00:03:58.190 --> 00:04:02.950
+but this time using DESC or
+descending instead of ASC.
+
+105
+00:04:02.950 --> 00:04:05.030
+All students in the
+table have now been
+
+106
+00:04:05.030 --> 00:04:07.280
+sorted by nationality
+for a second time.
+
+107
+00:04:07.280 --> 00:04:09.125
+But in this instance,
+
+108
+00:04:09.125 --> 00:04:10.895
+they've been sorted
+by descending
+
+109
+00:04:10.895 --> 00:04:13.165
+or reverse alphabetical order.
+
+110
+00:04:13.165 --> 00:04:15.500
+Finally, let's
+explore an example of
+
+111
+00:04:15.500 --> 00:04:17.720
+sorting data by
+multiple columns.
+
+112
+00:04:17.720 --> 00:04:19.580
+In this example, I'll sort
+
+113
+00:04:19.580 --> 00:04:22.240
+each student by nationality
+and date of birth.
+
+114
+00:04:22.240 --> 00:04:24.740
+First, I write the
+select statement,
+
+115
+00:04:24.740 --> 00:04:26.660
+then I write the names
+of the columns I
+
+116
+00:04:26.660 --> 00:04:29.090
+wanted my result, ID,
+
+117
+00:04:29.090 --> 00:04:31.565
+first_name, last_name,
+
+118
+00:04:31.565 --> 00:04:34.420
+date of birth, and nationality.
+
+119
+00:04:34.420 --> 00:04:36.830
+I then write the
+from keyword and
+
+120
+00:04:36.830 --> 00:04:39.125
+student table, the
+name of the table.
+
+121
+00:04:39.125 --> 00:04:42.410
+Next, I type the
+ORDER BY clause and
+
+122
+00:04:42.410 --> 00:04:44.000
+specify the names of the columns
+
+123
+00:04:44.000 --> 00:04:45.800
+by which I want my
+data to be sorted,
+
+124
+00:04:45.800 --> 00:04:48.355
+which are nationality
+and date of birth.
+
+125
+00:04:48.355 --> 00:04:50.550
+I then add ASC after
+
+126
+00:04:50.550 --> 00:04:52.970
+nationality so that
+the data is sorted in
+
+127
+00:04:52.970 --> 00:04:57.140
+ascending order of
+nationality and I add DESC
+
+128
+00:04:57.140 --> 00:04:59.270
+after date of birth
+so that the data
+
+129
+00:04:59.270 --> 00:05:01.840
+from this column will be
+sorted in descending order.
+
+130
+00:05:01.840 --> 00:05:05.120
+Then I run the statement.
+This returns my table with
+
+131
+00:05:05.120 --> 00:05:07.220
+the data for the
+specified columns
+
+132
+00:05:07.220 --> 00:05:08.720
+organized as instructed,
+
+133
+00:05:08.720 --> 00:05:10.070
+which is alphabetically for
+
+134
+00:05:10.070 --> 00:05:12.920
+nationality and
+youngest to oldest.
+
+135
+00:05:12.920 --> 00:05:16.550
+This was a short introduction
+to the SQL ORDER BY clause.
+
+136
+00:05:16.550 --> 00:05:18.500
+You can now demonstrate
+the purpose of
+
+137
+00:05:18.500 --> 00:05:20.585
+the ORDER BY clause
+for sorting data,
+
+138
+00:05:20.585 --> 00:05:23.000
+and you can also explain the
+different forms in which
+
+139
+00:05:23.000 --> 00:05:27.660
+the ORDER BY clause can be
+used to sort data. Great work.
