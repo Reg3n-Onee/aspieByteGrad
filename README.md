@@ -33,3 +33,8 @@ in **my_app** \
 and in **server** \
 `npm start`
 
+## Demo
+
+Here is the demo run of our smart watch for stress dectecting.
+
+-[Smart Watch Demo Run](https://youtu.be/KSkbPraUoZ0)
