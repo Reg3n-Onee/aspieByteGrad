@@ -1,0 +1,23 @@
+# secrets
+.env
+.env.*
+wifi_secrets.h
+
+# databases (real user + behavioral data — never commit)
+*.db
+*.sqlite
+*.sqlite3
+
+# dependencies
+node_modules/
+
+# build output
+/my-app/build/
+/my-app/dist/
+
+# OS
+.DS_Store
+
+# logs
+*.log
+npm-debug.log*

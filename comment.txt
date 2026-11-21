@@ -1,0 +1,219 @@
+aspieByte rewrite — what changed, why, and how
+================================================
+
+This file explains the new "apps/web" folder compared to the old
+"my-app" + "server" folders. The old folders are still there and still
+work — nothing has been deleted. This is step one of a bigger rewrite,
+and for now it only covers login/signup, not the rest of the app.
+
+Read this top to bottom like a story: what was wrong, what we did
+about it, and what to do next.
+
+
+1. THE BIG PICTURE CHANGE
+--------------------------
+
+OLD: two separate programs.
+  - "my-app" = the website (React, made with Create React App)
+  - "server" = a second program (Node.js + Express) that the website
+    talks to over the network to read/write data
+
+NEW: one program.
+  - "apps/web" = a Next.js app. It is still React, but it can also run
+    code on the server by itself — no second Express program needed.
+
+WHY: running two separate programs means two things to start, two
+things to deploy, and two codebases to keep in sync. Next.js lets the
+same project serve web pages AND handle API requests. One fewer moving
+part is simpler to build, explain, and host.
+
+
+2. THE DATABASE
+----------------
+
+OLD: raw SQL written by hand, as plain text, mixed into the same file
+as the website logic (server/controllers/authControllers.js). Example
+of what that looked like:
+
+    db.get('SELECT * FROM user WHERE email = ?', [email], (err, row) => { ... })
+
+NEW: a tool called Drizzle describes the database as normal TypeScript
+code (see apps/web/src/db/schema.ts), and we write queries like this:
+
+    db.select().from(users).where(eq(users.email, email)).get()
+
+WHY: with the old way, a typo in a column name is only caught when
+that exact line of code runs — maybe months later, in front of a real
+user. With Drizzle, the editor and the compiler catch that typo
+immediately, because the table's shape (users.email) is a real
+TypeScript type, not a guess.
+
+WHAT ELSE CHANGED: the old project had TWO user tables that didn't
+agree with each other — one for SQLite (actually used) and one for
+MongoDB (never used, just sitting in the code). We deleted that
+confusion. There is one "users" table now, and a "role" column
+(student or guardian) instead of two separate systems for students and
+parents.
+
+STILL SQLite FOR NOW: the database itself is still SQLite (one file,
+apps/web/dev.db), not a "real" server database like Postgres yet.
+That's a deliberate shortcut — SQLite needs zero setup, so the app
+runs immediately with `pnpm dev`. Moving to Postgres later is a small
+change (one line in apps/web/src/db/client.ts), not a rewrite, because
+Drizzle speaks both.
+
+
+3. LOGGING IN (the main thing we actually built)
+--------------------------------------------------
+
+OLD: when you logged in, the server checked your password and sent
+back your name and email — and that was it. Nothing remembered that
+you were logged in. This meant:
+  - Any page could be opened directly in the browser, logged in or not
+  - There was no way for the server to know who was making a request
+  - A password-checking library (jsonwebtoken) was installed but
+    never actually used anywhere in the code
+
+NEW: logging in now creates a "session" — a signed, unreadable token
+that gets stored in your browser automatically as a cookie. Every time
+you visit a page, the server checks that cookie before showing you
+anything.
+
+HOW this works, step by step:
+  1. You submit the login form (apps/web/src/app/login/page.tsx)
+  2. The server checks your email + password against the database
+     (apps/web/src/app/api/auth/login/route.ts)
+  3. If correct, the server creates a token containing your user ID,
+     email, and role, and signs it with a secret key so it can't be
+     faked (apps/web/src/lib/auth.ts)
+  4. That token is stored as a cookie the browser's JavaScript cannot
+     read (this blocks a common way accounts get hijacked)
+  5. On every request to a protected page, a "middleware" file
+     (apps/web/src/middleware.ts) checks for that cookie BEFORE the
+     page is allowed to load, and sends you to /login if it's missing
+     or invalid
+
+This is the single most important fix in this rewrite: before, there
+was no real login wall at all. Now there is one, and it's checked
+automatically, not something each page has to remember to do itself.
+
+ONE MORE SMALL BUT REAL FIX: the old login code gave a different error
+message for "wrong password" versus "no account with that email."
+That sounds helpful, but it actually lets someone check, email by
+email, who has an account — including students/guardians on a health-
+related platform. The new code gives the same message either way.
+
+
+4. CHECKING WHAT YOU TYPE (validation)
+-----------------------------------------
+
+OLD: a library for checking input (validator) was installed but never
+used. The server mostly just trusted whatever the browser sent it.
+
+NEW: every signup/login request is checked against a strict shape
+first (apps/web/src/lib/validation.ts), using a library called Zod.
+If a field is missing, too short, or not a real email, the request is
+rejected before it ever touches the database.
+
+
+5. WHY NOT Create React App ANYMORE
+--------------------------------------
+
+Create React App (what "my-app" uses) was officially retired by its
+own maintainers. It's not "old-fashioned," it's genuinely unmaintained
+— security fixes and new React features stop reliably applying to it.
+Next.js is the actively maintained, current-generation way to build
+with React.
+
+
+6. WHAT THIS STEP DID NOT DO YET
+------------------------------------
+
+On purpose, to keep this change reviewable:
+  - None of the actual course/dashboard/questionnaire pages were
+    ported yet — only landing, signup, login, and one dashboard page
+    that proves the login wall works
+  - The theme switcher, font size slider, stress wearable code, and
+    courses are still only in the old "my-app" — they get ported next,
+    screen by screen
+  - The database is still SQLite, not Postgres
+  - Nothing has been deployed anywhere — this only runs on your own
+    computer so far
+
+Nothing in "my-app" or "server" was changed or deleted. You can still
+run the old app exactly as before while the new one is built up
+alongside it.
+
+
+7. TESTS (the old project had none)
+---------------------------------------
+
+OLD: server/package.json literally had this as its test command:
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+That means nothing was ever actually checked automatically. Every bug
+had to be found by clicking through the app by hand.
+
+NEW: 20 automated tests, using a tool called Vitest, that run in about
+2 seconds. They live right next to the code they test (a file called
+auth.ts has a matching auth.test.ts beside it), so it's obvious what
+each test is checking:
+
+  - apps/web/src/lib/auth.test.ts
+    Checks password hashing and session tokens: a correct password
+    verifies, a wrong one doesn't, a tampered token is rejected.
+
+  - apps/web/src/lib/validation.test.ts
+    Checks that bad signups (short password, fake email, missing
+    name) get rejected before they ever reach the database.
+
+  - apps/web/src/app/api/auth/signup/route.test.ts
+    Checks the real signup endpoint: a good signup works, a duplicate
+    email is rejected, an incomplete request is rejected.
+
+  - apps/web/src/app/api/auth/login/route.test.ts
+    Checks the real login endpoint — including a test written
+    specifically for the "same error message" fix described in
+    section 3. If that protection is ever accidentally removed, this
+    test fails and says exactly why.
+
+  - apps/web/src/app/api/auth/logout/route.test.ts
+    Checks that logging out actually clears the cookie.
+
+HOW THE TESTS WORK: they run against a real but temporary database
+that only exists in memory (it disappears the moment the tests
+finish), built from the same migration file Drizzle generated. This
+means the tests are checking real database behavior, not a fake
+stand-in — but they never touch dev.db, so running tests can't
+accidentally delete your real local data.
+
+ONE THING LEFT OUT ON PURPOSE: the login wall (middleware.ts) and the
+dashboard page both use a Next.js feature (next/headers) that only
+works while a real request is being handled by the Next.js server —
+it can't be called directly from a plain test file. Instead, that
+part was checked by hand this session (described in the project
+conversation): confirmed with real requests that /dashboard redirects
+to /login when logged out, and loads normally once logged in. The
+honest way to automate that check later is a tool like Playwright,
+which drives a real browser against a real running copy of the app —
+that's a good next addition, not something this step skipped by
+accident.
+
+HOW TO RUN THE TESTS:
+
+    cd apps/web
+    pnpm test
+
+
+8. HOW TO RUN THE NEW APP
+----------------------------
+
+    cd apps/web
+    pnpm install
+    pnpm db:push      (creates the local database file, dev.db)
+    pnpm dev           (starts the app at http://localhost:3000)
+
+Try it: go to /signup, create an account, get sent to /dashboard.
+Open a private/incognito window and go straight to /dashboard — you'll
+get bounced to /login, which is the whole point of this step.

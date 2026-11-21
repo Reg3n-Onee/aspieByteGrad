@@ -2,9 +2,10 @@
 #include <ESP8266WebServer.h>
 #include <ArduinoJson.h>
 #include <SoftwareSerial.h>
+#include "wifi_secrets.h" // copy wifi_secrets.h.example -> wifi_secrets.h (gitignored) and fill in your network
 
-const char* ssid = "The_R_family-2G"; // Replace with your WiFi SSID
-const char* password = "P@$$w0rd"; // Replace with your WiFi password
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
 ESP8266WebServer server(80);
 
